@@ -1,104 +1,28 @@
 "use client"
 
-import { ArrowRight, Shield, Users, Zap, Award, Calendar, Sparkles, Play, Layers } from "lucide-react"
+import Footer from "@/components/footer"
+import Header from "@/components/header"
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { motion, useAnimation, useInView } from "framer-motion"
-import Link from "next/link"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
 import ZigzagProcess from "@/components/zigzag-process"
-import { useRef, useEffect, useState } from "react"
+import { ArrowRight, Award, Calendar, Layers, Play, Shield, Sparkles, Users, Zap } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
+import { useState } from "react"
 
 export default function HomePage() {
-  const controls = useAnimation()
-  const heroRef = useRef(null)
-  const isInView = useInView(heroRef, { once: true })
   const [isHovering, setIsHovering] = useState(false)
 
-  useEffect(() => {
-    if (isInView) {
-      controls.start("visible")
-    }
-  }, [controls, isInView])
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.3,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  }
-
-  const cardVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { duration: 0.5, ease: "easeOut" },
-    },
-  }
-
-  // Text animation variants
-  const letterVariants = {
-    hidden: { y: 100, opacity: 0 },
-    visible: (i: number) => ({
-      y: 0,
-      opacity: 1,
-      transition: {
-        delay: i * 0.03,
-        duration: 0.6,
-        ease: [0.22, 1, 0.36, 1],
-      },
-    }),
-  }
-
-  // Split text for animation
+  // Text for title
   const titleText = "Building Trust Through Digital Excellence"
-  const titleLetters = titleText.split("")
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-emerald-50/30 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 180, 360],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Number.POSITIVE_INFINITY,
-            ease: "linear",
-          }}
-          className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-200/20 to-blue-200/20 rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{
-            scale: [1.2, 1, 1.2],
-            rotate: [360, 180, 0],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Number.POSITIVE_INFINITY,
-            ease: "linear",
-          }}
-          className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-purple-200/20 to-emerald-200/20 rounded-full blur-3xl"
-        />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-200/20 to-blue-200/20 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-purple-200/20 to-emerald-200/20 rounded-full blur-3xl" />
 
         {/* Grid pattern */}
         <div
@@ -114,51 +38,32 @@ export default function HomePage() {
       <Header />
 
       {/* Hero Section */}
-      <section ref={heroRef} className="relative py-20 px-4 min-h-screen flex items-center">
+      <section className="relative py-20 px-4 min-h-screen flex items-center">
         <div className="container mx-auto relative z-10">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate={controls}
-            className="grid items-center gap-12 lg:grid-cols-2"
-          >
+          <div className="grid items-center gap-12 lg:grid-cols-2">
             {/* Left Content */}
             <div>
-              <motion.div variants={itemVariants}>
+              <div>
                 <Badge className="mb-8 bg-white/80 backdrop-blur-sm text-emerald-800 hover:bg-white/90 border border-emerald-200/50 shadow-lg">
                   <Sparkles className="w-4 h-4 mr-2" />
                   METI Certified Government Partner
                 </Badge>
-              </motion.div>
-
-              {/* Animated title */}
-              <div className="mb-8 overflow-hidden">
-                <motion.h1 className="flex flex-wrap text-4xl font-bold tracking-tight text-slate-800 sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
-                  {titleLetters.map((letter, index) => (
-                    <motion.span
-                      key={index}
-                      custom={index}
-                      variants={letterVariants}
-                      initial="hidden"
-                      animate={controls}
-                      className={letter === " " ? "mr-2" : ""}
-                    >
-                      {letter === " " ? "\u00A0" : letter}
-                    </motion.span>
-                  ))}
-                </motion.h1>
               </div>
 
-              <motion.p
-                variants={itemVariants}
-                className="mb-8 max-w-2xl text-lg md:text-xl text-slate-600 leading-relaxed"
-              >
+              {/* Title */}
+              <div className="mb-8 overflow-hidden">
+                <h1 className="flex flex-wrap text-4xl font-bold tracking-tight text-slate-800 sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
+                  {titleText}
+                </h1>
+              </div>
+
+              <p className="mb-8 max-w-2xl text-lg md:text-xl text-slate-600 leading-relaxed">
                 Aegis LLP Group delivers comprehensive digital transformation solutions for government agencies and
                 municipalities with 24/7 support, proven expertise, and METI-certified partnership structure.
-              </motion.p>
+              </p>
 
               {/* Services */}
-              <motion.div variants={itemVariants} className="mb-8">
+              <div className="mb-8">
                 <div className="mb-4 text-sm font-medium text-slate-700">Our Specializations</div>
                 <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
                   {[
@@ -166,20 +71,19 @@ export default function HomePage() {
                     { icon: Layers, name: "Digital Infrastructure" },
                     { icon: Users, name: "Citizen Engagement" },
                   ].map((service, index) => (
-                    <motion.div
+                    <div
                       key={index}
-                      whileHover={{ y: -5, scale: 1.03 }}
                       className="rounded-xl border border-emerald-200/50 bg-white/80 backdrop-blur-sm p-4 transition-all hover:shadow-lg"
                     >
                       <service.icon className="mb-2 h-5 w-5 text-emerald-600" />
                       <div className="text-sm font-medium text-slate-800">{service.name}</div>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <div className="flex flex-wrap gap-4">
+                <div>
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white text-lg px-8 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
@@ -187,9 +91,9 @@ export default function HomePage() {
                     <Link href="/projects">Explore Our Services</Link>
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
-                </motion.div>
+                </div>
 
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <div>
                   <Button
                     variant="outline"
                     size="lg"
@@ -201,41 +105,19 @@ export default function HomePage() {
                       <Play className="h-3 w-3 fill-white text-white" />
 
                       {/* Ripple Effect */}
-                      <motion.div
-                        className="absolute inset-0 rounded-full border border-emerald-400"
-                        animate={
-                          isHovering
-                            ? {
-                                scale: [1, 1.5],
-                                opacity: [1, 0],
-                              }
-                            : {}
-                        }
-                        transition={{
-                          repeat: isHovering ? Number.POSITIVE_INFINITY : 0,
-                          duration: 1.5,
-                        }}
-                      />
+                      <div className="absolute inset-0 rounded-full border border-emerald-400" />
                     </div>
                     <Link href="/about">Watch Overview</Link>
                   </Button>
-                </motion.div>
-              </motion.div>
+                </div>
+              </div>
             </div>
 
             {/* Right Content - Enhanced with real company image */}
             <div className="relative">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                className="relative mx-auto h-[600px] max-w-lg"
-              >
+              <div className="relative mx-auto h-[600px] max-w-lg">
                 {/* Main Company Showcase Card */}
-                <motion.div
-                  whileHover={{ scale: 1.02, y: -5 }}
-                  className="relative h-full w-full rounded-2xl overflow-hidden shadow-2xl"
-                >
+                <div className="relative h-full w-full rounded-2xl overflow-hidden shadow-2xl">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%287%29-fcdhf3NWqlr6vKoI0tEMnDdIbG0FUY.jpeg"
                     alt="Aegis Group Company Overview"
@@ -275,15 +157,10 @@ export default function HomePage() {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                </div>
 
                 {/* Floating elements */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1.2, type: "spring" }}
-                  className="absolute -left-16 top-10 z-40 rounded-xl bg-white/90 backdrop-blur-md p-4 shadow-lg border border-white/50"
-                >
+                <div className="absolute -left-16 top-10 z-40 rounded-xl bg-white/90 backdrop-blur-md p-4 shadow-lg border border-white/50">
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100">
                       <Shield className="h-5 w-5 text-emerald-600" />
@@ -293,14 +170,9 @@ export default function HomePage() {
                       <div className="text-slate-600">Government-grade standards</div>
                     </div>
                   </div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1.4, type: "spring" }}
-                  className="absolute -right-12 bottom-20 z-40 rounded-xl bg-white/90 backdrop-blur-md p-4 shadow-lg border border-white/50"
-                >
+                <div className="absolute -right-12 bottom-20 z-40 rounded-xl bg-white/90 backdrop-blur-md p-4 shadow-lg border border-white/50">
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100">
                       <Users className="h-5 w-5 text-blue-600" />
@@ -310,31 +182,19 @@ export default function HomePage() {
                       <div className="text-slate-600">Unified expertise</div>
                     </div>
                   </div>
-                </motion.div>
-              </motion.div>
+                </div>
+              </div>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2, duration: 1 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-center text-sm text-slate-500"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{
-              repeat: Number.POSITIVE_INFINITY,
-              duration: 2,
-              ease: "easeInOut",
-            }}
-          >
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-center text-sm text-slate-500">
+          <div>
             <div>Scroll to explore our process</div>
             <ArrowRight className="mx-auto mt-2 h-4 w-4 rotate-90" />
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </section>
 
       {/* Zigzag Process Section */}
@@ -344,28 +204,16 @@ export default function HomePage() {
       <section className="py-20 px-4 relative">
         <div className="absolute inset-0 bg-white/60 backdrop-blur-3xl" />
         <div className="container mx-auto relative z-10">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            className="text-center mb-16"
-          >
-            <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
               Why Government Agencies Choose Us
-            </motion.h2>
-            <motion.p variants={itemVariants} className="text-xl text-slate-600 max-w-3xl mx-auto">
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Our competitive advantages that set us apart in the public sector
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            className="grid md:grid-cols-3 gap-8"
-          >
+          <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 icon: Zap,
@@ -392,25 +240,24 @@ export default function HomePage() {
                 bgGradient: "from-amber-50 to-orange-50",
               },
             ].map((item, index) => (
-              <motion.div key={index} variants={cardVariants}>
+              <div key={index}>
                 <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg bg-white/80 backdrop-blur-sm overflow-hidden h-full">
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${item.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                   />
                   <CardHeader className="relative z-10">
-                    <motion.div
-                      whileHover={{ scale: 1.1, rotate: 5 }}
+                    <div
                       className={`w-16 h-16 bg-gradient-to-br ${item.gradient} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}
                     >
                       <item.icon className="h-8 w-8 text-white" />
-                    </motion.div>
+                    </div>
                     <CardTitle className="text-slate-800 text-xl mb-4">{item.title}</CardTitle>
                     <CardDescription className="text-slate-600 leading-relaxed">{item.description}</CardDescription>
                   </CardHeader>
                 </Card>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -418,57 +265,35 @@ export default function HomePage() {
       <section className="py-20 px-4 relative">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50/80 to-emerald-50/80 backdrop-blur-3xl" />
         <div className="container mx-auto relative z-10">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            className="text-center mb-16"
-          >
-            <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
               Our Member Companies
-            </motion.h2>
-            <motion.p variants={itemVariants} className="text-xl text-slate-600 max-w-3xl mx-auto">
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Specialized expertise across multiple domains working together as one
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-          >
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[1, 2, 3, 4].map((i) => (
-              <motion.div key={i} variants={cardVariants} whileHover={{ y: -10 }}>
+              <div key={i}>
                 <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/90 backdrop-blur-sm border-0 shadow-lg overflow-hidden">
                   <CardContent className="p-8 text-center">
-                    <motion.div
-                      whileHover={{ scale: 1.1, rotate: 360 }}
-                      transition={{ duration: 0.6 }}
-                      className="w-20 h-20 bg-gradient-to-br from-emerald-400 to-blue-500 rounded-2xl mx-auto mb-6 flex items-center justify-center shadow-lg"
-                    >
+                    <div className="w-20 h-20 bg-gradient-to-br from-emerald-400 to-blue-500 rounded-2xl mx-auto mb-6 flex items-center justify-center shadow-lg">
                       <Shield className="h-10 w-10 text-white" />
-                    </motion.div>
+                    </div>
                     <h3 className="font-bold text-slate-800 mb-3 text-lg">Company {i}</h3>
                     <p className="text-slate-600 text-sm leading-relaxed">
                       Specialized in digital solutions and government services
                     </p>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={itemVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-center mt-12"
-          >
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <div className="text-center mt-12">
+            <div>
               <Button
                 asChild
                 variant="outline"
@@ -479,8 +304,8 @@ export default function HomePage() {
                   View All Companies <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -488,22 +313,16 @@ export default function HomePage() {
       <section className="py-20 px-4 relative">
         <div className="absolute inset-0 bg-white/80 backdrop-blur-3xl" />
         <div className="container mx-auto relative z-10">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            className="flex items-center justify-between mb-16"
-          >
+          <div className="flex items-center justify-between mb-16">
             <div>
-              <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
                 Latest Updates
-              </motion.h2>
-              <motion.p variants={itemVariants} className="text-xl text-slate-600">
+              </h2>
+              <p className="text-xl text-slate-600">
                 Stay informed about our recent developments and achievements
-              </motion.p>
+              </p>
             </div>
-            <motion.div variants={itemVariants} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <div>
               <Button
                 asChild
                 variant="outline"
@@ -511,18 +330,12 @@ export default function HomePage() {
               >
                 <Link href="/news">View All News</Link>
               </Button>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            className="grid md:grid-cols-3 gap-8"
-          >
+          <div className="grid md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
-              <motion.div key={i} variants={cardVariants} whileHover={{ y: -5 }}>
+              <div key={i}>
                 <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg bg-white/90 backdrop-blur-sm overflow-hidden">
                   <CardContent className="p-8">
                     <div className="flex items-center gap-3 text-sm text-slate-500 mb-4">
@@ -539,17 +352,14 @@ export default function HomePage() {
                       Successfully delivered comprehensive DX solution for municipal government, improving efficiency by
                       60% and citizen satisfaction...
                     </p>
-                    <motion.div
-                      whileHover={{ x: 5 }}
-                      className="flex items-center text-emerald-600 mt-4 text-sm font-medium"
-                    >
+                    <div className="flex items-center text-emerald-600 mt-4 text-sm font-medium">
                       Read more <ArrowRight className="ml-1 h-4 w-4" />
-                    </motion.div>
+                    </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -557,46 +367,27 @@ export default function HomePage() {
       <section className="py-20 px-4 relative">
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 via-emerald-700 to-blue-700" />
         <div className="absolute inset-0 bg-black/20" />
-        <motion.div
-          animate={{
-            scale: [1, 1.1, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Number.POSITIVE_INFINITY,
-            ease: "easeInOut",
-          }}
-          className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-blue-400/20 blur-3xl"
-        />
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-blue-400/20 blur-3xl" />
 
         <div className="container mx-auto text-center relative z-10">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <motion.h2 variants={itemVariants} className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+          <div>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
               Ready to Transform Your Digital Infrastructure?
-            </motion.h2>
-            <motion.p
-              variants={itemVariants}
-              className="text-emerald-100 text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed"
-            >
+            </h2>
+            <p className="text-emerald-100 text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed">
               Partner with Aegis LLP Group for reliable, innovative solutions tailored to government and municipal
               needs.
-            </motion.p>
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 justify-center">
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <div>
                 <Button
                   size="lg"
                   className="bg-white text-emerald-600 hover:bg-slate-50 text-lg px-10 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
                 >
                   <Link href="/contact">Start a Project</Link>
                 </Button>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              </div>
+              <div>
                 <Button
                   size="lg"
                   variant="outline"
@@ -604,9 +395,9 @@ export default function HomePage() {
                 >
                   <Link href="/contact">Schedule Consultation</Link>
                 </Button>
-              </motion.div>
-            </motion.div>
-          </motion.div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

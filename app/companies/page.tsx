@@ -1,46 +1,16 @@
 "use client"
 
-import { ArrowRight, Users, Award, Zap, Building2, Code, Database, Cloud, Smartphone, CheckCircle } from "lucide-react"
+import Footer from "@/components/footer"
+import Header from "@/components/header"
+import ServiceShowcase from "@/components/service-showcase"
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { motion } from "framer-motion"
-import Link from "next/link"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import ServiceShowcase from "@/components/service-showcase"
+import { ArrowRight, Award, Building2, CheckCircle, Cloud, Code, Database, Smartphone, Users, Zap } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function CompaniesPage() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  }
-
-  const cardVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { duration: 0.5, ease: "easeOut" },
-    },
-  }
-
   const companies = [
     {
       id: 1,
@@ -90,32 +60,10 @@ export default function CompaniesPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-emerald-50/30 relative overflow-hidden">
-      {/* Animated Background Elements */}
+      {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 180, 360],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Number.POSITIVE_INFINITY,
-            ease: "linear",
-          }}
-          className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-200/20 to-blue-200/20 rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{
-            scale: [1.2, 1, 1.2],
-            rotate: [360, 180, 0],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Number.POSITIVE_INFINITY,
-            ease: "linear",
-          }}
-          className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-emerald-200/20 to-purple-200/20 rounded-full blur-3xl"
-        />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-200/20 to-blue-200/20 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-emerald-200/20 to-purple-200/20 rounded-full blur-3xl" />
       </div>
 
       <Header />
@@ -124,36 +72,26 @@ export default function CompaniesPage() {
       <section className="py-20 px-4 relative">
         <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div variants={containerVariants} initial="hidden" animate="visible" className="max-w-2xl">
-              <motion.div variants={itemVariants}>
+            <div className="max-w-2xl">
+              <div>
                 <Badge className="mb-8 bg-white/80 backdrop-blur-sm text-emerald-800 hover:bg-white/90 border border-emerald-200/50 shadow-lg">
                   <Building2 className="w-4 h-4 mr-2" />8 Specialized Companies, One Vision
                 </Badge>
-              </motion.div>
+              </div>
 
-              <motion.h1
-                variants={itemVariants}
-                className="text-5xl md:text-6xl font-bold text-slate-800 mb-8 leading-tight"
-              >
+              <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-8 leading-tight">
                 Our Member
-                <motion.span
-                  className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-blue-600 block"
-                  animate={{ backgroundPosition: ["0%", "100%", "0%"] }}
-                  transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-                >
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-blue-600 block">
                   Companies
-                </motion.span>
-              </motion.h1>
+                </span>
+              </h1>
 
-              <motion.p
-                variants={itemVariants}
-                className="text-xl md:text-2xl text-slate-600 mb-8 max-w-xl leading-relaxed"
-              >
+              <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-xl leading-relaxed">
                 Each member company brings unique expertise and specialized knowledge, working together under the Aegis
                 LLP structure to deliver comprehensive digital solutions.
-              </motion.p>
+              </p>
 
-              <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4">
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white text-lg px-8 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
@@ -168,15 +106,11 @@ export default function CompaniesPage() {
                 >
                   <Link href="/contact">Start a Project</Link>
                 </Button>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
 
             {/* Right side - Company overview with real image */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-            >
+            <div>
               <div className="relative">
                 <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100">
                   <div className="relative h-64">
@@ -216,12 +150,7 @@ export default function CompaniesPage() {
                 </div>
 
                 {/* Floating elements */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1.2, type: "spring" }}
-                  className="absolute -left-10 top-10 z-10 rounded-lg bg-white shadow-lg p-3"
-                >
+                <div className="absolute -left-10 top-10 z-10 rounded-lg bg-white shadow-lg p-3">
                   <div className="flex items-center gap-2">
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
                       <Users className="h-4 w-4" />
@@ -231,14 +160,9 @@ export default function CompaniesPage() {
                       <div className="text-slate-600">One vision</div>
                     </div>
                   </div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1.4, type: "spring" }}
-                  className="absolute -right-10 bottom-10 z-10 rounded-lg bg-white shadow-lg p-3"
-                >
+                <div className="absolute -right-10 bottom-10 z-10 rounded-lg bg-white shadow-lg p-3">
                   <div className="flex items-center gap-2">
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-blue-600">
                       <Award className="h-4 w-4" />
@@ -248,9 +172,9 @@ export default function CompaniesPage() {
                       <div className="text-slate-600">Certified excellence</div>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -262,42 +186,29 @@ export default function CompaniesPage() {
       <section className="py-20 px-4 relative">
         <div className="absolute inset-0 bg-white/60 backdrop-blur-3xl" />
         <div className="container mx-auto relative z-10">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            className="text-center mb-16"
-          >
-            <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
               Member Companies
-            </motion.h2>
-            <motion.p variants={itemVariants} className="text-xl text-slate-600 max-w-3xl mx-auto">
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Specialized expertise working together as one unified team
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            className="grid lg:grid-cols-2 gap-8"
-          >
+          <div className="grid lg:grid-cols-2 gap-8">
             {companies.map((company, index) => (
-              <motion.div key={company.id} variants={cardVariants} whileHover={{ y: -10 }}>
+              <div key={company.id}>
                 <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-white/90 backdrop-blur-sm">
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${company.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                   />
                   <CardHeader className="relative z-10 pb-8">
                     <div className="flex items-start justify-between">
-                      <motion.div
-                        whileHover={{ scale: 1.1, rotate: 5 }}
+                      <div
                         className={`w-20 h-20 bg-gradient-to-br ${company.gradient} rounded-2xl flex items-center justify-center shadow-lg`}
                       >
                         <company.icon className="h-10 w-10 text-white" />
-                      </motion.div>
+                      </div>
                       <Badge variant="secondary" className="text-xs bg-white/80 backdrop-blur-sm">
                         Est. {company.established}
                       </Badge>
@@ -327,7 +238,7 @@ export default function CompaniesPage() {
                         <Building2 className="h-4 w-4" />
                         <span>{company.specialization}</span>
                       </div>
-                      <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                      <div>
                         <Button
                           asChild
                           variant="outline"
@@ -338,13 +249,13 @@ export default function CompaniesPage() {
                             Learn More <ArrowRight className="ml-2 h-4 w-4" />
                           </Link>
                         </Button>
-                      </motion.div>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -352,45 +263,27 @@ export default function CompaniesPage() {
       <section className="py-20 px-4 relative">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50/80 to-emerald-50/80 backdrop-blur-3xl" />
         <div className="container mx-auto relative z-10">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            className="text-center mb-16"
-          >
-            <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
               Inter-Company Collaboration
-            </motion.h2>
-            <motion.p variants={itemVariants} className="text-xl text-slate-600 max-w-3xl mx-auto">
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Real examples of how our member companies work together to deliver comprehensive solutions
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            className="grid md:grid-cols-2 gap-8"
-          >
-            <motion.div variants={cardVariants} whileHover={{ y: -5 }}>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
               <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg bg-white/90 backdrop-blur-sm overflow-hidden">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="flex -space-x-2">
-                      <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg"
-                      >
+                      <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
                         <Cloud className="h-5 w-5 text-white" />
-                      </motion.div>
-                      <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg"
-                      >
+                      </div>
+                      <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
                         <Database className="h-5 w-5 text-white" />
-                      </motion.div>
+                      </div>
                     </div>
                     <Badge variant="secondary" className="bg-white/80 backdrop-blur-sm">
                       Collaboration Project
@@ -409,39 +302,27 @@ export default function CompaniesPage() {
                       "Real-time analytics and reporting",
                       "Scalable cloud infrastructure",
                     ].map((item, index) => (
-                      <motion.div
-                        key={index}
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.1 }}
-                        className="flex items-center gap-2 text-sm text-slate-600"
-                      >
+                      <div key={index} className="flex items-center gap-2 text-sm text-slate-600">
                         <CheckCircle className="h-4 w-4 text-emerald-600 flex-shrink-0" />
                         <span>{item}</span>
-                      </motion.div>
+                      </div>
                     ))}
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
-            <motion.div variants={cardVariants} whileHover={{ y: -5 }}>
+            <div>
               <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg bg-white/90 backdrop-blur-sm overflow-hidden">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="flex -space-x-2">
-                      <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg"
-                      >
+                      <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
                         <Code className="h-5 w-5 text-white" />
-                      </motion.div>
-                      <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        className="w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg"
-                      >
+                      </div>
+                      <div className="w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
                         <Smartphone className="h-5 w-5 text-white" />
-                      </motion.div>
+                      </div>
                     </div>
                     <Badge variant="secondary" className="bg-white/80 backdrop-blur-sm">
                       Collaboration Project
@@ -460,22 +341,16 @@ export default function CompaniesPage() {
                       "Mobile-first responsive design",
                       "Enhanced citizen participation",
                     ].map((item, index) => (
-                      <motion.div
-                        key={index}
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.1 }}
-                        className="flex items-center gap-2 text-sm text-slate-600"
-                      >
+                      <div key={index} className="flex items-center gap-2 text-sm text-slate-600">
                         <CheckCircle className="h-4 w-4 text-emerald-600 flex-shrink-0" />
                         <span>{item}</span>
-                      </motion.div>
+                      </div>
                     ))}
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -483,28 +358,16 @@ export default function CompaniesPage() {
       <section className="py-20 px-4 relative">
         <div className="absolute inset-0 bg-white/80 backdrop-blur-3xl" />
         <div className="container mx-auto relative z-10">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            className="text-center mb-16"
-          >
-            <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
               Why Partner With Us?
-            </motion.h2>
-            <motion.p variants={itemVariants} className="text-xl text-slate-600 max-w-3xl mx-auto">
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               The advantages of working with our unified LLP structure
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            className="grid md:grid-cols-3 gap-8"
-          >
+          <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 icon: Users,
@@ -525,23 +388,21 @@ export default function CompaniesPage() {
                 gradient: "from-purple-500 to-pink-600",
               },
             ].map((item, index) => (
-              <motion.div key={index} variants={cardVariants} whileHover={{ y: -10 }}>
+              <div key={index}>
                 <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg text-center bg-white/90 backdrop-blur-sm overflow-hidden">
                   <CardHeader className="p-8">
-                    <motion.div
-                      whileHover={{ scale: 1.1, rotate: 360 }}
-                      transition={{ duration: 0.6 }}
+                    <div
                       className={`w-20 h-20 bg-gradient-to-br ${item.gradient} rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg`}
                     >
                       <item.icon className="h-10 w-10 text-white" />
-                    </motion.div>
+                    </div>
                     <CardTitle className="text-slate-800 text-xl mb-4">{item.title}</CardTitle>
                     <CardDescription className="text-slate-600 leading-relaxed">{item.description}</CardDescription>
                   </CardHeader>
                 </Card>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -549,45 +410,26 @@ export default function CompaniesPage() {
       <section className="py-20 px-4 relative">
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 via-emerald-700 to-blue-700" />
         <div className="absolute inset-0 bg-black/20" />
-        <motion.div
-          animate={{
-            scale: [1, 1.1, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Number.POSITIVE_INFINITY,
-            ease: "easeInOut",
-          }}
-          className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-blue-400/20 blur-3xl"
-        />
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-blue-400/20 blur-3xl" />
 
         <div className="container mx-auto text-center relative z-10">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <motion.h2 variants={itemVariants} className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+          <div>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
               Ready to Work With Our Expert Team?
-            </motion.h2>
-            <motion.p
-              variants={itemVariants}
-              className="text-emerald-100 text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed"
-            >
+            </h2>
+            <p className="text-emerald-100 text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed">
               Connect with our member companies and discover how our collaborative approach can benefit your project.
-            </motion.p>
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 justify-center">
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <div>
                 <Button
                   size="lg"
                   className="bg-white text-emerald-600 hover:bg-slate-50 text-lg px-10 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
                 >
                   <Link href="/projects">View Our Work</Link>
                 </Button>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              </div>
+              <div>
                 <Button
                   size="lg"
                   variant="outline"
@@ -595,9 +437,9 @@ export default function CompaniesPage() {
                 >
                   <Link href="/contact">Start a Project</Link>
                 </Button>
-              </motion.div>
-            </motion.div>
-          </motion.div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

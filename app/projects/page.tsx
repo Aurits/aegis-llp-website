@@ -1,38 +1,17 @@
 "use client"
 
-import { Calendar, Users, Target, Lightbulb, TrendingUp, Building2, ArrowRight, Filter, Search } from "lucide-react"
+import Footer from "@/components/footer"
+import Header from "@/components/header"
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Input } from "@/components/ui/input"
-import { motion } from "framer-motion"
-import Link from "next/link"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { ArrowRight, Building2, Calendar, Filter, Lightbulb, Search, Target, TrendingUp, Users } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function ProjectsPage() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  }
-
   const projects = [
     {
       id: 1,
@@ -149,27 +128,24 @@ export default function ProjectsPage() {
       <section className="py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/5 to-blue-600/5" />
         <div className="container mx-auto relative z-10">
-          <motion.div variants={containerVariants} initial="hidden" animate="visible" className="text-center mb-16">
-            <motion.div variants={itemVariants}>
+          <div className="text-center mb-16">
+            <div>
               <Badge className="mb-6 bg-emerald-100 text-emerald-800 hover:bg-emerald-200">
                 <Building2 className="w-4 h-4 mr-2" />
                 Proven Track Record
               </Badge>
-            </motion.div>
-            <motion.h1
-              variants={itemVariants}
-              className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight"
-            >
+            </div>
+            <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight">
               Our Project
               <span className="text-emerald-600 block">Portfolio</span>
-            </motion.h1>
-            <motion.p variants={itemVariants} className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            </h1>
+            <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               Explore our successful digital transformation projects for government agencies and municipalities,
               showcasing our Problem → Proposal → Result methodology.
-            </motion.p>
+            </p>
 
             {/* Search and Filter */}
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
+            <div className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-5 w-5" />
                 <Input
@@ -181,8 +157,8 @@ export default function ProjectsPage() {
                 <Filter className="w-4 h-4 mr-2" />
                 Filter
               </Button>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -254,29 +230,17 @@ export default function ProjectsPage() {
       {/* Project Stats */}
       <section className="py-16 px-4 bg-slate-50">
         <div className="container mx-auto">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <motion.h2 variants={itemVariants} className="text-3xl font-bold text-slate-800 mb-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-slate-800 mb-4">
               Project Impact
-            </motion.h2>
-            <motion.p variants={itemVariants} className="text-slate-600 max-w-2xl mx-auto">
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
               Measurable results from our digital transformation initiatives
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-4 gap-8"
-          >
-            <motion.div variants={itemVariants}>
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
               <Card className="text-center border-0 shadow-lg bg-gradient-to-br from-emerald-50 to-white hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
                   <div className="text-4xl font-bold text-emerald-600 mb-2">25+</div>
@@ -284,9 +248,9 @@ export default function ProjectsPage() {
                   <div className="text-sm text-slate-500 mt-2">Across Japan</div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
-            <motion.div variants={itemVariants}>
+            <div>
               <Card className="text-center border-0 shadow-lg bg-gradient-to-br from-blue-50 to-white hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
                   <div className="text-4xl font-bold text-blue-600 mb-2">22M+</div>
@@ -294,9 +258,9 @@ export default function ProjectsPage() {
                   <div className="text-sm text-slate-500 mt-2">Direct impact</div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
-            <motion.div variants={itemVariants}>
+            <div>
               <Card className="text-center border-0 shadow-lg bg-gradient-to-br from-purple-50 to-white hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
                   <div className="text-4xl font-bold text-purple-600 mb-2">99.9%</div>
@@ -304,9 +268,9 @@ export default function ProjectsPage() {
                   <div className="text-sm text-slate-500 mt-2">System reliability</div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
-            <motion.div variants={itemVariants}>
+            <div>
               <Card className="text-center border-0 shadow-lg bg-gradient-to-br from-amber-50 to-white hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
                   <div className="text-4xl font-bold text-amber-600 mb-2">55%</div>
@@ -314,22 +278,22 @@ export default function ProjectsPage() {
                   <div className="text-sm text-slate-500 mt-2">Process improvement</div>
                 </CardContent>
               </Card>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-emerald-600 to-emerald-700">
         <div className="container mx-auto text-center">
-          <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <motion.h2 variants={itemVariants} className="text-4xl font-bold text-white mb-6">
+          <div>
+            <h2 className="text-4xl font-bold text-white mb-6">
               Ready to Start Your Digital Transformation?
-            </motion.h2>
-            <motion.p variants={itemVariants} className="text-emerald-100 text-xl mb-8 max-w-2xl mx-auto">
+            </h2>
+            <p className="text-emerald-100 text-xl mb-8 max-w-2xl mx-auto">
               Let us help you achieve similar results with our proven Problem → Proposal → Result methodology.
-            </motion.p>
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center">
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white text-emerald-600 hover:bg-slate-50 text-lg px-8 py-4 rounded-xl">
                 <Link href="/contact">Start Your Project</Link>
               </Button>
@@ -340,8 +304,8 @@ export default function ProjectsPage() {
               >
                 <Link href="/technology">View Our Technology</Link>
               </Button>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -354,12 +318,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
   const isEven = index % 2 === 0
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: index * 0.1 }}
-      viewport={{ once: true }}
-    >
+    <div>
       <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-white/90 backdrop-blur-sm">
         <div className={`grid lg:grid-cols-2 gap-0 ${isEven ? "" : "lg:grid-flow-col-dense"}`}>
           <div className={`relative h-64 lg:h-auto ${isEven ? "lg:order-1" : "lg:order-2"}`}>
@@ -466,6 +425,6 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
           </div>
         </div>
       </Card>
-    </motion.div>
+    </div>
   )
 }

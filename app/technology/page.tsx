@@ -1,51 +1,30 @@
 "use client"
 
-import {
-  Shield,
-  Cloud,
-  Database,
-  Smartphone,
-  Globe,
-  Cpu,
-  Lock,
-  TrendingUp,
-  CheckCircle,
-  Zap,
-  Code,
-  Search,
-  Filter,
-} from "lucide-react"
+import Footer from "@/components/footer"
+import Header from "@/components/header"
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
-import { motion } from "framer-motion"
-import Link from "next/link"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import {
+  CheckCircle,
+  Cloud,
+  Code,
+  Cpu,
+  Database,
+  Filter,
+  Globe,
+  Lock,
+  Search,
+  Shield,
+  Smartphone,
+  TrendingUp,
+  Zap,
+} from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function TechnologyPage() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  }
-
   const technologies = [
     {
       category: "Cloud Infrastructure",
@@ -121,7 +100,7 @@ export default function TechnologyPage() {
       client: "Osaka Prefecture",
     },
     {
-      title: "Real-time Citizen Service Platform",
+      title: "Real-time Citizen service Platform",
       challenge: "Citizens experienced 3+ hour wait times for municipal services",
       solution: "Built unified digital platform with queue management and real-time updates",
       outcome: "Wait times reduced to 15 minutes, 90% digital adoption, 70% satisfaction increase",
@@ -181,26 +160,23 @@ export default function TechnologyPage() {
       <section className="py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/5 to-blue-600/5" />
         <div className="container mx-auto relative z-10">
-          <motion.div variants={containerVariants} initial="hidden" animate="visible" className="text-center mb-16">
-            <motion.div variants={itemVariants}>
+          <div className="text-center mb-16">
+            <div>
               <Badge className="mb-6 bg-emerald-100 text-emerald-800 hover:bg-emerald-200">
                 <Code className="w-4 h-4 mr-2" />
                 Cutting-Edge Technology Stack
               </Badge>
-            </motion.div>
-            <motion.h1
-              variants={itemVariants}
-              className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight"
-            >
+            </div>
+            <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight">
               Technology &<span className="text-emerald-600 block">Digital Transformation</span>
-            </motion.h1>
-            <motion.p variants={itemVariants} className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            </h1>
+            <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               Discover our comprehensive technology capabilities and successful digital transformation initiatives that
               drive innovation in government and municipal services.
-            </motion.p>
+            </p>
 
             {/* Search and Filter */}
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
+            <div className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-5 w-5" />
                 <Input
@@ -212,46 +188,33 @@ export default function TechnologyPage() {
                 <Filter className="w-4 h-4 mr-2" />
                 Filter
               </Button>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Technology Stack */}
       <section className="py-16 px-4 bg-white/50">
         <div className="container mx-auto">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <motion.h2 variants={itemVariants} className="text-3xl font-bold text-slate-800 mb-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-slate-800 mb-4">
               Our Technology Stack
-            </motion.h2>
-            <motion.p variants={itemVariants} className="text-slate-600 max-w-2xl mx-auto">
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
               Modern technologies and frameworks powering our digital solutions
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-          >
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {technologies.map((tech, index) => (
-              <motion.div key={index} variants={itemVariants} whileHover={{ y: -10 }}>
+              <div key={index}>
                 <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/90 backdrop-blur-sm h-full">
                   <CardHeader>
-                    <motion.div
-                      whileHover={{ scale: 1.1, rotate: 5 }}
+                    <div
                       className={`w-16 h-16 bg-gradient-to-br from-${tech.color}-400 to-${tech.color}-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg`}
                     >
                       <tech.icon className="h-8 w-8 text-white" />
-                    </motion.div>
+                    </div>
                     <CardTitle className="text-slate-800">{tech.category}</CardTitle>
                     <CardDescription>{tech.description}</CardDescription>
                   </CardHeader>
@@ -291,39 +254,27 @@ export default function TechnologyPage() {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* DX Case Studies */}
       <section className="py-16 px-4 bg-slate-50">
         <div className="container mx-auto">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <motion.h2 variants={itemVariants} className="text-3xl font-bold text-slate-800 mb-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-slate-800 mb-4">
               Digital Transformation Success Stories
-            </motion.h2>
-            <motion.p variants={itemVariants} className="text-slate-600 max-w-2xl mx-auto">
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
               Real-world examples of how we've modernized government operations
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="space-y-8"
-          >
+          <div className="space-y-8">
             {dxCases.map((dxCase, index) => (
-              <motion.div key={index} variants={itemVariants} whileHover={{ y: -5 }}>
+              <div key={index}>
                 <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg overflow-hidden bg-white/90 backdrop-blur-sm">
                   <div className="grid lg:grid-cols-2 gap-0">
                     <div className="relative h-64 lg:h-auto">
@@ -390,48 +341,34 @@ export default function TechnologyPage() {
                     </CardContent>
                   </div>
                 </Card>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Innovation & Future Technologies */}
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <motion.h2 variants={itemVariants} className="text-3xl font-bold text-slate-800 mb-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-slate-800 mb-4">
               Innovation & Future Technologies
-            </motion.h2>
-            <motion.p variants={itemVariants} className="text-slate-600 max-w-2xl mx-auto">
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
               Staying ahead with emerging technologies and innovative approaches
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
-          >
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {innovationAreas.map((item, index) => (
-              <motion.div key={index} variants={itemVariants} whileHover={{ y: -5 }}>
+              <div key={index}>
                 <Card className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md text-center bg-white/90 backdrop-blur-sm h-full">
                   <CardContent className="p-6">
-                    <motion.div
-                      whileHover={{ scale: 1.1, rotate: 360 }}
-                      transition={{ duration: 0.6 }}
+                    <div
                       className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform"
                     >
                       <item.icon className="h-8 w-8 text-emerald-600" />
-                    </motion.div>
+                    </div>
                     <h3 className="font-semibold text-slate-800 mb-2">{item.title}</h3>
                     <p className="text-slate-600 text-sm mb-4">{item.description}</p>
                     <div className="space-y-2">
@@ -442,24 +379,24 @@ export default function TechnologyPage() {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-emerald-600 to-emerald-700">
         <div className="container mx-auto text-center">
-          <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <motion.h2 variants={itemVariants} className="text-4xl font-bold text-white mb-6">
+          <div>
+            <h2 className="text-4xl font-bold text-white mb-6">
               Ready to Modernize Your Operations?
-            </motion.h2>
-            <motion.p variants={itemVariants} className="text-emerald-100 text-xl mb-8 max-w-2xl mx-auto">
+            </h2>
+            <p className="text-emerald-100 text-xl mb-8 max-w-2xl mx-auto">
               Let our technology experts help you navigate your digital transformation journey with cutting-edge
               solutions.
-            </motion.p>
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center">
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white text-emerald-600 hover:bg-slate-50 text-lg px-8 py-4 rounded-xl">
                 <Link href="/contact">Discuss Your Project</Link>
               </Button>
@@ -470,8 +407,8 @@ export default function TechnologyPage() {
               >
                 <Link href="/projects">View Case Studies</Link>
               </Button>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 

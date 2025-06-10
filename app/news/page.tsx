@@ -1,36 +1,15 @@
 "use client"
 
-import { ArrowRight, Calendar, Clock, User, Search, Filter, TrendingUp } from "lucide-react"
+import Footer from "@/components/footer"
+import Header from "@/components/header"
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
-import { motion } from "framer-motion"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import { ArrowRight, Calendar, Clock, Filter, Search, TrendingUp, User } from "lucide-react"
 import Image from "next/image"
 
 export default function NewsPage() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  }
-
   const featuredNews = {
     id: 1,
     title: "Aegis LLP Group Awarded Major Digital Infrastructure Contract for Osaka Prefecture",
@@ -128,26 +107,23 @@ export default function NewsPage() {
       <section className="py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/5 to-blue-600/5" />
         <div className="container mx-auto relative z-10">
-          <motion.div variants={containerVariants} initial="hidden" animate="visible" className="text-center mb-16">
-            <motion.div variants={itemVariants}>
+          <div className="text-center mb-16">
+            <div>
               <Badge className="mb-6 bg-emerald-100 text-emerald-800 hover:bg-emerald-200">
                 <TrendingUp className="w-4 h-4 mr-2" />
                 Latest Updates & Insights
               </Badge>
-            </motion.div>
-            <motion.h1
-              variants={itemVariants}
-              className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight"
-            >
+            </div>
+            <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight">
               News & <span className="text-emerald-600">Updates</span>
-            </motion.h1>
-            <motion.p variants={itemVariants} className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            </h1>
+            <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               Stay informed about our latest projects, partnerships, and innovations in government digital
               transformation.
-            </motion.p>
+            </p>
 
             {/* Search and Filter */}
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
+            <div className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-5 w-5" />
                 <Input
@@ -159,20 +135,15 @@ export default function NewsPage() {
                 <Filter className="w-4 h-4 mr-2" />
                 Filter
               </Button>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Featured Article */}
       <section className="py-16 px-4">
         <div className="container mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <Card className="overflow-hidden shadow-2xl border-0 bg-white/90 backdrop-blur-sm">
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative h-64 lg:h-auto">
@@ -213,7 +184,7 @@ export default function NewsPage() {
                 </div>
               </div>
             </Card>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -222,25 +193,18 @@ export default function NewsPage() {
         <div className="container mx-auto">
           <div className="flex flex-wrap gap-3 justify-center">
             {categories.map((category, index) => (
-              <motion.div
-                key={category}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
+              <div key={category}>
                 <Button
                   variant={index === 0 ? "default" : "outline"}
                   size="sm"
-                  className={`rounded-full ${
-                    index === 0
+                  className={`rounded-full ${index === 0
                       ? "bg-emerald-600 hover:bg-emerald-700"
                       : "bg-white/80 backdrop-blur-sm hover:bg-emerald-50"
-                  }`}
+                    }`}
                 >
                   {category}
                 </Button>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -249,15 +213,9 @@ export default function NewsPage() {
       {/* News Grid */}
       <section className="py-16 px-4">
         <div className="container mx-auto">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-          >
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {newsArticles.map((article, index) => (
-              <motion.div key={article.id} variants={itemVariants} whileHover={{ y: -10 }} className="group">
+              <div key={article.id} className="group">
                 <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border-0 bg-white/90 backdrop-blur-sm h-full">
                   <div className="relative h-48">
                     <Image
@@ -297,43 +255,38 @@ export default function NewsPage() {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
 
           {/* Load More */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-center mt-12"
-          >
+          <div className="text-center mt-12">
             <Button variant="outline" size="lg" className="bg-white/80 backdrop-blur-sm hover:bg-white/90 rounded-xl">
               Load More Articles
             </Button>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Newsletter Signup */}
       <section className="py-20 px-4 bg-gradient-to-r from-emerald-600 to-emerald-700">
         <div className="container mx-auto text-center">
-          <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <motion.h2 variants={itemVariants} className="text-4xl font-bold text-white mb-6">
+          <div>
+            <h2 className="text-4xl font-bold text-white mb-6">
               Stay Updated with Aegis LLP Group
-            </motion.h2>
-            <motion.p variants={itemVariants} className="text-emerald-100 text-xl mb-8 max-w-2xl mx-auto">
+            </h2>
+            <p className="text-emerald-100 text-xl mb-8 max-w-2xl mx-auto">
               Subscribe to our newsletter for the latest updates on government partnerships and digital transformation
               initiatives.
-            </motion.p>
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <Input
                 placeholder="Enter your email"
                 className="flex-1 bg-white/10 border-white/20 text-white placeholder-white/70 rounded-xl"
               />
               <Button className="bg-white text-emerald-600 hover:bg-slate-50 rounded-xl">Subscribe</Button>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
