@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { Heart, Shield, Users } from "lucide-react"
 import Image from "next/image"
 
@@ -20,13 +19,7 @@ export default function CompanyValues() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 bg-emerald-900/30 text-emerald-400 rounded-full text-sm font-medium mb-4">
             PASSION
           </span>
@@ -35,17 +28,11 @@ export default function CompanyValues() {
             We are driven by a passion to protect communities and provide exceptional public services that make a
             meaningful difference in people's lives.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Image */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="relative"
-          >
+          <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%288%29-CVlVkWRcnCWzQ7QRBDqipsqeOs4Uh6.jpeg"
@@ -66,13 +53,7 @@ export default function CompanyValues() {
             </div>
 
             {/* Floating elements */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              viewport={{ once: true }}
-              className="absolute -top-8 -right-8 bg-white rounded-xl shadow-xl p-4 z-10"
-            >
+            <div className="absolute -top-8 -right-8 bg-white rounded-xl shadow-xl p-4 z-10">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
                   <Heart className="h-6 w-6 text-red-600" />
@@ -82,24 +63,12 @@ export default function CompanyValues() {
                   <p className="text-sm text-slate-600">Service with heart</p>
                 </div>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
           {/* Right side - Values */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="space-y-8"
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/15 transition-colors border border-white/5"
-            >
+          <div className="space-y-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/15 transition-colors border border-white/5">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-emerald-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
                   <Shield className="h-6 w-6 text-emerald-400" />
@@ -117,15 +86,9 @@ export default function CompanyValues() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/15 transition-colors border border-white/5"
-            >
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/15 transition-colors border border-white/5">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-blue-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
                   <Users className="h-6 w-6 text-blue-400" />
@@ -143,15 +106,9 @@ export default function CompanyValues() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/15 transition-colors border border-white/5"
-            >
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/15 transition-colors border border-white/5">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-purple-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
                   <svg
@@ -203,8 +160,8 @@ export default function CompanyValues() {
                   </p>
                 </div>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

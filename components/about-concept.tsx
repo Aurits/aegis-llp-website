@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { Scale, Shield, Users } from "lucide-react"
 import Image from "next/image"
 
@@ -24,13 +23,7 @@ export default function AboutConcept() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Image with overlay */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="relative"
-          >
+          <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/50 to-transparent z-10" />
               <Image
@@ -51,13 +44,7 @@ export default function AboutConcept() {
             </div>
 
             {/* Floating elements */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              viewport={{ once: true }}
-              className="absolute -bottom-10 -right-10 bg-white rounded-xl shadow-xl p-4 z-30"
-            >
+            <div className="absolute -bottom-10 -right-10 bg-white rounded-xl shadow-xl p-4 z-30">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
                   <Shield className="h-6 w-6 text-emerald-600" />
@@ -67,16 +54,11 @@ export default function AboutConcept() {
                   <p className="text-sm text-slate-600">METI Certified</p>
                 </div>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
           {/* Right side - Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-100">
               <h2 className="text-3xl font-bold text-slate-800 mb-6">Our Core Philosophy</h2>
               <p className="text-lg text-slate-600 mb-8">
@@ -146,7 +128,7 @@ export default function AboutConcept() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

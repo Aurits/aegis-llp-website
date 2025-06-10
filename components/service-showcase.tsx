@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { Building2, Scale, Shield, Users } from "lucide-react"
 import Image from "next/image"
 
@@ -10,29 +9,17 @@ export default function ServiceShowcase() {
       <div className="absolute inset-0 bg-gradient-to-b from-white to-slate-50" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Our Service Areas</h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
             Aegis LLP Group provides comprehensive services across multiple sectors, ensuring excellence in public
             service delivery.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left side - Service categories */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="space-y-8"
-          >
+          <div className="space-y-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-slate-100">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -131,23 +118,13 @@ export default function ServiceShowcase() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Right side - Image grid with overlapping */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="relative"
-          >
+          <div className="relative">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <motion.div
-                  whileHover={{ y: -5 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                  className="rounded-xl overflow-hidden shadow-lg h-64 relative"
-                >
+                <div className="rounded-xl overflow-hidden shadow-lg h-64 relative">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2818%29-bmwbVkyWCQIPIRqPQcEdzDBy6lGAYz.jpeg"
                     alt="Toll Road Management"
@@ -158,13 +135,9 @@ export default function ServiceShowcase() {
                   <div className="absolute bottom-0 left-0 p-4">
                     <span className="text-white font-medium">Toll Road Operations</span>
                   </div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                  whileHover={{ y: -5 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                  className="rounded-xl overflow-hidden shadow-lg h-48 relative"
-                >
+                <div className="rounded-xl overflow-hidden shadow-lg h-48 relative">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2813%29-pQA3PhWWkbXNJ4IBnfULBEE9haSWtv.jpeg"
                     alt="Ceremonial Services"
@@ -175,15 +148,11 @@ export default function ServiceShowcase() {
                   <div className="absolute bottom-0 left-0 p-4">
                     <span className="text-white font-medium">Ceremonial Services</span>
                   </div>
-                </motion.div>
+                </div>
               </div>
 
               <div className="space-y-4 mt-8">
-                <motion.div
-                  whileHover={{ y: -5 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                  className="rounded-xl overflow-hidden shadow-lg h-48 relative"
-                >
+                <div className="rounded-xl overflow-hidden shadow-lg h-48 relative">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2814%29-twzHcPSG0mo9wN6RUcU9ZtWSoFOhki.jpeg"
                     alt="Facility Management"
@@ -194,13 +163,9 @@ export default function ServiceShowcase() {
                   <div className="absolute bottom-0 left-0 p-4">
                     <span className="text-white font-medium">Facility Management</span>
                   </div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                  whileHover={{ y: -5 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                  className="rounded-xl overflow-hidden shadow-lg h-64 relative"
-                >
+                <div className="rounded-xl overflow-hidden shadow-lg h-64 relative">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2816%29-komzG8C6TWuA5SMZru3RPUc0nQK9ta.jpeg"
                     alt="Specialized Services"
@@ -211,18 +176,12 @@ export default function ServiceShowcase() {
                   <div className="absolute bottom-0 left-0 p-4">
                     <span className="text-white font-medium">Specialized Services</span>
                   </div>
-                </motion.div>
+                </div>
               </div>
             </div>
 
             {/* Floating badge */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
-              viewport={{ once: true }}
-              className="absolute -bottom-8 -left-8 bg-white rounded-xl shadow-xl p-4 z-10"
-            >
+            <div className="absolute -bottom-8 -left-8 bg-white rounded-xl shadow-xl p-4 z-10">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center">
                   <Shield className="h-6 w-6 text-slate-700" />
@@ -232,8 +191,8 @@ export default function ServiceShowcase() {
                   <p className="text-sm text-slate-600">Government-grade service</p>
                 </div>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

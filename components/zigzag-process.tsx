@@ -1,8 +1,6 @@
 "use client"
 
-import { useRef } from "react"
-import { motion, useInView } from "framer-motion"
-import { MessageSquare, FileText, Cog, Rocket, CheckCircle, Shield, Users, Database, Cloud } from "lucide-react"
+import { CheckCircle, Cloud, Cog, Database, FileText, MessageSquare, Rocket, Shield, Users } from "lucide-react"
 
 const steps = [
   {
@@ -48,26 +46,13 @@ const steps = [
 ]
 
 const ZigzagProcess = () => {
-  const sectionRef = useRef(null)
-  const isInView = useInView(sectionRef, { once: true, margin: "-100px 0px" })
-
   return (
-    <section ref={sectionRef} className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white py-24">
+    <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white py-24">
       {/* Background decorations */}
       <div className="absolute inset-0 overflow-hidden">
-        <motion.div
-          className="absolute right-0 top-0 h-[600px] w-[600px] -translate-y-1/3 translate-x-1/3 rounded-full bg-gradient-to-br from-emerald-50 to-blue-50"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={isInView ? { opacity: 0.7, scale: 1 } : { opacity: 0, scale: 0.8 }}
-          transition={{ duration: 1.5 }}
-        />
+        <div className="absolute right-0 top-0 h-[600px] w-[600px] -translate-y-1/3 translate-x-1/3 rounded-full bg-gradient-to-br from-emerald-50 to-blue-50 opacity-70" />
 
-        <motion.div
-          className="absolute bottom-0 left-0 h-[500px] w-[500px] -translate-x-1/4 translate-y-1/3 rounded-full bg-gradient-to-tr from-purple-50 to-emerald-50"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={isInView ? { opacity: 0.7, scale: 1 } : { opacity: 0, scale: 0.8 }}
-          transition={{ duration: 1.5, delay: 0.3 }}
-        />
+        <div className="absolute bottom-0 left-0 h-[500px] w-[500px] -translate-x-1/4 translate-y-1/3 rounded-full bg-gradient-to-tr from-purple-50 to-emerald-50 opacity-70" />
 
         {/* Grid pattern */}
         <div
@@ -81,12 +66,7 @@ const ZigzagProcess = () => {
       </div>
 
       <div className="container relative z-10 mx-auto max-w-6xl px-4">
-        <motion.div
-          className="mb-20 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.6 }}
-        >
+        <div className="mb-20 text-center">
           <h2 className="mb-6 text-4xl font-bold tracking-tight text-slate-800 md:text-5xl">
             Our Government Partnership Process
           </h2>
@@ -94,7 +74,7 @@ const ZigzagProcess = () => {
             A proven methodology designed specifically for government agencies and municipal organizations, ensuring
             compliance, security, and operational excellence at every step.
           </p>
-        </motion.div>
+        </div>
 
         <div className="relative">
           {/* ZigZag path for medium screens and up */}
@@ -107,14 +87,11 @@ const ZigzagProcess = () => {
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="xMidYMax meet"
             >
-              <motion.path
+              <path
                 d="M25 0V400L45 500L25 600V1000L5 1100L25 1200V1600L45 1700L25 1800V2000"
                 stroke="url(#gradient-path)"
                 strokeWidth="3"
                 strokeDasharray="8 8"
-                initial={{ pathLength: 0 }}
-                animate={isInView ? { pathLength: 1 } : { pathLength: 0 }}
-                transition={{ duration: 2, ease: "easeInOut", delay: 0.5 }}
               />
               <defs>
                 <linearGradient
@@ -142,31 +119,16 @@ const ZigzagProcess = () => {
             const isEven = index % 2 === 0
 
             return (
-              <motion.div
+              <div
                 key={step.id}
-                initial={{ opacity: 0, y: 50 }}
-                animate={
-                  isInView
-                    ? {
-                        opacity: 1,
-                        y: 0,
-                        transition: { delay: index * 0.3, duration: 0.8, ease: "easeOut" },
-                      }
-                    : { opacity: 0, y: 50 }
-                }
                 className={`flex items-center ${isEven ? "md:flex-row" : "md:flex-row-reverse"} mb-8 last:mb-0 md:mb-32`}
               >
                 {/* Step card */}
                 <div className={`w-full md:w-5/12 ${isEven ? "md:pr-16 md:text-right" : "md:pl-16 md:text-left"}`}>
-                  <motion.div
-                    whileHover={{ scale: 1.03, y: -5 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    className="group"
-                  >
+                  <div className="group">
                     <div className="relative">
                       <div
-                        className={`absolute -inset-1 rounded-2xl bg-gradient-to-r opacity-0 blur-sm transition duration-500 group-hover:opacity-100 ${
-                          step.color === "emerald"
+                        className={`absolute -inset-1 rounded-2xl bg-gradient-to-r opacity-0 blur-sm transition duration-500 group-hover:opacity-100 ${step.color === "emerald"
                             ? "from-emerald-400 to-teal-400"
                             : step.color === "blue"
                               ? "from-blue-400 to-cyan-400"
@@ -175,12 +137,11 @@ const ZigzagProcess = () => {
                                 : step.color === "amber"
                                   ? "from-amber-400 to-yellow-400"
                                   : "from-rose-400 to-pink-400"
-                        }`}
+                          }`}
                       />
                       <div className="relative rounded-2xl border border-slate-200/50 bg-white/80 backdrop-blur-sm p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                         <div
-                          className={`mb-6 inline-flex items-center justify-center rounded-xl p-4 ${
-                            step.color === "emerald"
+                          className={`mb-6 inline-flex items-center justify-center rounded-xl p-4 ${step.color === "emerald"
                               ? "bg-emerald-100 text-emerald-600"
                               : step.color === "blue"
                                 ? "bg-blue-100 text-blue-600"
@@ -189,7 +150,7 @@ const ZigzagProcess = () => {
                                   : step.color === "amber"
                                     ? "bg-amber-100 text-amber-600"
                                     : "bg-rose-100 text-rose-600"
-                          }`}
+                            }`}
                         >
                           {step.icon}
                         </div>
@@ -263,30 +224,13 @@ const ZigzagProcess = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
 
                 {/* Center step indicator */}
                 <div className="z-10 hidden md:absolute md:left-1/2 md:block md:-translate-x-1/2">
-                  <motion.div
-                    initial={{ scale: 0, rotate: -180 }}
-                    animate={
-                      isInView
-                        ? {
-                            scale: 1,
-                            rotate: 0,
-                            transition: {
-                              delay: index * 0.3 + 0.2,
-                              type: "spring",
-                              stiffness: 260,
-                              damping: 20,
-                            },
-                          }
-                        : { scale: 0, rotate: -180 }
-                    }
-                    whileHover={{ scale: 1.1 }}
-                    className={`flex h-16 w-16 items-center justify-center rounded-full border-4 bg-white shadow-xl ${
-                      step.color === "emerald"
+                  <div
+                    className={`flex h-16 w-16 items-center justify-center rounded-full border-4 bg-white shadow-xl ${step.color === "emerald"
                         ? "border-emerald-400"
                         : step.color === "blue"
                           ? "border-blue-400"
@@ -295,11 +239,10 @@ const ZigzagProcess = () => {
                             : step.color === "amber"
                               ? "border-amber-400"
                               : "border-rose-400"
-                    }`}
+                      }`}
                   >
                     <span
-                      className={`text-xl font-bold ${
-                        step.color === "emerald"
+                      className={`text-xl font-bold ${step.color === "emerald"
                           ? "text-emerald-600"
                           : step.color === "blue"
                             ? "text-blue-600"
@@ -308,16 +251,16 @@ const ZigzagProcess = () => {
                               : step.color === "amber"
                                 ? "text-amber-600"
                                 : "text-rose-600"
-                      }`}
+                        }`}
                     >
                       {step.id}
                     </span>
-                  </motion.div>
+                  </div>
                 </div>
 
                 {/* Empty space for the other side */}
                 <div className="hidden w-5/12 md:block" />
-              </motion.div>
+              </div>
             )
           })}
         </div>
