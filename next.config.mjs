@@ -16,8 +16,6 @@ const nextConfig = {
       },
     ],
   },
-  // Stable configuration for better compatibility
-  swcMinify: true,
   poweredByHeader: false,
 }
 
