@@ -92,12 +92,12 @@ export default function ContactPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-emerald-50/30 font-japanese">
+    <div className="min-h-screen bg-slate-50 font-japanese">
       <Header />
 
       {/* Hero Section */}
       <section className="py-20 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/5 to-blue-600/5" />
+        <div className="absolute inset-0 bg-emerald-50/30" />
         <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -209,7 +209,7 @@ export default function ContactPage() {
               <div key={index}>
                 <Card className="text-center p-6 shadow-lg hover:shadow-2xl transition-all duration-500 border-0 bg-white/90 backdrop-blur-sm h-full">
                   <div
-                    className={`w-16 h-16 bg-gradient-to-br from-${method.color}-400 to-${method.color}-600  flex items-center justify-center mx-auto mb-4 shadow-lg`}
+                    className={`w-16 h-16 bg-${method.color}-500 rounded-lg flex items-center justify-center mx-auto mb-4 shadow-lg`}
                   >
                     <method.icon className="h-8 w-8 text-white" />
                   </div>
@@ -245,7 +245,7 @@ export default function ContactPage() {
               <div key={index}>
                 <Card className="p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border-0 bg-white/90 backdrop-blur-sm text-center">
                   <div
-                    className="w-20 h-20 bg-gradient-to-br from-emerald-400 to-emerald-600  flex items-center justify-center mx-auto mb-6 shadow-lg"
+                    className="w-20 h-20 bg-emerald-500 rounded-lg flex items-center justify-center mx-auto mb-6 shadow-lg"
                   >
                     <service.icon className="h-10 w-10 text-white" />
                   </div>
@@ -276,7 +276,7 @@ export default function ContactPage() {
                 <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border-0 bg-white/90 backdrop-blur-sm">
                   <div className="relative h-48">
                     <Image src={office.image || "/placeholder.svg"} alt={office.name} fill className="object-cover" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
+                    <div className="absolute inset-0 bg-slate-900/80" />
                     <div className="absolute bottom-4 left-4 text-white">
                       <h3 className="font-bold text-lg">{office.name}</h3>
                     </div>
@@ -306,7 +306,7 @@ export default function ContactPage() {
       </section>
 
       {/* Emergency Contact */}
-      <section className="py-20 px-4 bg-gradient-to-r from-rose-600 to-rose-700">
+      <section className="py-20 px-4 bg-rose-600">
         <div className="container mx-auto text-center">
           <div>
             <h2 className="text-4xl font-bold text-white mb-6">

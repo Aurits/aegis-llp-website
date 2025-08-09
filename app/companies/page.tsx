@@ -18,7 +18,6 @@ export default function CompaniesPage() {
       specialization: "デジタルインフラ",
       description: "政府のデジタルインフラとクラウド移行サービスを専門としています",
       icon: Cloud,
-      gradient: "from-emerald-500 to-teal-600",
       bgGradient: "from-emerald-50/80 to-teal-50/80",
       services: ["クラウド移行", "インフラ設計", "システム統合"],
       established: "2018",
@@ -29,7 +28,6 @@ export default function CompaniesPage() {
       specialization: "データ管理",
       description: "自治体向けの専門的なデータ管理と分析ソリューション",
       icon: Database,
-      gradient: "from-blue-500 to-indigo-600",
       bgGradient: "from-blue-50/80 to-indigo-50/80",
       services: ["データ分析", "データベース設計", "ビジネスインテリジェンス"],
       established: "2016",
@@ -40,7 +38,6 @@ export default function CompaniesPage() {
       specialization: "ウェブ開発",
       description: "公共部門組織向けの最新ウェブアプリケーションとデジタルプラットフォーム",
       icon: Code,
-      gradient: "from-purple-500 to-pink-600",
       bgGradient: "from-purple-50/80 to-pink-50/80",
       services: ["ウェブ開発", "UI/UXデザイン", "デジタルプラットフォーム"],
       established: "2019",
@@ -51,7 +48,6 @@ export default function CompaniesPage() {
       specialization: "モバイルソリューション",
       description: "市民参加のためのモバイルアプリケーションとレスポンシブソリューション",
       icon: Smartphone,
-      gradient: "from-amber-500 to-orange-600",
       bgGradient: "from-amber-50/80 to-orange-50/80",
       services: ["モバイルアプリ", "レスポンシブデザイン", "市民ポータル"],
       established: "2020",
@@ -59,11 +55,11 @@ export default function CompaniesPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-emerald-50/30 relative overflow-hidden">
+    <div className="min-h-screen bg-slate-50 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-200/20 to-blue-200/20 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-emerald-200/20 to-purple-200/20 rounded-full blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-100/30 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-emerald-100/30 rounded-full blur-3xl" />
       </div>
 
       <Header />
@@ -81,7 +77,7 @@ export default function CompaniesPage() {
 
               <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-8 leading-tight">
                 私たちの
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-blue-600 block">
+                <span className="text-emerald-600 block">
                   メンバー企業
                 </span>
               </h1>
@@ -93,7 +89,7 @@ export default function CompaniesPage() {
               <div className="flex flex-wrap gap-4">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white text-lg px-8 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white text-lg px-8 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
                 >
                   <Link href="/projects">私たちの実績を見る</Link>
                 </Button>
@@ -119,7 +115,7 @@ export default function CompaniesPage() {
                       fill
                       className="object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent"></div>
+                    <div className="absolute inset-0 bg-slate-900/60"></div>
                     <div className="absolute bottom-0 left-0 p-6">
                       <h3 className="text-white text-xl font-bold mb-2">グループ企業</h3>
                       <p className="text-white/90">複数ドメインにわたる専門知識</p>
@@ -199,12 +195,12 @@ export default function CompaniesPage() {
               <div key={company.id}>
                 <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-white/90 backdrop-blur-sm">
                   <div
-                    className={`absolute inset-0 bg-gradient-to-br ${company.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                    className={`absolute inset-0 bg-${company.color}-50/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                   />
                   <CardHeader className="relative z-10 pb-8">
                     <div className="flex items-start justify-between">
                       <div
-                        className={`w-20 h-20 bg-gradient-to-br ${company.gradient} flex items-center justify-center shadow-lg`}
+                        className={`w-20 h-20 bg-${company.color}-500 rounded-lg flex items-center justify-center shadow-lg`}
                       >
                         <company.icon className="h-10 w-10 text-white" />
                       </div>
@@ -260,7 +256,7 @@ export default function CompaniesPage() {
 
       {/* Collaboration Examples */}
       <section className="py-20 px-4 relative">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-50/80 to-emerald-50/80 backdrop-blur-3xl" />
+        <div className="absolute inset-0 bg-slate-50/80 backdrop-blur-3xl" />
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
@@ -277,10 +273,10 @@ export default function CompaniesPage() {
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="flex -space-x-2">
-                      <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
+                      <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
                         <Cloud className="h-5 w-5 text-white" />
                       </div>
-                      <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
+                      <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
                         <Database className="h-5 w-5 text-white" />
                       </div>
                     </div>
@@ -315,10 +311,10 @@ export default function CompaniesPage() {
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="flex -space-x-2">
-                      <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
+                      <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
                         <Code className="h-5 w-5 text-white" />
                       </div>
-                      <div className="w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
+                      <div className="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
                         <Smartphone className="h-5 w-5 text-white" />
                       </div>
                     </div>
@@ -370,26 +366,25 @@ export default function CompaniesPage() {
                 icon: Users,
                 title: "統一チーム",
                 description: "あなたの成功に向けて働く、多様な専門知識を持つ1つの協調チーム",
-                gradient: "from-emerald-500 to-teal-600",
+                color: "emerald",
               },
               {
                 icon: Award,
                 title: "品質保証",
                 description: "すべてのメンバー企業で維持される一貫した品質基準",
-                gradient: "from-blue-500 to-indigo-600",
+                color: "blue",
               },
               {
                 icon: Zap,
                 title: "迅速な展開",
                 description: "協調された専門知識とリソースによる迅速なプロジェクト実行",
-                gradient: "from-purple-500 to-pink-600",
-              },
+                        },
             ].map((item, index) => (
               <div key={index}>
                 <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg text-center bg-white/90 backdrop-blur-sm overflow-hidden">
                   <CardHeader className="p-8">
                     <div
-                      className={`w-20 h-20 bg-gradient-to-br ${item.gradient} rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg`}
+                      className={`w-20 h-20 bg-${item.color}-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg`}
                     >
                       <item.icon className="h-10 w-10 text-white" />
                     </div>
@@ -405,9 +400,9 @@ export default function CompaniesPage() {
 
       {/* CTA Section */}
       <section className="py-20 px-4 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 via-emerald-700 to-blue-700" />
+        <div className="absolute inset-0 bg-emerald-600" />
         <div className="absolute inset-0 bg-black/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-blue-400/20 blur-3xl" />
+        <div className="absolute inset-0 bg-emerald-400/20 blur-3xl" />
 
         <div className="container mx-auto text-center relative z-10">
           <div>

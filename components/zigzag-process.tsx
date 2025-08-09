@@ -75,12 +75,12 @@ const ZigzagProcess = () => {
   }, [])
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white py-24">
+    <section className="relative overflow-hidden bg-slate-50 py-24">
       {/* Background decorations */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute right-0 top-0 h-[600px] w-[600px] -translate-y-1/3 translate-x-1/3 rounded-full bg-gradient-to-br from-emerald-50 to-blue-50 opacity-70" />
+        <div className="absolute right-0 top-0 h-[600px] w-[600px] -translate-y-1/3 translate-x-1/3 rounded-full bg-emerald-50 opacity-40" />
 
-        <div className="absolute bottom-0 left-0 h-[500px] w-[500px] -translate-x-1/4 translate-y-1/3 rounded-full bg-gradient-to-tr from-purple-50 to-emerald-50 opacity-70" />
+        <div className="absolute bottom-0 left-0 h-[500px] w-[500px] -translate-x-1/4 translate-y-1/3 rounded-full bg-blue-50 opacity-40" />
 
         {/* Grid pattern */}
         <div
@@ -116,28 +116,10 @@ const ZigzagProcess = () => {
             >
               <path
                 d="M25 0V400L45 500L25 600V1000L5 1100L25 1200V1600L45 1700L25 1800V2000"
-                stroke="url(#gradient-path)"
+                stroke="#10B981"
                 strokeWidth="3"
                 strokeDasharray="8 8"
               />
-              <defs>
-                <linearGradient
-                  id="gradient-path"
-                  x1="25"
-                  y1="0"
-                  x2="25"
-                  y2="2000"
-                  gradientUnits="userSpaceOnUse"
-                  className="h-full"
-                >
-                  <stop offset="0" stopColor="#10B981" />
-                  <stop offset="0.2" stopColor="#3B82F6" />
-                  <stop offset="0.4" stopColor="#8B5CF6" />
-                  <stop offset="0.6" stopColor="#F59E0B" />
-                  <stop offset="0.8" stopColor="#EF4444" />
-                  <stop offset="1" stopColor="#10B981" />
-                </linearGradient>
-              </defs>
             </svg>
           </div>
 
@@ -160,15 +142,15 @@ const ZigzagProcess = () => {
                   <div className="group">
                     <div className="relative">
                       <div
-                        className={`absolute -inset-1 bg-gradient-to-r opacity-0 blur-sm transition duration-500 group-hover:opacity-100 ${step.color === "emerald"
-                            ? "from-emerald-400 to-teal-400"
+                        className={`absolute -inset-1 opacity-0 blur-sm transition duration-500 group-hover:opacity-30 ${step.color === "emerald"
+                            ? "bg-emerald-400"
                             : step.color === "blue"
-                              ? "from-blue-400 to-cyan-400"
+                              ? "bg-blue-400"
                               : step.color === "purple"
-                                ? "from-purple-400 to-violet-400"
+                                ? "bg-purple-400"
                                 : step.color === "amber"
-                                  ? "from-amber-400 to-yellow-400"
-                                  : "from-rose-400 to-pink-400"
+                                  ? "bg-amber-400"
+                                  : "bg-rose-400"
                           }`}
                       />
                       <div className="relative border border-slate-200/50 bg-white/80 backdrop-blur-sm p-8 shadow-lg hover:shadow-xl transition-all duration-300">

@@ -6,7 +6,7 @@ import Image from "next/image"
 export default function ServiceShowcase() {
   return (
     <section className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-white to-slate-50" />
+      <div className="absolute inset-0 bg-white" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
@@ -127,7 +127,7 @@ export default function ServiceShowcase() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                  <div className="absolute inset-0 bg-slate-900/70"></div>
                   <div className="absolute bottom-0 left-0 p-4">
                     <span className="text-white font-medium">料金道路運営</span>
                   </div>
@@ -140,7 +140,7 @@ export default function ServiceShowcase() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                  <div className="absolute inset-0 bg-slate-900/70"></div>
                   <div className="absolute bottom-0 left-0 p-4">
                     <span className="text-white font-medium">儀式サービス</span>
                   </div>
@@ -155,7 +155,7 @@ export default function ServiceShowcase() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                  <div className="absolute inset-0 bg-slate-900/70"></div>
                   <div className="absolute bottom-0 left-0 p-4">
                     <span className="text-white font-medium">施設管理</span>
                   </div>
@@ -168,7 +168,7 @@ export default function ServiceShowcase() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                  <div className="absolute inset-0 bg-slate-900/70"></div>
                   <div className="absolute bottom-0 left-0 p-4">
                     <span className="text-white font-medium">専門サービス</span>
                   </div>

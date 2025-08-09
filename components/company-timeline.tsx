@@ -19,7 +19,7 @@ export default function CompanyTimeline() {
 
   return (
     <section className="py-24 relative overflow-hidden bg-slate-50">
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-50 to-white/50" />
+      <div className="absolute inset-0 bg-white/20" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
@@ -46,7 +46,7 @@ export default function CompanyTimeline() {
                 {/* Content */}
                 <div className="ml-10 md:ml-0 md:w-1/2 md:px-8">
                   <div
-                    className={`p-6 shadow-lg ${event.highlight ? "bg-gradient-to-br from-emerald-50 to-emerald-100/50" : "bg-white"} border border-slate-100`}
+                    className={`p-6 shadow-lg ${event.highlight ? "bg-emerald-50" : "bg-white"} border border-slate-100`}
                   >
                     <div className="flex items-center gap-2 mb-3">
                       <Calendar className={`h-5 w-5 ${event.highlight ? "text-emerald-600" : "text-slate-500"}`} />

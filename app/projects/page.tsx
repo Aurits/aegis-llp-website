@@ -121,12 +121,12 @@ export default function ProjectsPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-emerald-50 font-japanese">
+    <div className="min-h-screen bg-slate-50 font-japanese">
       <Header />
 
       {/* Hero Section */}
       <section className="py-20 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/5 to-blue-600/5" />
+        <div className="absolute inset-0 bg-emerald-50/30" />
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
             <div>
@@ -240,7 +240,7 @@ export default function ProjectsPage() {
 
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <Card className="text-center border-0 shadow-lg bg-gradient-to-br from-emerald-50 to-white hover:shadow-2xl transition-all duration-500">
+              <Card className="text-center border-0 shadow-lg bg-emerald-50 hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
                   <div className="text-4xl font-bold text-emerald-600 mb-2">25+</div>
                   <div className="text-slate-600">完了プロジェクト</div>
@@ -250,7 +250,7 @@ export default function ProjectsPage() {
             </div>
 
             <div>
-              <Card className="text-center border-0 shadow-lg bg-gradient-to-br from-blue-50 to-white hover:shadow-2xl transition-all duration-500">
+              <Card className="text-center border-0 shadow-lg bg-blue-50 hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
                   <div className="text-4xl font-bold text-blue-600 mb-2">22M+</div>
                   <div className="text-slate-600">市民へのサービス</div>
@@ -260,7 +260,7 @@ export default function ProjectsPage() {
             </div>
 
             <div>
-              <Card className="text-center border-0 shadow-lg bg-gradient-to-br from-purple-50 to-white hover:shadow-2xl transition-all duration-500">
+              <Card className="text-center border-0 shadow-lg bg-purple-50 hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
                   <div className="text-4xl font-bold text-purple-600 mb-2">99.9%</div>
                   <div className="text-slate-600">平均稼働時間</div>
@@ -270,7 +270,7 @@ export default function ProjectsPage() {
             </div>
 
             <div>
-              <Card className="text-center border-0 shadow-lg bg-gradient-to-br from-amber-50 to-white hover:shadow-2xl transition-all duration-500">
+              <Card className="text-center border-0 shadow-lg bg-amber-50 hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
                   <div className="text-4xl font-bold text-amber-600 mb-2">55%</div>
                   <div className="text-slate-600">平均効率向上</div>
@@ -283,7 +283,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-emerald-600 to-emerald-700">
+      <section className="py-20 px-4 bg-emerald-600">
         <div className="container mx-auto text-center">
           <div>
             <h2 className="text-4xl font-bold text-white mb-6">
@@ -327,7 +327,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+            <div className="absolute inset-0 bg-slate-900/80"></div>
 
             {/* Project Stats Overlay */}
             <div className="absolute top-4 left-4 space-y-2">

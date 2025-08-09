@@ -6,7 +6,7 @@ import Image from "next/image"
 export default function AboutConcept() {
   return (
     <section className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-100 to-white" />
+      <div className="absolute inset-0 bg-slate-50" />
 
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
@@ -25,7 +25,7 @@ export default function AboutConcept() {
           {/* Left side - Image with overlay */}
           <div className="relative">
             <div className="relative overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/50 to-transparent z-10" />
+              <div className="absolute inset-0 bg-slate-900/70 z-10" />
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%289%29-KyNOAU353e0JaATfjoxAMSPbS5Mh6V.jpeg"
                 alt="Aegis Group Concept"

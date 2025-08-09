@@ -43,10 +43,10 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+    <footer className="relative bg-slate-900 text-white overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(16,185,129,0.1),transparent_50%)]" />
+        <div className="absolute inset-0 bg-emerald-900/5" />
         <div className="absolute top-0 left-0 w-full h-full bg-[url('/pattern-dots.png')]" />
       </div>
 
@@ -167,7 +167,7 @@ export default function Footer() {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 p-8 bg-gradient-to-r from-emerald-600/10 to-blue-600/10 backdrop-blur-sm rounded-2xl border border-white/10">
+          <div className="mt-16 p-8 bg-emerald-600/10 backdrop-blur-sm rounded-2xl border border-white/10">
             <div className="max-w-2xl">
               <h3 className="text-xl font-bold mb-2">最新情報を受信</h3>
               <p className="text-slate-300 mb-6">
@@ -179,7 +179,7 @@ export default function Footer() {
                   placeholder="メールアドレスを入力"
                   className="flex-1 px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400/50 focus:border-emerald-400/50 transition-all duration-200"
                 />
-                <Button className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 px-8">
+                <Button className="bg-emerald-600 hover:bg-emerald-700 px-8">
                   登録
                 </Button>
               </div>

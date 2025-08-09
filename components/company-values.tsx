@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function CompanyValues() {
   return (
-    <section className="py-24 relative overflow-hidden bg-gradient-to-b from-slate-900 to-slate-800">
+    <section className="py-24 relative overflow-hidden bg-slate-900">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div
@@ -41,7 +41,7 @@ export default function CompanyValues() {
                 className="w-full h-auto object-cover"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/50 to-transparent"></div>
+              <div className="absolute inset-0 bg-slate-900/75"></div>
 
               <div className="absolute bottom-0 left-0 p-8">
                 <h3 className="text-white text-2xl font-bold mb-2">情熱</h3>

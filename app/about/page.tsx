@@ -13,11 +13,11 @@ import Link from "next/link"
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-emerald-50/30 relative overflow-hidden font-japanese">
+    <div className="min-h-screen bg-slate-50 relative overflow-hidden font-japanese">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-emerald-200/20 to-blue-200/20 rounded-full blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100/30 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-emerald-100/30 rounded-full blur-3xl" />
       </div>
 
       <Header />
@@ -36,7 +36,7 @@ export default function AboutPage() {
 
               <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-8 leading-tight mobile-horizontal">
                 私たちの
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-blue-600 block">
+                <span className="text-emerald-600 block">
                   LLP構造について
                 </span>
               </h1>
@@ -48,7 +48,7 @@ export default function AboutPage() {
               <div className="flex flex-wrap gap-4">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white text-lg px-8 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white text-lg px-8 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
                 >
                   <Link href="/companies">企業一覧</Link>
                 </Button>
@@ -146,9 +146,8 @@ export default function AboutPage() {
 
       {/* CTA Section */}
       <section className="py-20 px-4 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 via-emerald-700 to-blue-700" />
+        <div className="absolute inset-0 bg-emerald-600" />
         <div className="absolute inset-0 bg-black/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-blue-400/20 blur-3xl" />
 
         <div className="container mx-auto text-center relative z-10">
           <div>

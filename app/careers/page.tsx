@@ -187,12 +187,12 @@ export default function CareersPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-emerald-50/30 font-japanese">
+    <div className="min-h-screen bg-slate-50 font-japanese">
       <Header />
 
       {/* Hero Section */}
       <section className="py-20 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/5 to-blue-600/5" />
+        <div className="absolute inset-0 bg-emerald-50/30" />
         <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -228,7 +228,7 @@ export default function CareersPage() {
                   height={400}
                   className="w-full h-auto object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
+                <div className="absolute inset-0 bg-slate-900/60" />
                 <div className="absolute bottom-0 left-0 p-8 text-white">
                   <h3 className="text-2xl font-bold mb-2">私たちのチームに参加</h3>
                   <p className="text-white/90">8 specialized companies, one unified mission</p>
@@ -272,7 +272,7 @@ export default function CareersPage() {
                 <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border-0 bg-white/90 backdrop-blur-sm">
                   <div className="relative h-48">
                     <Image src={value.image || "/placeholder.svg"} alt={value.title} fill className="object-cover" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
+                    <div className="absolute inset-0 bg-slate-900/80" />
                   </div>
                   <CardContent className="p-6">
                     <h3 className="font-bold text-slate-800 text-xl mb-3">{value.title}</h3>
@@ -302,7 +302,7 @@ export default function CareersPage() {
               <div key={index}>
                 <Card className="text-center p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border-0 bg-white/90 backdrop-blur-sm">
                   <div
-                    className={`w-16 h-16 bg-gradient-to-br from-${benefit.color}-400 to-${benefit.color}-600  flex items-center justify-center mx-auto mb-6 shadow-lg`}
+                    className={`w-16 h-16 bg-${benefit.color}-500 rounded-lg flex items-center justify-center mx-auto mb-6 shadow-lg`}
                   >
                     <benefit.icon className="h-8 w-8 text-white" />
                   </div>
@@ -374,7 +374,7 @@ export default function CareersPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-emerald-600 to-emerald-700">
+      <section className="py-20 px-4 bg-emerald-600">
         <div className="container mx-auto text-center">
           <div>
             <h2 className="text-4xl font-bold text-white mb-6">

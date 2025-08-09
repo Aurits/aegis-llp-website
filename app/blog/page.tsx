@@ -135,12 +135,12 @@ export default function BlogPage() {
     ]
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-emerald-50/30">
+        <div className="min-h-screen bg-slate-50">
             <Header />
 
             {/* Hero Section */}
             <section className="py-20 px-4 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/5 to-blue-600/5" />
+                <div className="absolute inset-0 bg-emerald-50/30" />
                 <div className="container mx-auto relative z-10">
                     <div className="text-center mb-16">
                         <div>
@@ -187,7 +187,7 @@ export default function BlogPage() {
                                         fill
                                         className="object-cover"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
+                                    <div className="absolute inset-0 bg-slate-900/60" />
                                     <Badge className="absolute top-4 left-4 bg-emerald-600 text-white">注目投稿</Badge>
 
                                     {/* Engagement metrics */}
@@ -283,7 +283,7 @@ export default function BlogPage() {
                                             fill
                                             className="object-cover group-hover:scale-105 transition-transform duration-500"
                                         />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
+                                        <div className="absolute inset-0 bg-slate-900/60" />
                                         <Badge className="absolute top-3 left-3 bg-white/90 text-slate-700 text-xs">{post.category}</Badge>
 
                                         {/* Engagement metrics */}
@@ -347,7 +347,7 @@ export default function BlogPage() {
             </section>
 
             {/* Newsletter Signup */}
-            <section className="py-20 px-4 bg-gradient-to-r from-emerald-600 to-emerald-700">
+            <section className="py-20 px-4 bg-emerald-600">
                 <div className="container mx-auto text-center">
                     <div>
                         <h2 className="text-4xl font-bold text-white mb-6">

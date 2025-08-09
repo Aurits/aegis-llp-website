@@ -153,12 +153,12 @@ export default function TechnologyPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-emerald-50 font-japanese">
+    <div className="min-h-screen bg-slate-50 font-japanese">
       <Header />
 
       {/* Hero Section */}
       <section className="py-20 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/5 to-blue-600/5" />
+        <div className="absolute inset-0 bg-emerald-50/30" />
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
             <div>
@@ -210,7 +210,7 @@ export default function TechnologyPage() {
                 <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/90 backdrop-blur-sm h-full">
                   <CardHeader>
                     <div
-                      className={`w-16 h-16 bg-gradient-to-br from-${tech.color}-400 to-${tech.color}-600  flex items-center justify-center mb-4 shadow-lg`}
+                      className={`w-16 h-16 bg-${tech.color}-500 rounded-lg flex items-center justify-center mb-4 shadow-lg`}
                     >
                       <tech.icon className="h-8 w-8 text-white" />
                     </div>
@@ -283,7 +283,7 @@ export default function TechnologyPage() {
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
+                      <div className="absolute inset-0 bg-slate-900/80" />
                       <div className="absolute bottom-4 left-4 text-white">
                         <Badge className="bg-emerald-600 text-white mb-2">{dxCase.client}</Badge>
                         <h3 className="text-xl font-bold">{dxCase.title}</h3>
@@ -364,7 +364,7 @@ export default function TechnologyPage() {
                 <Card className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md text-center bg-white/90 backdrop-blur-sm h-full">
                   <CardContent className="p-6">
                     <div
-                      className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-emerald-200  mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform"
+                      className="w-16 h-16 bg-emerald-100 rounded-lg mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform"
                     >
                       <item.icon className="h-8 w-8 text-emerald-600" />
                     </div>
@@ -385,7 +385,7 @@ export default function TechnologyPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-emerald-600 to-emerald-700">
+      <section className="py-20 px-4 bg-emerald-600">
         <div className="container mx-auto text-center">
           <div>
             <h2 className="text-4xl font-bold text-white mb-6">

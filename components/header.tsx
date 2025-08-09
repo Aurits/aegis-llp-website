@@ -122,7 +122,7 @@ export default function Header() {
                         <ChevronDown className="ml-1 h-4 w-4 transition-transform group-hover:rotate-180" />
                       )}
                       {isActive(item.href) && (
-                        <div className="absolute inset-0 bg-gradient-to-r from-emerald-100 to-emerald-50 rounded-xl" />
+                        <div className="absolute inset-0 bg-emerald-50 rounded-xl" />
                       )}
                     </Link>
                   </div>
@@ -147,7 +147,7 @@ export default function Header() {
               <div>
                 <Button
                   asChild
-                  className="ml-4 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 font-sans"
+                  className="ml-4 bg-emerald-600 hover:bg-emerald-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 font-sans"
                 >
                   <Link href="/contact">
                     <span className="relative z-10">お問い合わせ</span>
@@ -195,7 +195,7 @@ export default function Header() {
               <div className="pt-4">
                 <Button
                   asChild
-                  className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 font-sans"
+                  className="w-full bg-emerald-600 hover:bg-emerald-700 font-sans"
                 >
                   <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                     お問い合わせ

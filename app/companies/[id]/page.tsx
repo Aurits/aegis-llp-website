@@ -271,12 +271,12 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-50 to-emerald-50">
+        <div className="min-h-screen bg-slate-50">
             <Header />
 
             {/* Hero Section */}
             <section className="py-20 px-4 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/5 to-blue-600/5" />
+                <div className="absolute inset-0 bg-emerald-50/30" />
                 <div className="container mx-auto relative z-10">
                     <div>
                         <div className="mb-8">
@@ -322,7 +322,7 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
                                         height={400}
                                         className="w-full h-auto object-cover"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
+                                    <div className="absolute inset-0 bg-slate-900/60" />
                                     <div className="absolute bottom-6 left-6 text-white">
                                         <h3 className="text-xl font-bold mb-2">{company.name}</h3>
                                         <p className="text-white/90">{company.tagline}</p>
