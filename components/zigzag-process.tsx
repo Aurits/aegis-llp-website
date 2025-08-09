@@ -18,7 +18,7 @@ const steps = [
     description:
       "私たちのLLPチームが、公共部門の要件に合わせたセキュリティプロトコル、コンプライアンスフレームワーク、リソース配置を含む詳細なプロジェクトロードマップを作成します。",
     icon: <FileText className="h-6 w-6" />,
-    color: "blue",
+    color: "slate",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const steps = [
     description:
       "堅牢なセキュリティ対策を実装し、政府規制、データ保護法、業界標準への完全な遵守を保証します。",
     icon: <Shield className="h-6 w-6" />,
-    color: "purple",
+    color: "slate",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const steps = [
     description:
       "専門企業が連携して、24時間365日の監視と品質保証でソリューションを開発、統合、厳格にテストします。",
     icon: <Cog className="h-6 w-6" />,
-    color: "amber",
+    color: "emerald",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const steps = [
     description:
       "包括的な研修、ドキュメント、継続的な24時間365日技術サポートでシームレスな展開を保証し、継続的な運用を実現します。",
     icon: <Rocket className="h-6 w-6" />,
-    color: "rose",
+    color: "slate",
   },
 ]
 
@@ -144,26 +144,14 @@ const ZigzagProcess = () => {
                       <div
                         className={`absolute -inset-1 opacity-0 blur-sm transition duration-500 group-hover:opacity-30 ${step.color === "emerald"
                             ? "bg-emerald-400"
-                            : step.color === "blue"
-                              ? "bg-blue-400"
-                              : step.color === "purple"
-                                ? "bg-purple-400"
-                                : step.color === "amber"
-                                  ? "bg-amber-400"
-                                  : "bg-rose-400"
+                            : "bg-slate-400"
                           }`}
                       />
                       <div className="relative border border-slate-200/50 bg-white/80 backdrop-blur-sm p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                         <div
                           className={`mb-6 inline-flex items-center justify-center rounded-xl p-4 ${step.color === "emerald"
                               ? "bg-emerald-100 text-emerald-600"
-                              : step.color === "blue"
-                                ? "bg-blue-100 text-blue-600"
-                                : step.color === "purple"
-                                  ? "bg-purple-100 text-purple-600"
-                                  : step.color === "amber"
-                                    ? "bg-amber-100 text-amber-600"
-                                    : "bg-rose-100 text-rose-600"
+                              : "bg-slate-100 text-slate-600"
                             }`}
                         >
                           {step.icon}
@@ -181,7 +169,7 @@ const ZigzagProcess = () => {
                                 <Users className="h-3 w-3" />
                                 ステークホルダー連携
                               </span>
-                              <span className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+                              <span className="inline-flex items-center gap-1 rounded-full bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">
                                 <Shield className="h-3 w-3" />
                                 コンプライアンスレビュー
                               </span>
@@ -189,11 +177,11 @@ const ZigzagProcess = () => {
                           )}
                           {index === 1 && (
                             <>
-                              <span className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+                              <span className="inline-flex items-center gap-1 rounded-full bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">
                                 <Database className="h-3 w-3" />
                                 データアーキテクチャ
                               </span>
-                              <span className="inline-flex items-center gap-1 rounded-full bg-purple-50 px-3 py-1 text-xs font-medium text-purple-700">
+                              <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
                                 <Cloud className="h-3 w-3" />
                                 インフラ計画
                               </span>
@@ -201,7 +189,7 @@ const ZigzagProcess = () => {
                           )}
                           {index === 2 && (
                             <>
-                              <span className="inline-flex items-center gap-1 rounded-full bg-purple-50 px-3 py-1 text-xs font-medium text-purple-700">
+                              <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
                                 <Shield className="h-3 w-3" />
                                 セキュリティ監査
                               </span>
@@ -213,11 +201,11 @@ const ZigzagProcess = () => {
                           )}
                           {index === 3 && (
                             <>
-                              <span className="inline-flex items-center gap-1 rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700">
+                              <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
                                 <Cog className="h-3 w-3" />
                                 品質保証
                               </span>
-                              <span className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+                              <span className="inline-flex items-center gap-1 rounded-full bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">
                                 <Users className="h-3 w-3" />
                                 LLP連携
                               </span>
@@ -225,7 +213,7 @@ const ZigzagProcess = () => {
                           )}
                           {index === 4 && (
                             <>
-                              <span className="inline-flex items-center gap-1 rounded-full bg-rose-50 px-3 py-1 text-xs font-medium text-rose-700">
+                              <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
                                 <Rocket className="h-3 w-3" />
                                 稼働開始サポート
                               </span>
@@ -246,25 +234,13 @@ const ZigzagProcess = () => {
                   <div
                     className={`flex h-16 w-16 items-center justify-center rounded-full border-4 bg-white shadow-xl ${step.color === "emerald"
                         ? "border-emerald-400"
-                        : step.color === "blue"
-                          ? "border-blue-400"
-                          : step.color === "purple"
-                            ? "border-purple-400"
-                            : step.color === "amber"
-                              ? "border-amber-400"
-                              : "border-rose-400"
+                        : "border-slate-400"
                       }`}
                   >
                     <span
                       className={`text-xl font-bold ${step.color === "emerald"
                           ? "text-emerald-600"
-                          : step.color === "blue"
-                            ? "text-blue-600"
-                            : step.color === "purple"
-                              ? "text-purple-600"
-                              : step.color === "amber"
-                                ? "text-amber-600"
-                                : "text-rose-600"
+                          : "text-slate-600"
                         }`}
                     >
                       {step.id}

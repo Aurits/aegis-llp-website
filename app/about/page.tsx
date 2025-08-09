@@ -16,7 +16,7 @@ export default function AboutPage() {
     <div className="min-h-screen bg-slate-50 relative overflow-hidden font-japanese">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100/30 rounded-full blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-emerald-100/30 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-emerald-100/30 rounded-full blur-3xl" />
       </div>
 
@@ -120,7 +120,7 @@ export default function AboutPage() {
 
                 <div className="absolute -right-10 bottom-10 z-10 rounded-lg bg-white shadow-lg p-3">
                   <div className="flex items-center gap-2">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-blue-600">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
                       <Users className="h-4 w-4" />
                     </div>
                     <div className="text-xs">

@@ -7,15 +7,15 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import {
   ArrowRight,
-  Award,
+  CheckCircle,
   Briefcase,
   Building2,
   Clock,
-  GraduationCap,
+  Square,
   Heart,
   MapPin,
   Shield,
-  TrendingUp,
+  ArrowUp,
   Users,
 } from "lucide-react"
 import Image from "next/image"
@@ -134,34 +134,34 @@ export default function CareersPage() {
       color: "emerald",
     },
     {
-      icon: TrendingUp,
+      icon: ArrowUp,
       title: "キャリア成長",
       description: "最先端の政府技術プロジェクトへの関与でキャリアを発展させます",
-      color: "blue",
+      color: "emerald",
     },
     {
       icon: Users,
       title: "協力的文化",
       description: "独特のLLP構造内の複数の専門会社で連携します",
-      color: "purple",
+      color: "slate",
     },
     {
-      icon: GraduationCap,
+      icon: Square,
       title: "継続的学習",
       description: "研修、認定資格、専門能力開発の機会へのアクセス",
-      color: "amber",
+      color: "slate",
     },
     {
       icon: Shield,
       title: "雇用保障",
       description: "政府契約と長期パートナーシップによる安定した雇用",
-      color: "rose",
+      color: "emerald",
     },
     {
-      icon: Award,
+      icon: CheckCircle,
       title: "表彰",
       description: "METIや業界リーダーに認められた受賞プロジェクトの一員になります",
-      color: "indigo",
+      color: "slate",
     },
   ]
 
@@ -245,7 +245,7 @@ export default function CareersPage() {
 
               <div className="absolute -bottom-8 -left-8 bg-white  shadow-xl p-4 z-10">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600">18+</div>
+                  <div className="text-2xl font-bold text-emerald-600">18+</div>
                   <div className="text-sm text-slate-600">年間経験</div>
                 </div>
               </div>
@@ -302,7 +302,7 @@ export default function CareersPage() {
               <div key={index}>
                 <Card className="text-center p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border-0 bg-white/90 backdrop-blur-sm">
                   <div
-                    className={`w-16 h-16 bg-${benefit.color}-500 rounded-lg flex items-center justify-center mx-auto mb-6 shadow-lg`}
+                    className={`w-16 h-16 bg-${benefit.color === 'slate' ? 'slate-600' : benefit.color + '-600'} rounded-lg flex items-center justify-center mx-auto mb-6 shadow-lg`}
                   >
                     <benefit.icon className="h-8 w-8 text-white" />
                   </div>

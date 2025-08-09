@@ -54,8 +54,8 @@ export default function CompanyValues() {
             {/* Floating elements */}
             <div className="absolute -top-8 -right-8 bg-white rounded-xl shadow-xl p-4 z-10">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-                  <Heart className="h-6 w-6 text-red-600" />
+                <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
+                  <Heart className="h-6 w-6 text-emerald-600" />
                 </div>
                 <div>
                   <p className="font-bold text-slate-800">ユーザー中心</p>
@@ -88,12 +88,12 @@ export default function CompanyValues() {
 
             <div className="bg-white/10 backdrop-blur-sm p-6 hover:bg-white/15 transition-colors border border-white/5">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Users className="h-6 w-6 text-blue-400" />
+                <div className="w-12 h-12 bg-slate-700/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Users className="h-6 w-6 text-slate-400" />
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="w-6 h-6 rounded-full bg-blue-900/50 text-blue-400 flex items-center justify-center text-sm font-bold">
+                    <span className="w-6 h-6 rounded-full bg-slate-700/50 text-slate-400 flex items-center justify-center text-sm font-bold">
                       2
                     </span>
                     <h3 className="font-bold text-white text-lg">ユーザー中心のサービス</h3>
@@ -107,9 +107,9 @@ export default function CompanyValues() {
 
             <div className="bg-white/10 backdrop-blur-sm p-6 hover:bg-white/15 transition-colors border border-white/5">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-purple-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-slate-700/30 rounded-xl flex items-center justify-center flex-shrink-0">
                   <svg
-                    className="h-6 w-6 text-purple-400"
+                    className="h-6 w-6 text-slate-400"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +146,7 @@ export default function CompanyValues() {
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="w-6 h-6 rounded-full bg-purple-900/50 text-purple-400 flex items-center justify-center text-sm font-bold">
+                    <span className="w-6 h-6 rounded-full bg-slate-700/50 text-slate-400 flex items-center justify-center text-sm font-bold">
                       3
                     </span>
                     <h3 className="font-bold text-white text-lg">意味のある作業環境</h3>

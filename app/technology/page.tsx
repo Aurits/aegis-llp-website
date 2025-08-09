@@ -7,17 +7,16 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import {
+  ArrowUp,
   CheckCircle,
-  Cloud,
   Code,
   Cpu,
-  Database,
   Filter,
   Globe,
   Lock,
   Search,
   Shield,
-  Smartphone,
+  Square,
   TrendingUp,
   Zap,
 } from "lucide-react"
@@ -28,7 +27,7 @@ export default function TechnologyPage() {
   const technologies = [
     {
       category: "クラウドインフラ",
-      icon: Cloud,
+      icon: Square,
       color: "emerald",
       description: "政府運用のためのスケーラブルで安全なクラウドソリューション",
       technologies: ["AWS", "Azure", "Google Cloud", "Kubernetes", "Docker", "Terraform"],
@@ -38,8 +37,8 @@ export default function TechnologyPage() {
     },
     {
       category: "データ分析とAI",
-      icon: Database,
-      color: "blue",
+      icon: Square,
+      color: "slate",
       description: "政府の洞察のための高度な分析とAIソリューション",
       technologies: ["Apache Spark", "Elasticsearch", "Power BI", "TensorFlow", "Python", "R"],
       useCases: ["予測分析", "リアルタイムダッシュボード", "市民行動分析", "リソース最適化"],
@@ -48,8 +47,8 @@ export default function TechnologyPage() {
     },
     {
       category: "モバイル開発",
-      icon: Smartphone,
-      color: "purple",
+      icon: Square,
+      color: "emerald",
       description: "市民参加のためのクロスプラットフォームモバイルソリューション",
       technologies: ["React Native", "Flutter", "Swift", "Kotlin", "Progressive Web Apps", "Ionic"],
       useCases: ["市民ポータル", "緊急アラート", "サービスアプリケーション", "デジタルIDシステム"],
@@ -58,8 +57,8 @@ export default function TechnologyPage() {
     },
     {
       category: "ウェブ技術",
-      icon: Globe,
-      color: "amber",
+      icon: Square,
+      color: "slate",
       description: "レスポンシブデザインの最新ウェブアプリケーション",
       technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "GraphQL"],
       useCases: ["政府ポータル", "管理ダッシュボード", "公共ウェブサイト", "内部ツール"],
@@ -69,7 +68,7 @@ export default function TechnologyPage() {
     {
       category: "サイバーセキュリティ",
       icon: Lock,
-      color: "rose",
+      color: "slate",
       description: "機密な政府データのためのエンタープライズグレードセキュリティ",
       technologies: ["OAuth 2.0", "SAML", "Zero Trust", "Encryption", "VPN", "SIEM"],
       useCases: ["アイデンティティ管理", "データ保護", "監査記録", "コンプライアンス監視"],
@@ -78,8 +77,8 @@ export default function TechnologyPage() {
     },
     {
       category: "IoTとエッジコンピューティング",
-      icon: Cpu,
-      color: "indigo",
+      icon: Square,
+      color: "emerald",
       description: "スマートシティのための接続デバイスとエッジ処理",
       technologies: ["Azure IoT", "AWS IoT Core", "Edge Computing", "5G", "LoRaWAN", "MQTT"],
       useCases: ["スマート交通", "環境監視", "資産追跡", "予知保守"],
@@ -210,7 +209,7 @@ export default function TechnologyPage() {
                 <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/90 backdrop-blur-sm h-full">
                   <CardHeader>
                     <div
-                      className={`w-16 h-16 bg-${tech.color}-500 rounded-lg flex items-center justify-center mb-4 shadow-lg`}
+                      className={`w-16 h-16 ${tech.color === "emerald" ? "bg-emerald-500" : "bg-slate-500"} rounded-lg flex items-center justify-center mb-4 shadow-lg`}
                     >
                       <tech.icon className="h-8 w-8 text-white" />
                     </div>
@@ -293,10 +292,10 @@ export default function TechnologyPage() {
                     <CardContent className="p-8">
                       <div className="space-y-6">
                         {/* Challenge */}
-                        <div className="border-l-4 border-red-200 pl-4">
+                        <div className="border-l-4 border-slate-200 pl-4">
                           <div className="flex items-center gap-2 mb-2">
-                            <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
-                              <span className="text-red-600 font-bold text-sm">01</span>
+                            <div className="w-8 h-8 bg-slate-100 rounded-lg flex items-center justify-center">
+                              <span className="text-slate-600 font-bold text-sm">01</span>
                             </div>
                             <h4 className="font-bold text-slate-800">課題</h4>
                           </div>
@@ -304,10 +303,10 @@ export default function TechnologyPage() {
                         </div>
 
                         {/* Solution */}
-                        <div className="border-l-4 border-blue-200 pl-4">
+                        <div className="border-l-4 border-slate-300 pl-4">
                           <div className="flex items-center gap-2 mb-2">
-                            <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
-                              <span className="text-blue-600 font-bold text-sm">02</span>
+                            <div className="w-8 h-8 bg-slate-200 rounded-lg flex items-center justify-center">
+                              <span className="text-slate-700 font-bold text-sm">02</span>
                             </div>
                             <h4 className="font-bold text-slate-800">解決策</h4>
                           </div>

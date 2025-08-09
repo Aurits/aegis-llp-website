@@ -6,7 +6,7 @@ import ServiceShowcase from "@/components/service-showcase"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowRight, Award, Building2, CheckCircle, Cloud, Code, Database, Smartphone, Users, Zap } from "lucide-react"
+import { ArrowRight, CheckCircle, Building2, CheckCircle as QualityIcon, Cloud, Square, Database, Square as MobileIcon, Users, ArrowRight as SpeedIcon } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -28,7 +28,7 @@ export default function CompaniesPage() {
       specialization: "データ管理",
       description: "自治体向けの専門的なデータ管理と分析ソリューション",
       icon: Database,
-      bgGradient: "from-blue-50/80 to-indigo-50/80",
+      bgGradient: "from-slate-50/80 to-slate-50/80",
       services: ["データ分析", "データベース設計", "ビジネスインテリジェンス"],
       established: "2016",
     },
@@ -37,8 +37,8 @@ export default function CompaniesPage() {
       name: "ウェブクラフト・デジタル",
       specialization: "ウェブ開発",
       description: "公共部門組織向けの最新ウェブアプリケーションとデジタルプラットフォーム",
-      icon: Code,
-      bgGradient: "from-purple-50/80 to-pink-50/80",
+      icon: Square,
+      bgGradient: "from-slate-50/80 to-slate-50/80",
       services: ["ウェブ開発", "UI/UXデザイン", "デジタルプラットフォーム"],
       established: "2019",
     },
@@ -47,8 +47,8 @@ export default function CompaniesPage() {
       name: "モバイルファースト・テック",
       specialization: "モバイルソリューション",
       description: "市民参加のためのモバイルアプリケーションとレスポンシブソリューション",
-      icon: Smartphone,
-      bgGradient: "from-amber-50/80 to-orange-50/80",
+      icon: MobileIcon,
+      bgGradient: "from-slate-50/80 to-slate-50/80",
       services: ["モバイルアプリ", "レスポンシブデザイン", "市民ポータル"],
       established: "2020",
     },
@@ -58,7 +58,7 @@ export default function CompaniesPage() {
     <div className="min-h-screen bg-slate-50 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-100/30 rounded-full blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-emerald-100/30 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-emerald-100/30 rounded-full blur-3xl" />
       </div>
 
@@ -130,15 +130,15 @@ export default function CompaniesPage() {
                       </div>
                       <div>
                         <p className="font-medium text-slate-700">サービス領域</p>
-                        <p className="text-2xl font-bold text-blue-600">15+</p>
+                        <p className="text-2xl font-bold text-slate-600">15+</p>
                       </div>
                       <div>
                         <p className="font-medium text-slate-700">年間経験</p>
-                        <p className="text-2xl font-bold text-purple-600">18+</p>
+                        <p className="text-2xl font-bold text-slate-600">18+</p>
                       </div>
                       <div>
                         <p className="font-medium text-slate-700">完了プロジェクト</p>
-                        <p className="text-2xl font-bold text-amber-600">200+</p>
+                        <p className="text-2xl font-bold text-slate-600">200+</p>
                       </div>
                     </div>
                   </div>
@@ -159,8 +159,8 @@ export default function CompaniesPage() {
 
                 <div className="absolute -right-10 bottom-10 z-10 rounded-lg bg-white shadow-lg p-3">
                   <div className="flex items-center gap-2">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-blue-600">
-                      <Award className="h-4 w-4" />
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
+                      <QualityIcon className="h-4 w-4" />
                     </div>
                     <div className="text-xs">
                       <div className="font-medium text-slate-800">品質保証</div>
@@ -195,12 +195,12 @@ export default function CompaniesPage() {
               <div key={company.id}>
                 <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-white/90 backdrop-blur-sm">
                   <div
-                    className={`absolute inset-0 bg-${company.color}-50/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                    className="absolute inset-0 bg-emerald-50/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                   />
                   <CardHeader className="relative z-10 pb-8">
                     <div className="flex items-start justify-between">
                       <div
-                        className={`w-20 h-20 bg-${company.color}-500 rounded-lg flex items-center justify-center shadow-lg`}
+                        className="w-20 h-20 bg-emerald-600 rounded-lg flex items-center justify-center shadow-lg"
                       >
                         <company.icon className="h-10 w-10 text-white" />
                       </div>
@@ -276,7 +276,7 @@ export default function CompaniesPage() {
                       <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
                         <Cloud className="h-5 w-5 text-white" />
                       </div>
-                      <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
+                      <div className="w-10 h-10 bg-slate-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
                         <Database className="h-5 w-5 text-white" />
                       </div>
                     </div>
@@ -311,11 +311,11 @@ export default function CompaniesPage() {
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="flex -space-x-2">
-                      <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
-                        <Code className="h-5 w-5 text-white" />
+                      <div className="w-10 h-10 bg-slate-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
+                        <Square className="h-5 w-5 text-white" />
                       </div>
-                      <div className="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
-                        <Smartphone className="h-5 w-5 text-white" />
+                      <div className="w-10 h-10 bg-slate-600 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
+                        <MobileIcon className="h-5 w-5 text-white" />
                       </div>
                     </div>
                     <Badge variant="secondary" className="bg-white/80 backdrop-blur-sm">
@@ -369,22 +369,23 @@ export default function CompaniesPage() {
                 color: "emerald",
               },
               {
-                icon: Award,
+                icon: QualityIcon,
                 title: "品質保証",
                 description: "すべてのメンバー企業で維持される一貫した品質基準",
-                color: "blue",
+                color: "emerald",
               },
               {
-                icon: Zap,
+                icon: SpeedIcon,
                 title: "迅速な展開",
                 description: "協調された専門知識とリソースによる迅速なプロジェクト実行",
+                color: "slate",
                         },
             ].map((item, index) => (
               <div key={index}>
                 <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg text-center bg-white/90 backdrop-blur-sm overflow-hidden">
                   <CardHeader className="p-8">
                     <div
-                      className={`w-20 h-20 bg-${item.color}-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg`}
+                      className={`w-20 h-20 bg-${item.color === 'slate' ? 'slate-600' : item.color + '-600'} rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg`}
                     >
                       <item.icon className="h-10 w-10 text-white" />
                     </div>

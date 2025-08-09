@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowUp, Github, Linkedin, Mail, MapPin, Phone, Shield, Twitter } from "lucide-react"
+import { ArrowUp, Square, Square as LinkedinIcon, Mail, MapPin, Phone, Shield, Square as TwitterIcon } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
@@ -37,9 +37,9 @@ export default function Footer() {
   }
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Github, href: "#", label: "GitHub" },
+    { icon: LinkedinIcon, href: "#", label: "LinkedIn" },
+    { icon: TwitterIcon, href: "#", label: "Twitter" },
+    { icon: Square, href: "#", label: "GitHub" },
   ]
 
   return (

@@ -250,9 +250,9 @@ export default function ProjectsPage() {
             </div>
 
             <div>
-              <Card className="text-center border-0 shadow-lg bg-blue-50 hover:shadow-2xl transition-all duration-500">
+              <Card className="text-center border-0 shadow-lg bg-slate-50 hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
-                  <div className="text-4xl font-bold text-blue-600 mb-2">22M+</div>
+                  <div className="text-4xl font-bold text-slate-600 mb-2">22M+</div>
                   <div className="text-slate-600">市民へのサービス</div>
                   <div className="text-sm text-slate-500 mt-2">直接的な影響</div>
                 </CardContent>
@@ -260,9 +260,9 @@ export default function ProjectsPage() {
             </div>
 
             <div>
-              <Card className="text-center border-0 shadow-lg bg-purple-50 hover:shadow-2xl transition-all duration-500">
+              <Card className="text-center border-0 shadow-lg bg-slate-100 hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
-                  <div className="text-4xl font-bold text-purple-600 mb-2">99.9%</div>
+                  <div className="text-4xl font-bold text-slate-700 mb-2">99.9%</div>
                   <div className="text-slate-600">平均稼働時間</div>
                   <div className="text-sm text-slate-500 mt-2">システム信頼性</div>
                 </CardContent>
@@ -270,9 +270,9 @@ export default function ProjectsPage() {
             </div>
 
             <div>
-              <Card className="text-center border-0 shadow-lg bg-amber-50 hover:shadow-2xl transition-all duration-500">
+              <Card className="text-center border-0 shadow-lg bg-emerald-100 hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
-                  <div className="text-4xl font-bold text-amber-600 mb-2">55%</div>
+                  <div className="text-4xl font-bold text-emerald-700 mb-2">55%</div>
                   <div className="text-slate-600">平均効率向上</div>
                   <div className="text-sm text-slate-500 mt-2">プロセス改善</div>
                 </CardContent>
@@ -370,18 +370,18 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
 
             <div className="space-y-6">
               {/* Problem */}
-              <div className="border-l-4 border-red-200 pl-4">
+              <div className="border-l-4 border-slate-200 pl-4">
                 <div className="flex items-center gap-2 mb-2">
-                  <Target className="h-5 w-5 text-red-600" />
+                  <Target className="h-5 w-5 text-slate-600" />
                   <h4 className="font-semibold text-slate-800">問題</h4>
                 </div>
                 <p className="text-slate-600 text-sm leading-relaxed">{project.problem}</p>
               </div>
 
               {/* Proposal */}
-              <div className="border-l-4 border-blue-200 pl-4">
+              <div className="border-l-4 border-slate-300 pl-4">
                 <div className="flex items-center gap-2 mb-2">
-                  <Lightbulb className="h-5 w-5 text-blue-600" />
+                  <Lightbulb className="h-5 w-5 text-slate-700" />
                   <h4 className="font-semibold text-slate-800">提案</h4>
                 </div>
                 <p className="text-slate-600 text-sm leading-relaxed">{project.proposal}</p>

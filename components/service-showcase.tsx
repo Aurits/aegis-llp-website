@@ -21,8 +21,8 @@ export default function ServiceShowcase() {
           <div className="space-y-8">
             <div className="bg-white p-6 shadow-lg hover:shadow-xl transition-shadow border border-slate-100">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Building2 className="h-6 w-6 text-red-600" />
+                <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Building2 className="h-6 w-6 text-emerald-600" />
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-800 text-lg mb-2">施設管理</h3>
@@ -31,19 +31,19 @@ export default function ServiceShowcase() {
                   </p>
                   <div className="grid grid-cols-2 gap-2">
                     <div className="text-sm text-slate-600 flex items-center gap-1">
-                      <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                      <span className="w-2 h-2 bg-emerald-400 rounded-full"></span>
                       <span>建物メンテナンス</span>
                     </div>
                     <div className="text-sm text-slate-600 flex items-center gap-1">
-                      <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                      <span className="w-2 h-2 bg-emerald-400 rounded-full"></span>
                       <span>セキュリティサービス</span>
                     </div>
                     <div className="text-sm text-slate-600 flex items-center gap-1">
-                      <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                      <span className="w-2 h-2 bg-emerald-400 rounded-full"></span>
                       <span>防火サービス</span>
                     </div>
                     <div className="text-sm text-slate-600 flex items-center gap-1">
-                      <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                      <span className="w-2 h-2 bg-emerald-400 rounded-full"></span>
                       <span>設備点検</span>
                     </div>
                   </div>
@@ -53,8 +53,8 @@ export default function ServiceShowcase() {
 
             <div className="bg-white p-6 shadow-lg hover:shadow-xl transition-shadow border border-slate-100">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Scale className="h-6 w-6 text-blue-600" />
+                <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Scale className="h-6 w-6 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-800 text-lg mb-2">料金道路管理</h3>
@@ -63,19 +63,19 @@ export default function ServiceShowcase() {
                   </p>
                   <div className="grid grid-cols-2 gap-2">
                     <div className="text-sm text-slate-600 flex items-center gap-1">
-                      <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                      <span className="w-2 h-2 bg-slate-400 rounded-full"></span>
                       <span>料金徴収</span>
                     </div>
                     <div className="text-sm text-slate-600 flex items-center gap-1">
-                      <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                      <span className="w-2 h-2 bg-slate-400 rounded-full"></span>
                       <span>道路メンテナンス</span>
                     </div>
                     <div className="text-sm text-slate-600 flex items-center gap-1">
-                      <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                      <span className="w-2 h-2 bg-slate-400 rounded-full"></span>
                       <span>交通管理</span>
                     </div>
                     <div className="text-sm text-slate-600 flex items-center gap-1">
-                      <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                      <span className="w-2 h-2 bg-slate-400 rounded-full"></span>
                       <span>システム統合</span>
                     </div>
                   </div>
@@ -179,8 +179,8 @@ export default function ServiceShowcase() {
             {/* Floating badge */}
             <div className="absolute -bottom-8 -left-8 bg-white shadow-xl p-4 z-10">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center">
-                  <Shield className="h-6 w-6 text-slate-700" />
+                <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
+                  <Shield className="h-6 w-6 text-emerald-600" />
                 </div>
                 <div>
                   <p className="font-bold text-slate-800">24時間365日サポート</p>

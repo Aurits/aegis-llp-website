@@ -78,8 +78,8 @@ export default function AboutConcept() {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Users className="h-6 w-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Users className="h-6 w-6 text-slate-600" />
                   </div>
                   <div>
                     <h3 className="font-bold text-slate-800 text-lg mb-2">専門知識</h3>
@@ -90,9 +90,9 @@ export default function AboutConcept() {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
-                      className="h-6 w-6 text-amber-600"
+                      className="h-6 w-6 text-slate-600"
                       viewBox="0 0 24 24"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"

@@ -26,7 +26,7 @@ export default function ContactPage() {
       description: "一般的なお問い合わせとパートナーシップに関する相談",
       contact: "contact@aegisllp.com",
       availability: "24時間以内に回答",
-      color: "blue",
+      color: "emerald",
     },
     {
       icon: MessageSquare,
@@ -34,7 +34,7 @@ export default function ContactPage() {
       description: "デジタル変革のニーズについてのコンサルテーションを予約",
       contact: "projects@aegisllp.com",
       availability: "コンサルテーション可能",
-      color: "purple",
+      color: "slate",
     },
     {
       icon: Calendar,
@@ -42,7 +42,7 @@ export default function ContactPage() {
       description: "政府業務における重要システムのサポート",
       contact: "emergency@aegisllp.com",
       availability: "即座の対応",
-      color: "rose",
+      color: "slate",
     },
   ]
 
@@ -117,16 +117,16 @@ export default function ContactPage() {
 
               {/* Quick Stats */}
               <div className="grid grid-cols-3 gap-4 mb-8">
-                <div className="text-center p-4 bg-white/80 backdrop-blur-sm  shadow-lg">
+                <div className="text-center p-4 bg-white/80 backdrop-blur-sm shadow-lg">
                   <div className="text-2xl font-bold text-emerald-600">24/7</div>
                   <div className="text-sm text-slate-600">サポート</div>
                 </div>
-                <div className="text-center p-4 bg-white/80 backdrop-blur-sm  shadow-lg">
-                  <div className="text-2xl font-bold text-blue-600">25+</div>
+                <div className="text-center p-4 bg-white/80 backdrop-blur-sm shadow-lg">
+                  <div className="text-2xl font-bold text-emerald-600">25+</div>
                   <div className="text-sm text-slate-600">政府パートナー</div>
                 </div>
-                <div className="text-center p-4 bg-white/80 backdrop-blur-sm  shadow-lg">
-                  <div className="text-2xl font-bold text-purple-600">99.9%</div>
+                <div className="text-center p-4 bg-white/80 backdrop-blur-sm shadow-lg">
+                  <div className="text-2xl font-bold text-emerald-600">99.9%</div>
                   <div className="text-sm text-slate-600">稼働率</div>
                 </div>
               </div>
@@ -209,7 +209,7 @@ export default function ContactPage() {
               <div key={index}>
                 <Card className="text-center p-6 shadow-lg hover:shadow-2xl transition-all duration-500 border-0 bg-white/90 backdrop-blur-sm h-full">
                   <div
-                    className={`w-16 h-16 bg-${method.color}-500 rounded-lg flex items-center justify-center mx-auto mb-4 shadow-lg`}
+                    className={`w-16 h-16 bg-emerald-500 rounded-lg flex items-center justify-center mx-auto mb-4 shadow-lg`}
                   >
                     <method.icon className="h-8 w-8 text-white" />
                   </div>
@@ -306,24 +306,24 @@ export default function ContactPage() {
       </section>
 
       {/* Emergency Contact */}
-      <section className="py-20 px-4 bg-rose-600">
+      <section className="py-20 px-4 bg-slate-800">
         <div className="container mx-auto text-center">
           <div>
             <h2 className="text-4xl font-bold text-white mb-6">
               緊急サポート対応可能
             </h2>
-            <p className="text-rose-100 text-xl mb-8 max-w-2xl mx-auto">
+            <p className="text-slate-300 text-xl mb-8 max-w-2xl mx-auto">
               重要なシステムの問題がありますか？緊急対応チームが政府パートナーに24時間365日対応しています。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-rose-600 hover:bg-slate-50 ">
+              <Button size="lg" className="bg-white text-slate-800 hover:bg-slate-50">
                 <Phone className="w-4 h-4 mr-2" />
                 緊急ホットライン
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-rose-600 "
+                className="border-white text-white hover:bg-white hover:text-slate-800"
               >
                 <Mail className="w-4 h-4 mr-2" />
                 緊急メール

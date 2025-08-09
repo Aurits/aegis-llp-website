@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ChevronDown, Menu, Phone, Shield, X, Zap } from "lucide-react"
+import { ChevronDown, Menu, Phone, Shield, X, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
@@ -55,7 +55,7 @@ export default function Header() {
         <div className="container mx-auto">
           <div className="flex items-center justify-between text-sm">
             <div className="flex items-center gap-2">
-              <Zap className="h-4 w-4" />
+              <ArrowRight className="h-4 w-4" />
               <span className="font-medium">24時間365日政府サポート</span>
               <span className="hidden sm:inline text-emerald-200">• 緊急対応 &lt; 15分</span>
             </div>

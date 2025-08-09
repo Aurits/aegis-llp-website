@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import ZigzagProcess from "@/components/zigzag-process"
-import { ArrowRight, Award, Calendar, Layers, Play, Shield, Sparkles, Users, Zap } from "lucide-react"
+import { ArrowRight, CheckCircle, Calendar, Square, Play, Shield, Star, Users, ArrowRight as SpeedIcon } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { useCallback, useEffect, useRef, useState } from "react"
@@ -102,7 +102,7 @@ export default function HomePage() {
             <div>
               <div>
                 <Badge className="mb-8 bg-white/80 backdrop-blur-sm text-emerald-800 hover:bg-white/90 border border-emerald-200/50 shadow-lg">
-                  <Sparkles className="w-4 h-4 mr-2" />
+                  <Star className="w-4 h-4 mr-2" />
                   経済産業省認定 政府パートナー
                 </Badge>
               </div>
@@ -134,7 +134,7 @@ export default function HomePage() {
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
                   {[
                     { icon: Shield, name: "セキュリティ・コンプライアンス" },
-                    { icon: Layers, name: "デジタルインフラ" },
+                    { icon: Square, name: "デジタルインフラ" },
                     { icon: Users, name: "市民エンゲージメント" },
                   ].map((service, index) => (
                     <div
@@ -213,15 +213,15 @@ export default function HomePage() {
                         <div className="text-white/80">メンバー企業</div>
                       </div>
                       <div>
-                        <div className="text-2xl font-bold text-blue-400 mb-1">18+</div>
+                        <div className="text-2xl font-bold text-emerald-400 mb-1">18+</div>
                         <div className="text-white/80">年間の実績</div>
                       </div>
                       <div>
-                        <div className="text-2xl font-bold text-purple-400 mb-1">99.9%</div>
+                        <div className="text-2xl font-bold text-emerald-400 mb-1">99.9%</div>
                         <div className="text-white/80">システム稼働率</div>
                       </div>
                       <div>
-                        <div className="text-2xl font-bold text-amber-400 mb-1">24/7</div>
+                        <div className="text-2xl font-bold text-emerald-400 mb-1">24/7</div>
                         <div className="text-white/80">サポート対応</div>
                       </div>
                     </div>
@@ -243,8 +243,8 @@ export default function HomePage() {
 
                 <div className="absolute -right-12 bottom-20 z-40 rounded-xl bg-white/90 backdrop-blur-md p-4 shadow-lg border border-white/50">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100">
-                      <Users className="h-5 w-5 text-blue-600" />
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100">
+                      <Users className="h-5 w-5 text-emerald-600" />
                     </div>
                     <div className="text-sm">
                       <div className="font-medium text-slate-800">LLP構造</div>
@@ -294,12 +294,12 @@ export default function HomePage() {
             <div className="mb-12 md:mb-16 relative">
               <div className="bg-emerald-600 p-6 md:p-12 text-white relative overflow-hidden">
                 <div className="absolute right-4 md:right-8 top-4 md:top-8 opacity-10 md:opacity-20">
-                  <Zap className="h-16 w-16 md:h-24 md:w-24" />
+                  <SpeedIcon className="h-16 w-16 md:h-24 md:w-24" />
                 </div>
                 <div className="relative z-10 max-w-4xl">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
                     <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-xl md:rounded-2xl flex items-center justify-center flex-shrink-0">
-                      <Zap className="h-6 w-6 md:h-8 md:w-8 text-white" />
+                      <SpeedIcon className="h-6 w-6 md:h-8 md:w-8 text-white" />
                     </div>
                     <div>
                       <h3 className="text-2xl md:text-3xl font-bold mb-2">24時間365日サポート保証</h3>
@@ -327,14 +327,14 @@ export default function HomePage() {
             {/* LLP Structure & Track Record - Side by side */}
             <div className="grid md:grid-cols-2 gap-8">
               {/* LLP Structure */}
-              <div className="bg-white/90 backdrop-blur-sm p-8 shadow-lg border border-blue-100">
+              <div className="bg-white/90 backdrop-blur-sm p-8 shadow-lg border border-emerald-100">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-blue-600 flex items-center justify-center">
+                  <div className="w-16 h-16 bg-emerald-600 flex items-center justify-center">
                     <Users className="h-8 w-8 text-white" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-slate-800 mb-1">LLP構造</h3>
-                    <p className="text-blue-600 font-medium">経済産業省認定パートナーシップ</p>
+                    <p className="text-emerald-600 font-medium">経済産業省認定パートナーシップ</p>
                   </div>
                 </div>
                 <p className="text-slate-600 leading-relaxed mb-6">
@@ -342,19 +342,19 @@ export default function HomePage() {
                 </p>
                 <div className="flex items-center justify-between pt-4 border-t border-slate-200">
                   <span className="text-slate-500">メンバー企業数</span>
-                  <span className="text-2xl font-bold text-blue-600">8+</span>
+                  <span className="text-2xl font-bold text-emerald-600">8+</span>
                 </div>
               </div>
 
               {/* Proven Track Record */}
-              <div className="bg-white/90 backdrop-blur-sm p-8 shadow-lg border border-amber-100">
+              <div className="bg-white/90 backdrop-blur-sm p-8 shadow-lg border border-emerald-100">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-amber-600 flex items-center justify-center">
-                    <Award className="h-8 w-8 text-white" />
+                  <div className="w-16 h-16 bg-emerald-600 flex items-center justify-center">
+                    <CheckCircle className="h-8 w-8 text-white" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-slate-800 mb-1">実績ある経歴</h3>
-                    <p className="text-amber-600 font-medium">2006年以来の政府パートナーシップ</p>
+                    <p className="text-emerald-600 font-medium">2006年以来の政府パートナーシップ</p>
                   </div>
                 </div>
                 <p className="text-slate-600 leading-relaxed mb-6">
@@ -362,7 +362,7 @@ export default function HomePage() {
                 </p>
                 <div className="flex items-center justify-between pt-4 border-t border-slate-200">
                   <span className="text-slate-500">年間の経験</span>
-                  <span className="text-2xl font-bold text-amber-600">18+</span>
+                  <span className="text-2xl font-bold text-emerald-600">18+</span>
                 </div>
               </div>
             </div>
@@ -394,7 +394,7 @@ export default function HomePage() {
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               {[
                 { name: "テックソリューション株式会社", specialty: "クラウドインフラ・DevOps", icon: Shield },
-                { name: "データシステムズ株式会社", specialty: "データ分析・AIソリューション", icon: Layers },
+                { name: "データシステムズ株式会社", specialty: "データ分析・AIソリューション", icon: Square },
                 { name: "セキュリティエキスパーツ株式会社", specialty: "サイバーセキュリティ・コンプライアンス", icon: Shield },
                 { name: "デジタルサービス株式会社", specialty: "市民エンゲージメントプラットフォーム", icon: Users },
               ].map((company, i) => (
@@ -420,15 +420,15 @@ export default function HomePage() {
                   <div className="text-slate-600">専門企業数</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">{counters.teamMembers || 0}+</div>
+                  <div className="text-3xl font-bold text-slate-600 mb-2">{counters.teamMembers || 0}+</div>
                   <div className="text-slate-600">統合チーム</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-purple-600 mb-2">{counters.govProjects || 0}+</div>
+                  <div className="text-3xl font-bold text-slate-600 mb-2">{counters.govProjects || 0}+</div>
                   <div className="text-slate-600">政府プロジェクト</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-amber-600 mb-2">{counters.yearsExp || 0}+</div>
+                  <div className="text-3xl font-bold text-slate-600 mb-2">{counters.yearsExp || 0}+</div>
                   <div className="text-slate-600">統合経験年数</div>
                 </div>
               </div>
@@ -496,17 +496,17 @@ export default function HomePage() {
                 <div className="text-xs text-slate-500 mt-1">銀行レベルセキュリティ</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">99.99%</div>
+                <div className="text-3xl font-bold text-slate-600 mb-2">99.99%</div>
                 <div className="text-slate-600 font-medium">データ整合性</div>
                 <div className="text-xs text-slate-500 mt-1">データ損失ゼロ保証</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-600 mb-2">24/7</div>
+                <div className="text-3xl font-bold text-slate-600 mb-2">24/7</div>
                 <div className="text-slate-600 font-medium">セキュリティ監視</div>
                 <div className="text-xs text-slate-500 mt-1">リアルタイム脅威検出</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-amber-600 mb-2">&lt; 4時間</div>
+                <div className="text-3xl font-bold text-slate-600 mb-2">&lt; 4時間</div>
                 <div className="text-slate-600 font-medium">インシデント対応</div>
                 <div className="text-xs text-slate-500 mt-1">平均解決時間</div>
               </div>
