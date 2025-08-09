@@ -12,16 +12,16 @@ import Image from "next/image"
 export default function BlogPage() {
     const featuredPost = {
         id: 1,
-        title: "The Future of Government Digital Transformation in Japan",
+        title: "日本における政府デジタル変革の未来",
         excerpt:
-            "Exploring how emerging technologies like AI, IoT, and blockchain are reshaping public services and citizen engagement across Japanese municipalities.",
+            "AI、IoT、ブロックチェーンなどの新興技術が日本の自治体全体で公共サービスと市民参加をどのように再構築しているかを探ります。",
         content:
-            "As we move deeper into the digital age, Japanese government agencies are embracing transformative technologies at an unprecedented pace. From AI-powered citizen services to IoT-enabled smart cities, the landscape of public administration is evolving rapidly...",
-        author: "Hiroshi Tanaka, CTO at TechFlow Solutions",
+            "デジタル時代が深化する中、日本の政府機関は前例のないペースで変革的技術を取り入れています。AI駆動の市民サービスからIoT対応のスマートシティまで、行政の風景は急速に進化しています...",
+        author: "田中博、テックフロー・ソリューションズCTO",
         date: "2024-12-18",
-        readTime: "8 min read",
-        category: "Digital Transformation",
-        tags: ["AI", "Government", "Smart Cities", "Innovation"],
+        readTime: "8 分で読む",
+        category: "デジタル変革",
+        tags: ["AI", "政府", "スマートシティ", "イノベーション"],
         image:
             "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2818%29-bmwbVkyWCQIPIRqPQcEdzDBy6lGAYz.jpeg",
         featured: true,
@@ -33,14 +33,14 @@ export default function BlogPage() {
     const blogPosts = [
         {
             id: 2,
-            title: "Building Trust Through Transparent Government APIs",
+            title: "透明な政府APIによる信頼構築",
             excerpt:
-                "How open APIs are fostering transparency and enabling third-party developers to create innovative citizen services.",
-            author: "Yuki Sato, Head of Data Science at DataCore Systems",
+                "オープンAPIがいかに透明性を促進し、サードパーティ開発者が革新的な市民サービスを創造することを可能にしているかを解説します。",
+            author: "佐藤雪、データコア・システムズデータサイエンス責任者",
             date: "2024-12-15",
-            readTime: "6 min read",
-            category: "Technology",
-            tags: ["APIs", "Transparency", "Open Data"],
+            readTime: "6 分で読む",
+            category: "技術",
+            tags: ["API", "透明性", "オープンデータ"],
             image:
                 "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2814%29-twzHcPSG0mo9wN6RUcU9ZtWSoFOhki.jpeg",
             likes: 28,
@@ -48,14 +48,14 @@ export default function BlogPage() {
         },
         {
             id: 3,
-            title: "User Experience Design for Government Services: Lessons Learned",
+            title: "政府サービスのUXデザイン：学んだ教訓",
             excerpt:
-                "Key insights from designing citizen-facing applications that serve diverse demographics and accessibility needs.",
-            author: "Akiko Yamamoto, Creative Director at WebCraft Digital",
+                "多様な人口統計とアクセシビリティのニーズに対応する市民向けアプリケーションの設計から得た重要な洞察。",
+            author: "山本明子、ウェブクラフト・デジタルクリエイティブディレクター",
             date: "2024-12-12",
-            readTime: "5 min read",
-            category: "Design",
-            tags: ["UX Design", "Accessibility", "Citizen Services"],
+            readTime: "5 分で読む",
+            category: "デザイン",
+            tags: ["UXデザイン", "アクセシビリティ", "市民サービス"],
             image:
                 "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2816%29-komzG8C6TWuA5SMZru3RPUc0nQK9ta.jpeg",
             likes: 35,
@@ -63,14 +63,14 @@ export default function BlogPage() {
         },
         {
             id: 4,
-            title: "Mobile-First Government: Why Apps Matter for Citizen Engagement",
+            title: "モバイルファースト政府：市民参加になぜアプリが重要か",
             excerpt:
-                "The growing importance of mobile applications in connecting citizens with government services and emergency response systems.",
-            author: "Kenji Nakamura, Mobile Technology Lead at MobileFirst Tech",
+                "市民を政府サービスや緊急対応システムと結ぶモバイルアプリケーションの重要性の高まりについて。",
+            author: "中村健二、モバイルファーストテック・モバイル技術リード",
             date: "2024-12-10",
-            readTime: "4 min read",
-            category: "Mobile Development",
-            tags: ["Mobile Apps", "Citizen Engagement", "Emergency Response"],
+            readTime: "4 分で読む",
+            category: "モバイル開発",
+            tags: ["モバイルアプリ", "市民参加", "緊急対応"],
             image:
                 "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2813%29-pQA3PhWWkbXNJ4IBnfULBEE9haSWtv.jpeg",
             likes: 31,
@@ -78,14 +78,14 @@ export default function BlogPage() {
         },
         {
             id: 5,
-            title: "Cybersecurity in Government: Protecting Citizen Data in the Digital Age",
+            title: "政府におけるサイバーセキュリティ：デジタル時代の市民データ保護",
             excerpt:
-                "Best practices and emerging threats in government cybersecurity, with focus on protecting sensitive citizen information.",
-            author: "Security Team, Aegis LLP Group",
+                "政府サイバーセキュリティのベストプラクティスと新たな脅威、機密市民情報の保護に焦点を当てます。",
+            author: "セキュリティチーム、イージスLLPグループ",
             date: "2024-12-08",
-            readTime: "7 min read",
-            category: "Security",
-            tags: ["Cybersecurity", "Data Protection", "Privacy"],
+            readTime: "7 分で読む",
+            category: "セキュリティ",
+            tags: ["サイバーセキュリティ", "データ保護", "プライバシー"],
             image:
                 "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%289%29-KyNOAU353e0JaATfjoxAMSPbS5Mh6V.jpeg",
             likes: 45,
@@ -93,14 +93,14 @@ export default function BlogPage() {
         },
         {
             id: 6,
-            title: "The LLP Advantage: How Our Structure Benefits Government Partners",
+            title: "LLPの利点：私たちの構造が政府パートナーにどのように利益をもたらすか",
             excerpt:
-                "Understanding the unique benefits of the Limited Liability Partnership model for delivering comprehensive government solutions.",
-            author: "Executive Team, Aegis LLP Group",
+                "包括的な政府ソリューションの提供における有限責任パートナーシップモデルの独特の利点を理解します。",
+            author: "経営陣、イージスLLPグループ",
             date: "2024-12-05",
-            readTime: "6 min read",
-            category: "Business Insights",
-            tags: ["LLP", "Partnership", "Government Relations"],
+            readTime: "6 分で読む",
+            category: "ビジネス洞察",
+            tags: ["LLP", "パートナーシップ", "政府関係"],
             image:
                 "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%287%29-fcdhf3NWqlr6vKoI0tEMnDdIbG0FUY.jpeg",
             likes: 38,
@@ -108,14 +108,14 @@ export default function BlogPage() {
         },
         {
             id: 7,
-            title: "Sustainable Technology: Green IT Practices in Government",
+            title: "持続可能技術：政府におけるグリーンIT実践",
             excerpt:
-                "How government agencies can reduce their environmental impact through sustainable technology practices and green IT initiatives.",
-            author: "Sustainability Committee, Aegis LLP Group",
+                "政府機関が持続可能な技術実践とグリーンITイニシアティブを通じて環境への影響を削減する方法。",
+            author: "持続可能性委員会、イージスLLPグループ",
             date: "2024-12-03",
-            readTime: "5 min read",
-            category: "Sustainability",
-            tags: ["Green IT", "Sustainability", "Environment"],
+            readTime: "5 分で読む",
+            category: "持続可能性",
+            tags: ["グリーンIT", "持続可能性", "環境"],
             image:
                 "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2812%29-QPTAHO18mqKBVdy0YMVD7OpIez10Da.jpeg",
             likes: 22,
@@ -124,14 +124,14 @@ export default function BlogPage() {
     ]
 
     const categories = [
-        "All Posts",
-        "Digital Transformation",
-        "Technology",
-        "Design",
-        "Mobile Development",
-        "Security",
-        "Business Insights",
-        "Sustainability",
+        "すべての投稿",
+        "デジタル変革",
+        "技術",
+        "デザイン",
+        "モバイル開発",
+        "セキュリティ",
+        "ビジネス洞察",
+        "持続可能性",
     ]
 
     return (
@@ -146,15 +146,14 @@ export default function BlogPage() {
                         <div>
                             <Badge className="mb-6 bg-emerald-100 text-emerald-800 hover:bg-emerald-200">
                                 <MessageSquare className="w-4 h-4 mr-2" />
-                                Insights & Updates
+                                洞察・アップデート
                             </Badge>
                         </div>
                         <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight">
-                            Blog & <span className="text-emerald-600">Updates</span>
+                            ブログ・<span className="text-emerald-600">更新</span>
                         </h1>
                         <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-                            Insights, thoughts, and updates from our team of experts on government technology, digital transformation,
-                            and innovation in public services.
+                            政府技術、デジタル変革、公共サービスのイノベーションに関する専門家チームからの洞察、考察、更新情報。
                         </p>
 
                         {/* Search and Filter */}
@@ -162,13 +161,13 @@ export default function BlogPage() {
                             <div className="relative flex-1">
                                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-5 w-5" />
                                 <Input
-                                    placeholder="Search blog posts..."
-                                    className="pl-10 py-3 rounded-xl border-slate-200 bg-white/80 backdrop-blur-sm"
+                                    placeholder="ブログ投稿を検索..."
+                                    className="pl-10 py-3  border-slate-200 bg-white/80 backdrop-blur-sm"
                                 />
                             </div>
-                            <Button variant="outline" className="px-6 py-3 rounded-xl bg-white/80 backdrop-blur-sm">
+                            <Button variant="outline" className="px-6 py-3  bg-white/80 backdrop-blur-sm">
                                 <Filter className="w-4 h-4 mr-2" />
-                                Filter
+                                フィルター
                             </Button>
                         </div>
                     </div>
@@ -189,7 +188,7 @@ export default function BlogPage() {
                                         className="object-cover"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
-                                    <Badge className="absolute top-4 left-4 bg-emerald-600 text-white">Featured Post</Badge>
+                                    <Badge className="absolute top-4 left-4 bg-emerald-600 text-white">注目投稿</Badge>
 
                                     {/* Engagement metrics */}
                                     <div className="absolute bottom-4 left-4 flex items-center gap-4 text-white text-sm">
@@ -238,7 +237,7 @@ export default function BlogPage() {
                                             <span>{featuredPost.author}</span>
                                         </div>
                                         <Button className="bg-emerald-600 hover:bg-emerald-700">
-                                            Read Full Post <ArrowRight className="ml-2 h-4 w-4" />
+                                            投稿全文を読む <ArrowRight className="ml-2 h-4 w-4" />
                                         </Button>
                                     </div>
                                 </div>
@@ -329,7 +328,7 @@ export default function BlogPage() {
                                                 <span className="truncate">{post.author.split(",")[0]}</span>
                                             </div>
                                             <Button variant="ghost" size="sm" className="text-emerald-600 hover:text-emerald-700 p-0">
-                                                Read More <ArrowRight className="ml-1 h-3 w-3" />
+                                                続きを読む <ArrowRight className="ml-1 h-3 w-3" />
                                             </Button>
                                         </div>
                                     </CardContent>
@@ -340,8 +339,8 @@ export default function BlogPage() {
 
                     {/* Load More */}
                     <div className="text-center mt-12">
-                        <Button variant="outline" size="lg" className="bg-white/80 backdrop-blur-sm hover:bg-white/90 rounded-xl">
-                            Load More Posts
+                        <Button variant="outline" size="lg" className="bg-white/80 backdrop-blur-sm hover:bg-white/90 ">
+                            さらに投稿を読み込む
                         </Button>
                     </div>
                 </div>
@@ -352,18 +351,17 @@ export default function BlogPage() {
                 <div className="container mx-auto text-center">
                     <div>
                         <h2 className="text-4xl font-bold text-white mb-6">
-                            Stay Updated with Our Latest Insights
+                            最新の洞察で常に最新情報を入手
                         </h2>
                         <p className="text-emerald-100 text-xl mb-8 max-w-2xl mx-auto">
-                            Subscribe to our blog for the latest thoughts on government technology, digital transformation, and
-                            innovation in public services.
+                            政府技術、デジタル変革、公共サービスのイノベーションに関する最新の考察をお届けするブログをご購読ください。
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                             <Input
-                                placeholder="Enter your email"
-                                className="flex-1 bg-white/10 border-white/20 text-white placeholder-white/70 rounded-xl"
+                                placeholder="メールアドレスを入力"
+                                className="flex-1 bg-white/10 border-white/20 text-white placeholder-white/70 "
                             />
-                            <Button className="bg-white text-emerald-600 hover:bg-slate-50 rounded-xl">Subscribe</Button>
+                            <Button className="bg-white text-emerald-600 hover:bg-slate-50 ">登録</Button>
                         </div>
                     </div>
                 </div>

@@ -14,58 +14,58 @@ import { notFound } from "next/navigation"
 const companies = {
     "1": {
         id: "1",
-        name: "TechFlow Solutions",
-        tagline: "Digital Infrastructure Excellence",
-        specialization: "Cloud Infrastructure & System Integration",
+        name: "テックフロー・ソリューション",
+        tagline: "デジタルインフラの卓越性",
+        specialization: "クラウドインフラとシステム統合",
         established: "2018",
         employees: "45+",
-        headquarters: "Tokyo, Japan",
+        headquarters: "日本、東京",
         description:
-            "TechFlow Solutions specializes in government-grade digital infrastructure, providing scalable cloud solutions and system integration services for municipal and prefecture-level organizations across Japan.",
+            "テックフロー・ソリューションは政府グレードのデジタルインフラを専門とし、日本全国の自治体や都道府県レベルの組織にスケーラブルなクラウドソリューションとシステム統合サービスを提供しています。",
         mission:
-            "To modernize government operations through cutting-edge cloud infrastructure and seamless system integration, ensuring 24/7 reliability and security compliance.",
+            "最先端のクラウドインフラとシームレスなシステム統合を通じて政府運営を現代化し、24時間365日の信頼性とセキュリティコンプライアンスを保証します。",
         services: [
             {
-                name: "Cloud Migration",
+                name: "クラウド移行",
                 description:
-                    "Comprehensive migration of legacy government systems to modern cloud platforms with zero downtime.",
+                    "レガシー政府システムの最新クラウドプラットフォームへのゼロダウンタイムでの包括的な移行。",
                 technologies: ["AWS", "Azure", "Google Cloud", "Kubernetes"],
             },
             {
-                name: "System Integration",
-                description: "Seamless integration of disparate government systems for unified operations.",
+                name: "システム統合",
+                description: "統一された運用のための分散した政府システムのシームレスな統合。",
                 technologies: ["API Gateway", "Microservices", "Docker", "Terraform"],
             },
             {
-                name: "Infrastructure Monitoring",
-                description: "24/7 monitoring and maintenance of critical government infrastructure.",
+                name: "インフラ監視",
+                description: "重要な政府インフラの24時間365日の監視と保守。",
                 technologies: ["Prometheus", "Grafana", "ELK Stack", "Nagios"],
             },
         ],
         achievements: [
-            "Successfully migrated 15 municipal offices to cloud infrastructure",
-            "Achieved 99.9% uptime across all government clients",
-            "Reduced infrastructure costs by 40% on average",
-            "METI-certified cloud security implementation",
+            "15の市役所のクラウドインフラへの成功した移行",
+            "すべての政府クライアントで99.9%の稼働率を達成",
+            "インフラコストを平均40%削減",
+            "METI認定クラウドセキュリティ実装",
         ],
         projects: [
             {
-                name: "Osaka Prefecture Digital Infrastructure",
-                client: "Osaka Prefecture Government",
+                name: "大阪府デジタルインフラ",
+                client: "大阪府政府",
                 year: "2024",
-                description: "Complete digital infrastructure overhaul serving 2.8M citizens",
+                description: "280万人の市民にサービスを提供する完全なデジタルインフラの見直し",
             },
             {
-                name: "Tokyo Smart City IoT Platform",
-                client: "Tokyo Metropolitan Government",
+                name: "東京スマートシティIoTプラットフォーム",
+                client: "東京都政府",
                 year: "2023",
-                description: "IoT integration platform with 10,000+ sensors",
+                description: "10,000個以上のセンサーを持つIoT統合プラットフォーム",
             },
         ],
         team: {
-            leadership: "Hiroshi Tanaka, Chief Technology Officer",
-            expertise: ["Cloud Architecture", "DevOps", "Security Compliance", "Government Relations"],
-            certifications: ["AWS Solutions Architect", "Azure Expert", "Google Cloud Professional"],
+            leadership: "田中博、最高技術責任者",
+            expertise: ["クラウドアーキテクチャ", "DevOps", "セキュリティコンプライアンス", "政府関係"],
+            certifications: ["AWSソリューションアーキテクト", "Azureエキスパート", "Google Cloudプロフェッショナル"],
         },
         contact: {
             email: "contact@techflow.aegisllp.com",
@@ -77,57 +77,57 @@ const companies = {
     },
     "2": {
         id: "2",
-        name: "DataCore Systems",
-        tagline: "Intelligent Data Solutions",
-        specialization: "Data Analytics & Business Intelligence",
+        name: "データコア・システムズ",
+        tagline: "インテリジェントデータソリューション",
+        specialization: "データ分析とビジネスインテリジェンス",
         established: "2016",
         employees: "38+",
-        headquarters: "Osaka, Japan",
+        headquarters: "日本、大阪",
         description:
-            "DataCore Systems transforms government data into actionable insights, providing advanced analytics and business intelligence solutions that drive informed policy decisions and improve citizen services.",
+            "データコア・システムズは政府データを実行可能な洞察に変換し、情報に基づいた政策決定を促進し、市民サービスを改善する高度な分析とビジネスインテリジェンスソリューションを提供しています。",
         mission:
-            "To empower government agencies with data-driven decision making through advanced analytics, machine learning, and intelligent reporting systems.",
+            "高度な分析、機械学習、インテリジェントレポートシステムを通じて政府機関のデータ駆動意思決定を支援します。",
         services: [
             {
-                name: "Data Analytics Platform",
-                description: "Comprehensive analytics platform for government data processing and insights generation.",
+                name: "データ分析プラットフォーム",
+                description: "政府データ処理と洞察生成のための包括的な分析プラットフォーム。",
                 technologies: ["Apache Spark", "Elasticsearch", "Power BI", "Tableau"],
             },
             {
-                name: "Predictive Analytics",
-                description: "AI-powered predictive models for resource planning and citizen service optimization.",
+                name: "予測分析",
+                description: "リソース計画と市民サービス最適化のためのAI駆動予測モデル。",
                 technologies: ["TensorFlow", "Python", "R", "Machine Learning"],
             },
             {
-                name: "Real-time Dashboards",
-                description: "Interactive dashboards providing real-time insights for government operations.",
+                name: "リアルタイムダッシュボード",
+                description: "政府運営のためのリアルタイム洞察を提供するインタラクティブダッシュボード。",
                 technologies: ["React", "D3.js", "WebSocket", "Redis"],
             },
         ],
         achievements: [
-            "Processed over 100TB of government data annually",
-            "Improved decision-making speed by 60% for client agencies",
-            "Developed 50+ custom analytics solutions",
-            "ISO 27001 certified data security practices",
+            "年間100TB以上の政府データを処理",
+            "クライアント機関の意思決定速度を60%改善",
+            "50個以上のカスタム分析ソリューションを開発",
+            "ISO 27001認定データセキュリティ実践",
         ],
         projects: [
             {
-                name: "Kyoto Healthcare Data Management",
-                client: "Kyoto Prefecture Health Department",
+                name: "京都医療データ管理",
+                client: "京都府保健部",
                 year: "2024",
-                description: "Unified healthcare data system serving 500K patients",
+                description: "50万人の患者にサービスを提供する統一医療データシステム",
             },
             {
-                name: "Municipal Resource Optimization",
-                client: "Nagoya City Government",
+                name: "自治体リソース最適化",
+                client: "名古屋市政府",
                 year: "2023",
-                description: "AI-powered resource allocation system",
+                description: "AI駆動リソース配置システム",
             },
         ],
         team: {
-            leadership: "Yuki Sato, Head of Data Science",
-            expertise: ["Data Science", "Machine Learning", "Business Intelligence", "Statistical Analysis"],
-            certifications: ["Microsoft Data Analyst", "Google Data Engineer", "AWS Machine Learning"],
+            leadership: "佐藤雪、データサイエンス責任者",
+            expertise: ["データサイエンス", "機械学習", "ビジネスインテリジェンス", "統計分析"],
+            certifications: ["Microsoftデータアナリスト", "Googleデータエンジニア", "AWS機械学習"],
         },
         contact: {
             email: "contact@datacore.aegisllp.com",
@@ -139,57 +139,57 @@ const companies = {
     },
     "3": {
         id: "3",
-        name: "WebCraft Digital",
-        tagline: "Citizen-Centered Design",
-        specialization: "Web Development & User Experience",
+        name: "ウェブクラフト・デジタル",
+        tagline: "市民中心のデザイン",
+        specialization: "ウェブ開発とユーザーエクスペリエンス",
         established: "2019",
         employees: "32+",
-        headquarters: "Kyoto, Japan",
+        headquarters: "日本、京都",
         description:
-            "WebCraft Digital creates intuitive, accessible web applications that bridge the gap between government services and citizens, focusing on user experience and digital accessibility.",
+            "ウェブクラフト・デジタルは、政府サービスと市民の間のギャップを埋める直感的でアクセシブルなウェブアプリケーションを作成し、ユーザーエクスペリエンスとデジタルアクセシビリティに焦点を当てています。",
         mission:
-            "To design and develop user-friendly digital interfaces that make government services accessible to all citizens, regardless of age or technical ability.",
+            "年齢や技術的能力に関係なく、すべての市民が政府サービスにアクセスできるユーザーフレンドリーなデジタルインターフェースを設計・開発します。",
         services: [
             {
-                name: "Government Web Portals",
-                description: "Comprehensive web portals for municipal services with focus on accessibility and usability.",
+                name: "政府ウェブポータル",
+                description: "アクセシビリティと使いやすさに焦点を当てた自治体サービスの包括的なウェブポータル。",
                 technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
             },
             {
-                name: "Citizen Service Applications",
-                description: "Digital applications that streamline citizen interactions with government services.",
+                name: "市民サービスアプリケーション",
+                description: "市民と政府サービスのやり取りを簡素化するデジタルアプリケーション。",
                 technologies: ["Progressive Web Apps", "Node.js", "GraphQL", "MongoDB"],
             },
             {
-                name: "Accessibility Compliance",
-                description: "Ensuring all digital services meet WCAG 2.1 AA standards for accessibility.",
+                name: "アクセシビリティコンプライアンス",
+                description: "すべてのデジタルサービスがWCAG 2.1 AAアクセシビリティ基準を満たすことを保証。",
                 technologies: ["ARIA", "Screen Reader Testing", "Color Contrast Tools", "Keyboard Navigation"],
             },
         ],
         achievements: [
-            "Achieved 95% citizen satisfaction scores across projects",
-            "WCAG 2.1 AA compliance on all delivered applications",
-            "Reduced service completion time by 70% on average",
-            "Designed interfaces used by 5M+ citizens annually",
+            "すべてのプロジェクトで95%の市民満足度を達成",
+            "すべての納入アプリケーションでWCAG 2.1 AA遵守",
+            "サービス完了時間を平均70%短縮",
+            "年間500万人以上の市民が使用するインターフェースを設計",
         ],
         projects: [
             {
-                name: "Nagoya Digital Services Platform",
-                client: "Nagoya City Government",
+                name: "名古屋デジタルサービスプラットフォーム",
+                client: "名古屋市政府",
                 year: "2024",
-                description: "Comprehensive digital services platform for 2.3M citizens",
+                description: "230万人の市民のための包括的デジタルサービスプラットフォーム",
             },
             {
-                name: "Citizen Engagement Portal",
-                client: "Multiple Municipalities",
+                name: "市民参加ポータル",
+                client: "複数の自治体",
                 year: "2023",
-                description: "Unified citizen engagement platform",
+                description: "統一市民参加プラットフォーム",
             },
         ],
         team: {
-            leadership: "Akiko Yamamoto, Creative Director",
-            expertise: ["UX/UI Design", "Frontend Development", "Accessibility", "User Research"],
-            certifications: ["Google UX Design", "Adobe Certified Expert", "IAAP Accessibility"],
+            leadership: "山本明子、クリエイティブディレクター",
+            expertise: ["UX/UIデザイン", "フロントエンド開発", "アクセシビリティ", "ユーザーリサーチ"],
+            certifications: ["Google UXデザイン", "Adobe認定エキスパート", "IAAPアクセシビリティ"],
         },
         contact: {
             email: "contact@webcraft.aegisllp.com",
@@ -201,57 +201,57 @@ const companies = {
     },
     "4": {
         id: "4",
-        name: "MobileFirst Tech",
-        tagline: "Mobile Innovation for Government",
-        specialization: "Mobile Development & Citizen Apps",
+        name: "モバイルファースト・テック",
+        tagline: "政府向けモバイルイノベーション",
+        specialization: "モバイル開発と市民アプリ",
         established: "2020",
         employees: "28+",
-        headquarters: "Hiroshima, Japan",
+        headquarters: "日本、広島",
         description:
-            "MobileFirst Tech develops cutting-edge mobile applications that bring government services directly to citizens' smartphones, focusing on security, performance, and user engagement.",
+            "モバイルファースト・テックは、政府サービスを市民のスマートフォンに直接届ける最先端のモバイルアプリケーションを開発し、セキュリティ、パフォーマンス、ユーザーエンゲージメントに焦点を当てています。",
         mission:
-            "To revolutionize citizen-government interaction through innovative mobile solutions that are secure, accessible, and user-friendly.",
+            "安全でアクセシブル、ユーザーフレンドリーな革新的モバイルソリューションを通じて市民と政府のやり取りを革命的に変えます。",
         services: [
             {
-                name: "Citizen Mobile Apps",
-                description: "Native and cross-platform mobile applications for government services and citizen engagement.",
+                name: "市民モバイルアプリ",
+                description: "政府サービスと市民参加のためのネイティブおよびクロスプラットフォームモバイルアプリケーション。",
                 technologies: ["React Native", "Flutter", "Swift", "Kotlin"],
             },
             {
-                name: "Emergency Response Systems",
-                description: "Real-time emergency alert and response systems for mobile devices.",
+                name: "緊急対応システム",
+                description: "モバイルデバイス向けのリアルタイム緊急アラートおよび対応システム。",
                 technologies: ["Push Notifications", "GPS Integration", "Real-time Messaging", "Offline Capability"],
             },
             {
-                name: "Digital Identity Solutions",
-                description: "Secure mobile identity verification and authentication systems.",
+                name: "デジタルアイデンティティソリューション",
+                description: "安全なモバイル本人確認および認証システム。",
                 technologies: ["Biometric Authentication", "Blockchain", "OAuth 2.0", "Multi-factor Authentication"],
             },
         ],
         achievements: [
-            "Developed apps used by 3M+ citizens across Japan",
-            "Achieved 4.8/5 average app store ratings",
-            "Zero security breaches across all mobile applications",
-            "Winner of Japan Mobile App Excellence Award 2023",
+            "日本全国で300万人以上の市民が使用するアプリを開発",
+            "アプリストア平均評価4.8/5を達成",
+            "すべてのモバイルアプリケーションでセキュリティ侵害ゼロ",
+            "2023年日本モバイルアプリ優秀賞受賞",
         ],
         projects: [
             {
-                name: "Hiroshima Emergency Response App",
-                client: "Hiroshima Prefecture",
+                name: "広島緊急対応アプリ",
+                client: "広島県",
                 year: "2024",
-                description: "AI-powered emergency response system protecting 2.8M citizens",
+                description: "280万人の市民を守るAI駆動緊急対応システム",
             },
             {
-                name: "Tokyo Citizen Services App",
-                client: "Tokyo Metropolitan Government",
+                name: "東京市民サービスアプリ",
+                client: "東京都政府",
                 year: "2023",
-                description: "Comprehensive citizen services mobile platform",
+                description: "包括的市民サービスモバイルプラットフォーム",
             },
         ],
         team: {
-            leadership: "Kenji Nakamura, Mobile Technology Lead",
-            expertise: ["Mobile Development", "Security", "User Experience", "Performance Optimization"],
-            certifications: ["Apple Developer", "Google Play Console", "React Native Certified"],
+            leadership: "中村健二、モバイル技術リード",
+            expertise: ["モバイル開発", "セキュリティ", "ユーザーエクスペリエンス", "パフォーマンス最適化"],
+            certifications: ["Appleデベロッパー", "Google Playコンソール", "React Native認定"],
         },
         contact: {
             email: "contact@mobilefirst.aegisllp.com",
@@ -282,39 +282,39 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
                         <div className="mb-8">
                             <Link href="/companies" className="inline-flex items-center text-emerald-600 hover:text-emerald-700 mb-4">
                                 <ArrowLeft className="w-4 h-4 mr-2" />
-                                Back to All Companies
+                                すべての企業に戻る
                             </Link>
                         </div>
 
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
                             <div>
-                                <Badge className="mb-6 bg-emerald-100 text-emerald-800">Member Company</Badge>
+                                <Badge className="mb-6 bg-emerald-100 text-emerald-800">メンバー企業</Badge>
                                 <h1 className="text-5xl font-bold text-slate-800 mb-4">{company.name}</h1>
                                 <p className="text-2xl text-emerald-600 mb-6">{company.tagline}</p>
                                 <p className="text-xl text-slate-600 mb-8 leading-relaxed">{company.description}</p>
 
                                 <div className="grid grid-cols-2 gap-6 mb-8">
                                     <div>
-                                        <div className="text-sm font-medium text-slate-500 mb-1">Established</div>
+                                        <div className="text-sm font-medium text-slate-500 mb-1">設立年</div>
                                         <div className="text-lg font-semibold text-slate-800">{company.established}</div>
                                     </div>
                                     <div>
-                                        <div className="text-sm font-medium text-slate-500 mb-1">Team Size</div>
+                                        <div className="text-sm font-medium text-slate-500 mb-1">チーム規模</div>
                                         <div className="text-lg font-semibold text-slate-800">{company.employees}</div>
                                     </div>
                                     <div>
-                                        <div className="text-sm font-medium text-slate-500 mb-1">Headquarters</div>
+                                        <div className="text-sm font-medium text-slate-500 mb-1">本社</div>
                                         <div className="text-lg font-semibold text-slate-800">{company.headquarters}</div>
                                     </div>
                                     <div>
-                                        <div className="text-sm font-medium text-slate-500 mb-1">Specialization</div>
+                                        <div className="text-sm font-medium text-slate-500 mb-1">専門分野</div>
                                         <div className="text-lg font-semibold text-slate-800">{company.specialization}</div>
                                     </div>
                                 </div>
                             </div>
 
                             <div>
-                                <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                                <div className="relative  overflow-hidden shadow-2xl">
                                     <Image
                                         src={company.image || "/placeholder.svg"}
                                         alt={company.name}
@@ -339,7 +339,7 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
                 <div className="container mx-auto">
                     <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-3xl font-bold text-slate-800 mb-6">
-                            Our Mission
+                            私たちのミッション
                         </h2>
                         <p className="text-xl text-slate-600 leading-relaxed">
                             {company.mission}
@@ -353,10 +353,10 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
                 <div className="container mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-slate-800 mb-4">
-                            Our Services
+                            私たちのサービス
                         </h2>
                         <p className="text-slate-600 max-w-2xl mx-auto">
-                            Specialized solutions designed for government and municipal organizations
+                            政府機関や自治体向けに設計された専門的ソリューション
                         </p>
                     </div>
 
@@ -370,7 +370,7 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
                                     </CardHeader>
                                     <CardContent>
                                         <div className="space-y-2">
-                                            <div className="text-sm font-medium text-slate-700">Technologies:</div>
+                                            <div className="text-sm font-medium text-slate-700">技術:</div>
                                             <div className="flex flex-wrap gap-1">
                                                 {service.technologies.map((tech, i) => (
                                                     <Badge key={i} variant="outline" className="text-xs">
@@ -392,17 +392,17 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
                 <div className="container mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-slate-800 mb-4">
-                            Key Achievements
+                            主な実績
                         </h2>
                         <p className="text-slate-600 max-w-2xl mx-auto">
-                            Measurable results and recognition in government technology solutions
+                            政府技術ソリューションにおける測定可能な結果と認知
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-6">
                         {company.achievements.map((achievement, index) => (
                             <div key={index}>
-                                <div className="flex items-start gap-3 p-6 bg-white rounded-xl shadow-md">
+                                <div className="flex items-start gap-3 p-6 bg-white  shadow-md">
                                     <Award className="h-6 w-6 text-emerald-600 flex-shrink-0 mt-1" />
                                     <p className="text-slate-700">{achievement}</p>
                                 </div>
@@ -417,10 +417,10 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
                 <div className="container mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-slate-800 mb-4">
-                            Recent Projects
+                            最近のプロジェクト
                         </h2>
                         <p className="text-slate-600 max-w-2xl mx-auto">
-                            Highlighting our latest successful implementations
+                            最新の成功した実装をハイライト
                         </p>
                     </div>
 
@@ -454,14 +454,14 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
                 <div className="container mx-auto">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-slate-800 mb-8 text-center">
-                            Team & Expertise
+                            チームと専門知識
                         </h2>
 
                         <div className="grid md:grid-cols-2 gap-8">
                             <div>
                                 <Card className="border-0 shadow-md bg-white/90 backdrop-blur-sm">
                                     <CardHeader>
-                                        <CardTitle className="text-slate-800">Leadership</CardTitle>
+                                        <CardTitle className="text-slate-800">リーダーシップ</CardTitle>
                                     </CardHeader>
                                     <CardContent>
                                         <div className="flex items-center gap-3 mb-4">
@@ -469,7 +469,7 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
                                             <span className="font-medium text-slate-800">{company.team.leadership}</span>
                                         </div>
                                         <div className="space-y-2">
-                                            <div className="text-sm font-medium text-slate-700">Core Expertise:</div>
+                                            <div className="text-sm font-medium text-slate-700">中核専門知識:</div>
                                             <div className="flex flex-wrap gap-1">
                                                 {company.team.expertise.map((skill, i) => (
                                                     <Badge key={i} variant="outline" className="text-xs">
@@ -485,7 +485,7 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
                             <div>
                                 <Card className="border-0 shadow-md bg-white/90 backdrop-blur-sm">
                                     <CardHeader>
-                                        <CardTitle className="text-slate-800">Certifications</CardTitle>
+                                        <CardTitle className="text-slate-800">認定資格</CardTitle>
                                     </CardHeader>
                                     <CardContent>
                                         <div className="space-y-3">
@@ -509,7 +509,7 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
                 <div className="container mx-auto">
                     <div className="max-w-2xl mx-auto text-center">
                         <h2 className="text-3xl font-bold text-slate-800 mb-8">
-                            Get in Touch
+                            お問い合わせ
                         </h2>
 
                         <div>
@@ -536,7 +536,7 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                             >
-                                                Company Website <ExternalLink className="h-4 w-4 inline ml-1" />
+                                                企業ウェブサイト <ExternalLink className="h-4 w-4 inline ml-1" />
                                             </a>
                                         </div>
                                         <div className="flex items-center justify-center gap-3">
@@ -547,7 +547,7 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
 
                                     <div className="mt-8 pt-6 border-t border-slate-200">
                                         <Button className="w-full bg-emerald-600 hover:bg-emerald-700">
-                                            <Link href="/contact">Contact Through Aegis LLP</Link>
+                                            <Link href="/contact">イージスLLP経由でお問い合わせ</Link>
                                         </Button>
                                     </div>
                                 </CardContent>
@@ -563,10 +563,10 @@ export default function CompanyDetailPage({ params }: { params: { id: string } }
                     <div className="flex justify-between items-center">
                         <Link href="/companies" className="inline-flex items-center text-emerald-600 hover:text-emerald-700">
                             <ArrowLeft className="w-4 h-4 mr-2" />
-                            All Companies
+                            すべての企業
                         </Link>
                         <Link href="/projects" className="inline-flex items-center text-emerald-600 hover:text-emerald-700">
-                            View Our Projects
+                            私たちのプロジェクトを見る
                             <ArrowRight className="w-4 h-4 ml-2" />
                         </Link>
                     </div>

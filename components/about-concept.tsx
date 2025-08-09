@@ -24,7 +24,7 @@ export default function AboutConcept() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Image with overlay */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative overflow-hidden shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/50 to-transparent z-10" />
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%289%29-KyNOAU353e0JaATfjoxAMSPbS5Mh6V.jpeg"
@@ -35,10 +35,9 @@ export default function AboutConcept() {
               />
 
               <div className="absolute inset-0 z-20 p-8 flex flex-col justify-end">
-                <h3 className="text-white text-3xl font-bold mb-4">CONCEPT</h3>
+                <h3 className="text-white text-3xl font-bold mb-4">コンセプト</h3>
                 <p className="text-white/90 text-lg max-w-md">
-                  Protecting society through excellence in public services. Our mission is to transform and elevate
-                  government operations.
+                  公共サービスの卓越性を通じて社会を守る。私たちの使命は政府業務を変革し、向上させることです。
                 </p>
               </div>
             </div>
@@ -50,8 +49,8 @@ export default function AboutConcept() {
                   <Shield className="h-6 w-6 text-emerald-600" />
                 </div>
                 <div>
-                  <p className="font-bold text-slate-800">Since 2006</p>
-                  <p className="text-sm text-slate-600">METI Certified</p>
+                  <p className="font-bold text-slate-800">2006年以来</p>
+                  <p className="text-sm text-slate-600">経済産業省認定</p>
                 </div>
               </div>
             </div>
@@ -59,12 +58,10 @@ export default function AboutConcept() {
 
           {/* Right side - Content */}
           <div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-100">
-              <h2 className="text-3xl font-bold text-slate-800 mb-6">Our Core Philosophy</h2>
+            <div className="bg-white p-8 shadow-lg border border-slate-100">
+              <h2 className="text-3xl font-bold text-slate-800 mb-6">私たちの中核哲学</h2>
               <p className="text-lg text-slate-600 mb-8">
-                At Aegis LLP Group, we believe that public services should be delivered with the highest standards of
-                professionalism, efficiency, and integrity. Our unique LLP structure combines specialized expertise to
-                provide comprehensive solutions for government agencies.
+                イージスLLPグループでは、公共サービスは最高水準の専門性、効率性、そして誠実性をもって提供されるべきだと信じています。私たちの独特なLLP構造は、専門知識を組み合わせて政府機関に包括的なソリューションを提供します。
               </p>
 
               <div className="space-y-6">
@@ -73,10 +70,9 @@ export default function AboutConcept() {
                     <Scale className="h-6 w-6 text-emerald-600" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-800 text-lg mb-2">Public Service Excellence</h3>
+                    <h3 className="font-bold text-slate-800 text-lg mb-2">公共サービスの卓越性</h3>
                     <p className="text-slate-600">
-                      We serve as agents of public service, ensuring fairness, transparency, and continuity in all
-                      government operations.
+                      私たちは公共サービスの代理人として、すべての政府業務において公平性、透明性、継続性を確保します。
                     </p>
                   </div>
                 </div>
@@ -86,10 +82,9 @@ export default function AboutConcept() {
                     <Users className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-800 text-lg mb-2">Specialized Expertise</h3>
+                    <h3 className="font-bold text-slate-800 text-lg mb-2">専門知識</h3>
                     <p className="text-slate-600">
-                      Our member companies bring specialized knowledge and skills to deliver high-quality services
-                      across various sectors.
+                      メンバー企業は、さまざまな分野で高品質なサービスを提供するための専門知識と技術を持ち寄っています。
                     </p>
                   </div>
                 </div>
@@ -119,10 +114,9 @@ export default function AboutConcept() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-800 text-lg mb-2">Operational Efficiency</h3>
+                    <h3 className="font-bold text-slate-800 text-lg mb-2">業務効率</h3>
                     <p className="text-slate-600">
-                      We optimize processes and systems to deliver cost-effective solutions without compromising on
-                      quality.
+                      品質を損なうことなく、コスト効果の高いソリューションを提供するためにプロセスとシステムを最適化します。
                     </p>
                   </div>
                 </div>

@@ -24,170 +24,170 @@ export default function CareersPage() {
   const jobOpenings = [
     {
       id: 1,
-      title: "Senior Government Solutions Architect",
-      department: "TechFlow Solutions",
-      location: "Tokyo, Japan",
-      type: "Full-time",
-      level: "Senior",
+      title: "シニア政府ソリューションアーキテクト",
+      department: "テックフローソリューション",
+      location: "東京都",
+      type: "正社員",
+      level: "シニア",
       description:
-        "Lead the design and implementation of digital infrastructure solutions for government agencies. Work directly with municipal partners to transform public services.",
+        "政府機関向けデジタルインフラソリューションの設計・実装をリードします。自治体パートナーと直接連携し、公共サービスの変革に取り組みます。",
       requirements: [
-        "5+ years in enterprise architecture",
-        "Government sector experience",
-        "Cloud platforms expertise",
-        "Japanese business proficiency",
+        "エンタープライズアーキテクチャでの5年以上の経験",
+        "政府部門での業務経験",
+        "クラウドプラットフォームの専門知識",
+        "日本語ビジネスレベル",
       ],
-      benefits: ["Competitive salary", "Government project exposure", "Professional development", "Health insurance"],
+      benefits: ["競争力のある給与", "政府プロジェクトへの参画", "専門能力開発", "健康保険"],
     },
     {
       id: 2,
-      title: "Data Analytics Specialist",
-      department: "DataCore Systems",
-      location: "Osaka, Japan",
-      type: "Full-time",
-      level: "Mid-level",
+      title: "データ分析スペシャリスト",
+      department: "データコアシステムズ",
+      location: "大阪府",
+      type: "正社員",
+      level: "中級",
       description:
-        "Develop analytics solutions for municipal data platforms. Create insights that drive policy decisions and improve citizen services.",
+        "自治体データプラットフォーム向けの分析ソリューションを開発します。政策決定を促進し、市民サービスを向上させるインサイトを創出します。",
       requirements: [
-        "3+ years in data analytics",
-        "Python/R proficiency",
-        "Public sector understanding",
-        "Statistical modeling experience",
+        "データ分析での3年以上の経験",
+        "Python/Rの習熟",
+        "公共部門の理解",
+        "統計モデリングの経験",
       ],
-      benefits: ["Flexible working", "Training budget", "Impact-driven work", "Team collaboration"],
+      benefits: ["柔軟な働き方", "研修予算", "社会貢献性の高い仕事", "チーム連携"],
     },
     {
       id: 3,
-      title: "UX/UI Designer - Public Services",
-      department: "WebCraft Digital",
-      location: "Remote/Hybrid",
-      type: "Full-time",
-      level: "Mid-level",
+      title: "UX/UIデザイナー - 公共サービス",
+      department: "ウェブクラフト・デジタル",
+      location: "リモート/ハイブリッド",
+      type: "正社員",
+      level: "ミドルレベル",
       description:
-        "Design intuitive interfaces for citizen-facing government applications. Focus on accessibility and user experience for diverse demographics.",
+        "市民向け政府アプリケーションの直感的なインターフェースをデザインします。多様な人口統計のアクセシビリティとユーザーエクスペリエンスに焦点を当てます。",
       requirements: [
-        "4+ years UX/UI design",
-        "Accessibility standards knowledge",
-        "Government app experience",
-        "Design system expertise",
+        "UX/UIデザインで4年以上",
+        "アクセシビリティ標準の知識",
+        "政府アプリ経験",
+        "デザインシステムの専門知識",
       ],
-      benefits: ["Remote flexibility", "Creative freedom", "User impact", "Design conferences"],
+      benefits: ["リモート柔軟性", "クリエイティブな自由", "ユーザーへの影響", "デザインカンファレンス"],
     },
     {
       id: 4,
-      title: "Mobile Development Engineer",
-      department: "MobileFirst Tech",
-      location: "Kyoto, Japan",
-      type: "Full-time",
-      level: "Senior",
+      title: "モバイル開発エンジニア",
+      department: "モバイルファースト・テック",
+      location: "日本、京都",
+      type: "正社員",
+      level: "シニア",
       description:
-        "Build mobile applications that connect citizens with government services. Develop cross-platform solutions with focus on security and performance.",
+        "市民と政府サービスを結ぶモバイルアプリケーションを構築します。セキュリティとパフォーマンスに焦点を当てたクロスプラットフォームソリューションを開発します。",
       requirements: [
         "React Native/Flutter",
-        "5+ years mobile development",
-        "Security best practices",
-        "Government compliance knowledge",
+        "モバイル開発5年以上",
+        "セキュリティベストプラクティス",
+        "政府コンプライアンス知識",
       ],
-      benefits: ["Technical growth", "Innovation time", "Conference attendance", "Mentorship opportunities"],
+      benefits: ["技術的成長", "イノベーション時間", "カンファレンス参加", "メンタリングの機会"],
     },
     {
       id: 5,
-      title: "Project Manager - Digital Transformation",
-      department: "Aegis LLP Group",
-      location: "Mie Prefecture",
-      type: "Full-time",
-      level: "Senior",
+      title: "プロジェクトマネージャー - デジタル変革",
+      department: "イージスLLPグループ",
+      location: "三重県",
+      type: "正社員",
+      level: "シニア",
       description:
-        "Manage large-scale digital transformation projects for government clients. Coordinate across multiple member companies and stakeholder groups.",
+        "政府クライアント向けの大規模デジタル変革プロジェクトを管理します。複数のメンバー企業とステークホルダーグループ間で調整します。",
       requirements: [
-        "PMP certification preferred",
-        "Government project experience",
-        "Stakeholder management",
-        "Agile methodologies",
+        "PMP認定資格優遇",
+        "政府プロジェクト経験",
+        "ステークホルダー管理",
+        "アジャイル手法",
       ],
-      benefits: ["Leadership development", "Cross-company exposure", "Strategic involvement", "Executive mentoring"],
+      benefits: ["リーダーシップ開発", "クロスカンパニー経験", "戦略的関与", "経営メンタリング"],
     },
     {
       id: 6,
-      title: "Cybersecurity Analyst",
-      department: "Security Division",
-      location: "Tokyo, Japan",
-      type: "Full-time",
-      level: "Mid-level",
+      title: "サイバーセキュリティアナリスト",
+      department: "セキュリティ部門",
+      location: "日本、東京",
+      type: "正社員",
+      level: "ミドルレベル",
       description:
-        "Ensure security compliance for government systems. Conduct security assessments and implement protection measures for sensitive public data.",
+        "政府システムのセキュリティコンプライアンスを保証します。セキュリティ評価を実施し、機密な公共データの保護対策を実装します。",
       requirements: [
-        "Security certifications",
-        "Government security standards",
-        "Incident response experience",
-        "Risk assessment skills",
+        "セキュリティ認定資格",
+        "政府セキュリティ標準",
+        "インシデント対応経験",
+        "リスク評価スキル",
       ],
-      benefits: ["Security training", "Certification support", "Critical infrastructure work", "Expert mentorship"],
+      benefits: ["セキュリティ研修", "認定資格サポート", "重要インフラ業務", "エキスパートメンタリング"],
     },
   ]
 
   const benefits = [
     {
       icon: Heart,
-      title: "Meaningful Work",
-      description: "Contribute to projects that directly improve citizens' lives and government efficiency",
+      title: "意味のある仕事",
+      description: "市民の生活と政府の効率を直接改善するプロジェクトに貢献します",
       color: "emerald",
     },
     {
       icon: TrendingUp,
-      title: "Career Growth",
-      description: "Advance your career with exposure to cutting-edge government technology projects",
+      title: "キャリア成長",
+      description: "最先端の政府技術プロジェクトへの関与でキャリアを発展させます",
       color: "blue",
     },
     {
       icon: Users,
-      title: "Collaborative Culture",
-      description: "Work across multiple specialized companies within our unique LLP structure",
+      title: "協力的文化",
+      description: "独特のLLP構造内の複数の専門会社で連携します",
       color: "purple",
     },
     {
       icon: GraduationCap,
-      title: "Continuous Learning",
-      description: "Access to training, certifications, and professional development opportunities",
+      title: "継続的学習",
+      description: "研修、認定資格、専門能力開発の機会へのアクセス",
       color: "amber",
     },
     {
       icon: Shield,
-      title: "Job Security",
-      description: "Stable employment with government contracts and long-term partnerships",
+      title: "雇用保障",
+      description: "政府契約と長期パートナーシップによる安定した雇用",
       color: "rose",
     },
     {
       icon: Award,
-      title: "Recognition",
-      description: "Be part of award-winning projects recognized by METI and industry leaders",
+      title: "表彰",
+      description: "METIや業界リーダーに認められた受賞プロジェクトの一員になります",
       color: "indigo",
     },
   ]
 
   const companyValues = [
     {
-      title: "Public Service Excellence",
-      description: "We serve as agents of public service, ensuring fairness and transparency in all operations.",
+      title: "公共サービスの卓越性",
+      description: "私たちは公共サービスの代理人として、すべての運用において公平性と透明性を保証します。",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2813%29-pQA3PhWWkbXNJ4IBnfULBEE9haSWtv.jpeg",
     },
     {
-      title: "User-Focused Innovation",
-      description: "We relentlessly pursue service excellence from the citizen's perspective.",
+      title: "ユーザー焦点のイノベーション",
+      description: "私たちは市民の視点からサービスの卓越性をたゆまなく追求します。",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2814%29-twzHcPSG0mo9wN6RUcU9ZtWSoFOhki.jpeg",
     },
     {
-      title: "Meaningful Work Environment",
-      description: "We foster a workplace where team members experience growth and fulfillment.",
+      title: "意味のある作業環境",
+      description: "私たちはチームメンバーが成長と充実感を経験できる職場を育成します。",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2816%29-komzG8C6TWuA5SMZru3RPUc0nQK9ta.jpeg",
     },
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-emerald-50/30">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-emerald-50/30 font-japanese">
       <Header />
 
       {/* Hero Section */}
@@ -199,29 +199,28 @@ export default function CareersPage() {
               <div>
                 <Badge className="mb-6 bg-emerald-100 text-emerald-800 hover:bg-emerald-200">
                   <Briefcase className="w-4 h-4 mr-2" />
-                  Join Our Mission
+                  私たちのミッションに参加
                 </Badge>
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight">
-                Build the Future of
-                <span className="text-emerald-600 block">Public Service</span>
+              <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight mobile-horizontal">
+                未来の
+                <span className="text-emerald-600 block">公共サービスを構築</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                Join Aegis LLP Group and be part of transforming government services for millions of citizens. Work on
-                meaningful projects that make a real difference in society.
+                イージス有限責任事業組合に参加し、数百万人の市民のための政府サービス変革の一員になりましょう。社会に真の変化をもたらす意義あるプロジェクトに取り組みます。
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 rounded-xl">
-                  View Open Positions <ArrowRight className="ml-2 h-5 w-5" />
+                <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 ">
+                  求人情報を見る <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button variant="outline" size="lg" className="rounded-xl bg-white/80 backdrop-blur-sm">
-                  Learn About Our Culture
+                <Button variant="outline" size="lg" className=" bg-white/80 backdrop-blur-sm">
+                  企業文化について
                 </Button>
               </div>
             </div>
 
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative  overflow-hidden shadow-2xl">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%287%29-fcdhf3NWqlr6vKoI0tEMnDdIbG0FUY.jpeg"
                   alt="Aegis LLP Group Team"
@@ -231,23 +230,23 @@ export default function CareersPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-2">Join Our Team</h3>
+                  <h3 className="text-2xl font-bold mb-2">私たちのチームに参加</h3>
                   <p className="text-white/90">8 specialized companies, one unified mission</p>
                 </div>
               </div>
 
               {/* Floating stats */}
-              <div className="absolute -top-8 -right-8 bg-white rounded-xl shadow-xl p-4 z-10">
+              <div className="absolute -top-8 -right-8 bg-white  shadow-xl p-4 z-10">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-emerald-600">200+</div>
-                  <div className="text-sm text-slate-600">Team Members</div>
+                  <div className="text-sm text-slate-600">チームメンバー</div>
                 </div>
               </div>
 
-              <div className="absolute -bottom-8 -left-8 bg-white rounded-xl shadow-xl p-4 z-10">
+              <div className="absolute -bottom-8 -left-8 bg-white  shadow-xl p-4 z-10">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-blue-600">18+</div>
-                  <div className="text-sm text-slate-600">Years Experience</div>
+                  <div className="text-sm text-slate-600">年間経験</div>
                 </div>
               </div>
             </div>
@@ -260,10 +259,10 @@ export default function CareersPage() {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-800 mb-6">
-              Our Values & Culture
+              私たちの価値観と文化
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              At Aegis LLP Group, we believe in creating meaningful work that serves the public good
+              イージスLLPグループでは、公共の利益に貢献する意義ある仕事の創造を信念としています
             </p>
           </div>
 
@@ -291,10 +290,10 @@ export default function CareersPage() {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-800 mb-6">
-              Why Work With Us?
+              なぜ私たちと一緒に働くのですか？
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Discover the benefits of joining Japan's leading government technology partnership
+              日本をリードする政府技術パートナーシップに参加する利点をご発見ください
             </p>
           </div>
 
@@ -303,7 +302,7 @@ export default function CareersPage() {
               <div key={index}>
                 <Card className="text-center p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border-0 bg-white/90 backdrop-blur-sm">
                   <div
-                    className={`w-16 h-16 bg-gradient-to-br from-${benefit.color}-400 to-${benefit.color}-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg`}
+                    className={`w-16 h-16 bg-gradient-to-br from-${benefit.color}-400 to-${benefit.color}-600  flex items-center justify-center mx-auto mb-6 shadow-lg`}
                   >
                     <benefit.icon className="h-8 w-8 text-white" />
                   </div>
@@ -321,10 +320,10 @@ export default function CareersPage() {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-800 mb-6">
-              Current Opportunities
+              現在の求人
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Join our team and help shape the future of government technology in Japan
+              私たちのチームに参加し、日本の政府技術の未来を形作るお手伝いをしてください
             </p>
           </div>
 
@@ -361,7 +360,7 @@ export default function CareersPage() {
                       </div>
 
                       <div className="text-center lg:text-right">
-                        <Button className="bg-emerald-600 hover:bg-emerald-700 rounded-xl">
+                        <Button className="bg-emerald-600 hover:bg-emerald-700 ">
                           Apply Now <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
                       </div>
@@ -379,22 +378,21 @@ export default function CareersPage() {
         <div className="container mx-auto text-center">
           <div>
             <h2 className="text-4xl font-bold text-white mb-6">
-              Ready to Make a Difference?
+              変化をもたらす準備はできていますか？
             </h2>
             <p className="text-emerald-100 text-xl mb-8 max-w-2xl mx-auto">
-              Join Aegis LLP Group and be part of Japan's digital transformation journey. Your skills can help improve
-              millions of lives.
+              イージスLLPグループに参加し、日本のデジタル変革の旅の一員になりましょう。あなたのスキルが数百万人の生活を改善するお手伝いができます。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-emerald-600 hover:bg-slate-50 rounded-xl">
-                Browse All Positions
+              <Button size="lg" className="bg-white text-emerald-600 hover:bg-slate-50 ">
+                すべてのポジションを見る
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-emerald-600 rounded-xl"
+                className="border-white text-white hover:bg-white hover:text-emerald-600 "
               >
-                Contact HR Team
+                人事チームに連絡
               </Button>
             </div>
           </div>

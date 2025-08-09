@@ -117,3 +117,77 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
+
+/* Japanese Vertical Text Utilities */
+.text-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.text-vertical-upright {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.text-vertical-lr {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+.text-horizontal {
+  writing-mode: horizontal-tb;
+  text-orientation: mixed;
+}
+
+/* Responsive vertical text for Japanese */
+@media (min-width: 768px) {
+  .md\:text-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  
+  .md\:text-vertical-upright {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  
+  .lg\:text-vertical-upright {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+}
+
+/* Japanese font optimization */
+.font-japanese {
+  font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic', 'Meiryo', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+}
+
+/* Vertical text container adjustments */
+.vertical-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: fit-content;
+}
+
+.vertical-text-spacing {
+  margin: 0 1rem;
+}
+
+/* Mobile friendly vertical text */
+@media (max-width: 767px) {
+  .mobile-horizontal {
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+  }
+}

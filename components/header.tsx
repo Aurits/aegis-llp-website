@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ChevronDown, Menu, Shield, X } from "lucide-react"
+import { ChevronDown, Menu, Phone, Shield, X, Zap } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
@@ -21,37 +21,63 @@ export default function Header() {
   }, [])
 
   const navItems = [
-    { href: "/about", label: "About LLP" },
+    { href: "/about", label: "LLPについて" },
     {
       href: "/companies",
-      label: "Companies",
+      label: "企業一覧",
       dropdown: [
-        { href: "/companies", label: "All Companies" },
-        { href: "/companies/1", label: "TechFlow Solutions" },
-        { href: "/companies/2", label: "DataCore Systems" },
-        { href: "/companies/3", label: "WebCraft Digital" },
-        { href: "/companies/4", label: "MobileFirst Tech" },
+        { href: "/companies", label: "全企業" },
+        { href: "/companies/1", label: "テックフローソリューション" },
+        { href: "/companies/2", label: "データコアシステム" },
+        { href: "/companies/3", label: "ウェブクラフトデジタル" },
+        { href: "/companies/4", label: "モバイルファーストテック" },
       ],
     },
-    { href: "/projects", label: "Projects" },
-    { href: "/technology", label: "Technology & DX" },
+    { href: "/projects", label: "プロジェクト" },
+    { href: "/technology", label: "技術・DX" },
     {
       href: "/news",
-      label: "Updates",
+      label: "最新情報",
       dropdown: [
-        { href: "/news", label: "Latest News" },
-        { href: "/blog", label: "Blog & Updates" },
+        { href: "/news", label: "最新ニュース" },
+        { href: "/blog", label: "ブログ・更新情報" },
       ],
     },
-    { href: "/careers", label: "Careers" },
+    { href: "/careers", label: "採用情報" },
   ]
 
   const isActive = (href: string) => pathname === href
 
   return (
     <>
+      {/* 24/7 Support Banner */}
+      <div className="fixed top-0 left-0 right-0 z-50 bg-emerald-600 text-white py-2 px-4">
+        <div className="container mx-auto">
+          <div className="flex items-center justify-between text-sm">
+            <div className="flex items-center gap-2">
+              <Zap className="h-4 w-4" />
+              <span className="font-medium">24時間365日政府サポート</span>
+              <span className="hidden sm:inline text-emerald-200">• 緊急対応 &lt; 15分</span>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="hidden md:flex items-center gap-2">
+                <Phone className="h-4 w-4" />
+                <span className="font-medium">緊急時: +81-3-1234-5678</span>
+              </div>
+              <Button
+                size="sm" 
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-emerald-600 text-xs py-1 px-3"
+              >
+                サポートに連絡
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        className={`fixed top-10 left-0 right-0 z-40 transition-all duration-300 ${isScrolled
             ? "bg-white/90 backdrop-blur-xl border-b border-white/20 shadow-lg shadow-black/5"
             : "bg-transparent"
           }`}
@@ -67,9 +93,9 @@ export default function Header() {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-2xl font-bold text-slate-800 group-hover:text-emerald-600 transition-colors font-sans">
-                    Aegis LLP
+                    イージス LLP
                   </span>
-                  <span className="text-xs text-slate-500 -mt-1 font-medium">Digital Excellence</span>
+                  <span className="text-xs text-slate-500 -mt-1 font-medium">デジタル革新</span>
                 </div>
               </Link>
             </div>
@@ -124,7 +150,7 @@ export default function Header() {
                   className="ml-4 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 font-sans"
                 >
                   <Link href="/contact">
-                    <span className="relative z-10">Contact Us</span>
+                    <span className="relative z-10">お問い合わせ</span>
                   </Link>
                 </Button>
               </div>
@@ -172,7 +198,7 @@ export default function Header() {
                   className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 font-sans"
                 >
                   <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                    Contact Us
+                    お問い合わせ
                   </Link>
                 </Button>
               </div>
@@ -182,7 +208,7 @@ export default function Header() {
       </nav>
 
       {/* Spacer to prevent content from hiding behind fixed header */}
-      <div className="h-20" />
+      <div className="h-28" />
     </>
   )
 }

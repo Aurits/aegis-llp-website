@@ -27,133 +27,133 @@ import Link from "next/link"
 export default function TechnologyPage() {
   const technologies = [
     {
-      category: "Cloud Infrastructure",
+      category: "クラウドインフラ",
       icon: Cloud,
       color: "emerald",
-      description: "Scalable, secure cloud solutions for government operations",
+      description: "政府運用のためのスケーラブルで安全なクラウドソリューション",
       technologies: ["AWS", "Azure", "Google Cloud", "Kubernetes", "Docker", "Terraform"],
-      useCases: ["Data Migration", "Disaster Recovery", "Auto-scaling", "Multi-region Deployment"],
-      projects: ["Osaka Prefecture Migration", "Tokyo Smart City Platform"],
-      certifications: ["AWS Solutions Architect", "Azure Expert", "Google Cloud Professional"],
+      useCases: ["データ移行", "災害復旧", "自動スケーリング", "マルチリージョン展開"],
+      projects: ["大阪府移行", "東京スマートシティプラットフォーム"],
+      certifications: ["AWSソリューションアーキテクト", "Azureエキスパート", "Google Cloudプロフェッショナル"],
     },
     {
-      category: "Data Analytics & AI",
+      category: "データ分析とAI",
       icon: Database,
       color: "blue",
-      description: "Advanced analytics and AI solutions for government insights",
+      description: "政府の洞察のための高度な分析とAIソリューション",
       technologies: ["Apache Spark", "Elasticsearch", "Power BI", "TensorFlow", "Python", "R"],
-      useCases: ["Predictive Analytics", "Real-time Dashboards", "Citizen Behavior Analysis", "Resource Optimization"],
-      projects: ["Kyoto Healthcare Analytics", "Hiroshima Emergency Prediction"],
-      certifications: ["Microsoft Data Analyst", "Google Data Engineer", "AWS Machine Learning"],
+      useCases: ["予測分析", "リアルタイムダッシュボード", "市民行動分析", "リソース最適化"],
+      projects: ["京都医療分析", "広島緊急事態予測"],
+      certifications: ["Microsoftデータアナリスト", "Googleデータエンジニア", "AWS機械学習"],
     },
     {
-      category: "Mobile Development",
+      category: "モバイル開発",
       icon: Smartphone,
       color: "purple",
-      description: "Cross-platform mobile solutions for citizen engagement",
+      description: "市民参加のためのクロスプラットフォームモバイルソリューション",
       technologies: ["React Native", "Flutter", "Swift", "Kotlin", "Progressive Web Apps", "Ionic"],
-      useCases: ["Citizen Portals", "Emergency Alerts", "Service Applications", "Digital ID Systems"],
-      projects: ["Nagoya Citizen App", "Tokyo Emergency Response"],
-      certifications: ["Apple Developer", "Google Play Console", "React Native Certified"],
+      useCases: ["市民ポータル", "緊急アラート", "サービスアプリケーション", "デジタルIDシステム"],
+      projects: ["名古屋市民アプリ", "東京緊急対応"],
+      certifications: ["Appleデベロッパー", "Google Playコンソール", "React Native認定"],
     },
     {
-      category: "Web Technologies",
+      category: "ウェブ技術",
       icon: Globe,
       color: "amber",
-      description: "Modern web applications with responsive design",
+      description: "レスポンシブデザインの最新ウェブアプリケーション",
       technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "GraphQL"],
-      useCases: ["Government Portals", "Admin Dashboards", "Public Websites", "Internal Tools"],
-      projects: ["Osaka Digital Services", "Kyoto Health Portal"],
-      certifications: ["React Developer", "Node.js Certified", "TypeScript Expert"],
+      useCases: ["政府ポータル", "管理ダッシュボード", "公共ウェブサイト", "内部ツール"],
+      projects: ["大阪デジタルサービス", "京都健康ポータル"],
+      certifications: ["Reactデベロッパー", "Node.js認定", "TypeScriptエキスパート"],
     },
     {
-      category: "Cybersecurity",
+      category: "サイバーセキュリティ",
       icon: Lock,
       color: "rose",
-      description: "Enterprise-grade security for sensitive government data",
+      description: "機密な政府データのためのエンタープライズグレードセキュリティ",
       technologies: ["OAuth 2.0", "SAML", "Zero Trust", "Encryption", "VPN", "SIEM"],
-      useCases: ["Identity Management", "Data Protection", "Audit Trails", "Compliance Monitoring"],
-      projects: ["Government Security Framework", "Multi-Agency SSO"],
-      certifications: ["CISSP", "CISM", "ISO 27001 Lead Auditor"],
+      useCases: ["アイデンティティ管理", "データ保護", "監査記録", "コンプライアンス監視"],
+      projects: ["政府セキュリティフレームワーク", "マルチ機関SSO"],
+      certifications: ["CISSP", "CISM", "ISO 27001主审査員"],
     },
     {
-      category: "IoT & Edge Computing",
+      category: "IoTとエッジコンピューティング",
       icon: Cpu,
       color: "indigo",
-      description: "Connected devices and edge processing for smart cities",
+      description: "スマートシティのための接続デバイスとエッジ処理",
       technologies: ["Azure IoT", "AWS IoT Core", "Edge Computing", "5G", "LoRaWAN", "MQTT"],
-      useCases: ["Smart Traffic", "Environmental Monitoring", "Asset Tracking", "Predictive Maintenance"],
-      projects: ["Tokyo IoT Platform", "Smart City Sensors"],
-      certifications: ["IoT Solutions Architect", "Edge Computing Specialist"],
+      useCases: ["スマート交通", "環境監視", "資産追跡", "予知保守"],
+      projects: ["東京IoTプラットフォーム", "スマートシティセンサー"],
+      certifications: ["IoTソリューションアーキテクト", "エッジコンピューティングスペシャリスト"],
     },
   ]
 
   const dxCases = [
     {
-      title: "AI-Powered Document Processing",
-      challenge: "Manual processing of 100,000+ government documents monthly causing delays",
-      solution: "Implemented OCR and NLP systems with automated workflow routing",
-      outcome: "85% reduction in processing time, 95% accuracy improvement, ¥500M annual savings",
-      technologies: ["Computer Vision", "Natural Language Processing", "Workflow Automation"],
+      title: "AI駆動文書処理",
+      challenge: "月間100,000件以上の政府文書の手作業処理が遅延を引き起こしていた",
+      solution: "OCRとNLPシステムを自動ワークフロールーティングと共に実装",
+      outcome: "処理時間の85%短縮、精度の95%向上、年間5億円の節約",
+      technologies: ["コンピュータビジョン", "自然言語処理", "ワークフロー自動化"],
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2814%29-twzHcPSG0mo9wN6RUcU9ZtWSoFOhki.jpeg",
-      client: "Osaka Prefecture",
+      client: "大阪府",
     },
     {
-      title: "Real-time Citizen service Platform",
-      challenge: "Citizens experienced 3+ hour wait times for municipal services",
-      solution: "Built unified digital platform with queue management and real-time updates",
-      outcome: "Wait times reduced to 15 minutes, 90% digital adoption, 70% satisfaction increase",
-      technologies: ["Real-time Systems", "Queue Management", "Mobile Integration"],
+      title: "リアルタイム市民サービスプラットフォーム",
+      challenge: "市民は自治体サービスでの3時間以上の待ち時間を経験していた",
+      solution: "キュー管理とリアルタイム更新を備えた統一デジタルプラットフォームを構築",
+      outcome: "待ち時間を15分に短縮、90%のデジタル採用、70%の満足度向上",
+      technologies: ["リアルタイムシステム", "キュー管理", "モバイル統合"],
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2816%29-komzG8C6TWuA5SMZru3RPUc0nQK9ta.jpeg",
-      client: "Nagoya City",
+      client: "名古屋市",
     },
     {
-      title: "Predictive Emergency Response",
-      challenge: "Emergency services needed better resource allocation and response prediction",
-      solution: "Developed AI system analyzing weather, traffic, and historical data",
-      outcome: "40% faster response times, 60% better resource utilization, lives saved",
-      technologies: ["Machine Learning", "Predictive Analytics", "Real-time Data"],
+      title: "予測緊急対応",
+      challenge: "緊急サービスはより良いリソース配分と対応予測が必要でした",
+      solution: "天気、交通、過去データを分析するAIシステムを開発",
+      outcome: "対応時間の40%短縮、60%のリソース利用效率向上、命の救助",
+      technologies: ["機械学習", "予測分析", "リアルタイムデータ"],
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%289%29-KyNOAU353e0JaATfjoxAMSPbS5Mh6V.jpeg",
-      client: "Hiroshima Prefecture",
+      client: "広島県",
     },
   ]
 
   const innovationAreas = [
     {
       icon: Cpu,
-      title: "Quantum Computing",
-      description: "Exploring quantum algorithms for complex government optimization problems",
-      status: "Research Phase",
+      title: "量子コンピューティング",
+      description: "複雑な政府最適化問題のための量子アルゴリズムの探索",
+      status: "研究段階",
       timeline: "2025-2027",
     },
     {
       icon: Shield,
-      title: "Blockchain Governance",
-      description: "Transparent, immutable record-keeping for government transactions",
-      status: "Pilot Testing",
+      title: "ブロックチェーンガバナンス",
+      description: "政府取引のための透明で不変な記録保持",
+      status: "パイロットテスト",
       timeline: "2024-2025",
     },
     {
       icon: TrendingUp,
-      title: "Digital Twin Cities",
-      description: "Virtual city models for urban planning and disaster simulation",
-      status: "Development",
+      title: "デジタルツインシティ",
+      description: "都市計画と災害シミュレーションのための仮想都市モデル",
+      status: "開発中",
       timeline: "2024-2026",
     },
     {
       icon: Zap,
-      title: "5G Smart Infrastructure",
-      description: "Ultra-low latency networks for real-time city management",
-      status: "Implementation",
+      title: "5Gスマートインフラ",
+      description: "リアルタイム都市管理のための超低遅延ネットワーク",
+      status: "実装中",
       timeline: "2024-2025",
     },
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-emerald-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-emerald-50 font-japanese">
       <Header />
 
       {/* Hero Section */}
@@ -164,15 +164,14 @@ export default function TechnologyPage() {
             <div>
               <Badge className="mb-6 bg-emerald-100 text-emerald-800 hover:bg-emerald-200">
                 <Code className="w-4 h-4 mr-2" />
-                Cutting-Edge Technology Stack
+                最先端技術スタック
               </Badge>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight">
-              Technology &<span className="text-emerald-600 block">Digital Transformation</span>
+            <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight mobile-horizontal">
+              技術と<span className="text-emerald-600 block">デジタル変革</span>
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Discover our comprehensive technology capabilities and successful digital transformation initiatives that
-              drive innovation in government and municipal services.
+              政府および自治体サービスにおける革新を推進する私たちの包括的な技術能力と成功したデジタル変革イニシアティブをご発見ください。
             </p>
 
             {/* Search and Filter */}
@@ -180,13 +179,13 @@ export default function TechnologyPage() {
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-5 w-5" />
                 <Input
-                  placeholder="Search technologies..."
-                  className="pl-10 py-3 rounded-xl border-slate-200 bg-white/80 backdrop-blur-sm"
+                  placeholder="技術を検索..."
+                  className="pl-10 py-3  border-slate-200 bg-white/80 backdrop-blur-sm"
                 />
               </div>
-              <Button variant="outline" className="px-6 py-3 rounded-xl bg-white/80 backdrop-blur-sm">
+              <Button variant="outline" className="px-6 py-3  bg-white/80 backdrop-blur-sm">
                 <Filter className="w-4 h-4 mr-2" />
-                Filter
+                フィルター
               </Button>
             </div>
           </div>
@@ -198,10 +197,10 @@ export default function TechnologyPage() {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-800 mb-4">
-              Our Technology Stack
+              私たちの技術スタック
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Modern technologies and frameworks powering our digital solutions
+              デジタルソリューションを支える現代的な技術とフレームワーク
             </p>
           </div>
 
@@ -211,7 +210,7 @@ export default function TechnologyPage() {
                 <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/90 backdrop-blur-sm h-full">
                   <CardHeader>
                     <div
-                      className={`w-16 h-16 bg-gradient-to-br from-${tech.color}-400 to-${tech.color}-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg`}
+                      className={`w-16 h-16 bg-gradient-to-br from-${tech.color}-400 to-${tech.color}-600  flex items-center justify-center mb-4 shadow-lg`}
                     >
                       <tech.icon className="h-8 w-8 text-white" />
                     </div>
@@ -221,7 +220,7 @@ export default function TechnologyPage() {
                   <CardContent>
                     <div className="space-y-4">
                       <div>
-                        <h4 className="font-semibold text-slate-800 mb-2 text-sm">Technologies</h4>
+                        <h4 className="font-semibold text-slate-800 mb-2 text-sm">技術</h4>
                         <div className="flex flex-wrap gap-1">
                           {tech.technologies.map((t, i) => (
                             <Badge key={i} variant="outline" className="text-xs bg-white/80">
@@ -231,7 +230,7 @@ export default function TechnologyPage() {
                         </div>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-slate-800 mb-2 text-sm">Recent Projects</h4>
+                        <h4 className="font-semibold text-slate-800 mb-2 text-sm">最近のプロジェクト</h4>
                         <ul className="space-y-1">
                           {tech.projects.slice(0, 2).map((project, i) => (
                             <li key={i} className="flex items-center gap-2 text-sm text-slate-600">
@@ -242,7 +241,7 @@ export default function TechnologyPage() {
                         </ul>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-slate-800 mb-2 text-sm">Certifications</h4>
+                        <h4 className="font-semibold text-slate-800 mb-2 text-sm">認定</h4>
                         <div className="flex flex-wrap gap-1">
                           {tech.certifications.slice(0, 2).map((cert, i) => (
                             <Badge key={i} variant="secondary" className="text-xs">
@@ -265,10 +264,10 @@ export default function TechnologyPage() {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-800 mb-4">
-              Digital Transformation Success Stories
+              デジタル変革の成功事例
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Real-world examples of how we've modernized government operations
+              政府業務を近代化した実際の例
             </p>
           </div>
 
@@ -299,7 +298,7 @@ export default function TechnologyPage() {
                             <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
                               <span className="text-red-600 font-bold text-sm">01</span>
                             </div>
-                            <h4 className="font-bold text-slate-800">Challenge</h4>
+                            <h4 className="font-bold text-slate-800">課題</h4>
                           </div>
                           <p className="text-slate-600 leading-relaxed">{dxCase.challenge}</p>
                         </div>
@@ -310,7 +309,7 @@ export default function TechnologyPage() {
                             <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
                               <span className="text-blue-600 font-bold text-sm">02</span>
                             </div>
-                            <h4 className="font-bold text-slate-800">Solution</h4>
+                            <h4 className="font-bold text-slate-800">解決策</h4>
                           </div>
                           <p className="text-slate-600 leading-relaxed">{dxCase.solution}</p>
                         </div>
@@ -321,7 +320,7 @@ export default function TechnologyPage() {
                             <div className="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center">
                               <span className="text-emerald-600 font-bold text-sm">03</span>
                             </div>
-                            <h4 className="font-bold text-slate-800">Outcome</h4>
+                            <h4 className="font-bold text-slate-800">結果</h4>
                           </div>
                           <p className="text-slate-600 leading-relaxed">{dxCase.outcome}</p>
                         </div>
@@ -352,10 +351,10 @@ export default function TechnologyPage() {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-800 mb-4">
-              Innovation & Future Technologies
+              革新と未来技術
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Staying ahead with emerging technologies and innovative approaches
+              新しい技術と革新的アプローチで先行し続ける
             </p>
           </div>
 
@@ -365,7 +364,7 @@ export default function TechnologyPage() {
                 <Card className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md text-center bg-white/90 backdrop-blur-sm h-full">
                   <CardContent className="p-6">
                     <div
-                      className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform"
+                      className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-emerald-200  mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform"
                     >
                       <item.icon className="h-8 w-8 text-emerald-600" />
                     </div>
@@ -390,22 +389,21 @@ export default function TechnologyPage() {
         <div className="container mx-auto text-center">
           <div>
             <h2 className="text-4xl font-bold text-white mb-6">
-              Ready to Modernize Your Operations?
+              業務を近代化する準備はできていますか？
             </h2>
             <p className="text-emerald-100 text-xl mb-8 max-w-2xl mx-auto">
-              Let our technology experts help you navigate your digital transformation journey with cutting-edge
-              solutions.
+              私たちの技術専門家が、最先端のソリューションであなたのデジタル変革の旅をナビゲートします。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-emerald-600 hover:bg-slate-50 text-lg px-8 py-4 rounded-xl">
-                <Link href="/contact">Discuss Your Project</Link>
+              <Button size="lg" className="bg-white text-emerald-600 hover:bg-slate-50 text-lg px-8 py-4 ">
+                <Link href="/contact">プロジェクトを相談</Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-8 py-4 rounded-xl"
+                className="border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-8 py-4 "
               >
-                <Link href="/projects">View Case Studies</Link>
+                <Link href="/projects">ケーススタディを見る</Link>
               </Button>
             </div>
           </div>

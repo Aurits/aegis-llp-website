@@ -4,17 +4,17 @@ import { Calendar, CheckCircle } from "lucide-react"
 
 export default function CompanyTimeline() {
   const timelineEvents = [
-    { year: "2006", event: "Aegis Group established", highlight: true },
-    { year: "2006", event: "Aegis Group Limited Liability Partnership formed" },
-    { year: "2008", event: "Aegis Inc. joined (Partnership business)" },
-    { year: "2010", event: "NSK Inc. joined (Facility management)" },
-    { year: "2010", event: "NDK Inc. joined (Toll road fee collection & maintenance)" },
-    { year: "2011", event: "NDK Kyushu Inc. joined" },
-    { year: "2012", event: "Nippon Rotex Inc. joined (Fire prevention & inspection)" },
-    { year: "2013", event: "Central Highway Inc. joined" },
-    { year: "2016", event: "Participated in Aichi toll road concession", highlight: true },
-    { year: "2018", event: "Established comprehensive toll road management system", highlight: true },
-    { year: "2020", event: "Mytown Service Inc. joined" },
+    { year: "2006", event: "イージスグループ設立", highlight: true },
+    { year: "2006", event: "イージスグループ有限責任事業組合結成" },
+    { year: "2008", event: "イージス株式会社参加（パートナーシップ事業）" },
+    { year: "2010", event: "NSK株式会社参加（施設管理）" },
+    { year: "2010", event: "NDK株式会社参加（料金徴収・メンテナンス）" },
+    { year: "2011", event: "NDK九州株式会社参加" },
+    { year: "2012", event: "日本ロテックス株式会社参加（防火・点検）" },
+    { year: "2013", event: "セントラルハイウェイ株式会社参加" },
+    { year: "2016", event: "愛知県料金道路コンセッション参加", highlight: true },
+    { year: "2018", event: "包括的料金道路管理システム積立", highlight: true },
+    { year: "2020", event: "マイタウンサービス株式会社参加" },
   ]
 
   return (
@@ -23,10 +23,9 @@ export default function CompanyTimeline() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Our Growth Journey</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">私たちの成長の歩み</h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            Since our establishment in 2006, Aegis LLP Group has continuously expanded our capabilities through
-            strategic partnerships and company integrations.
+            2006年の設立以来、イージスLLPグループは戦略的パートナーシップと企業統合を通じて継続的に能力を拡大してきました。
           </p>
         </div>
 
@@ -47,7 +46,7 @@ export default function CompanyTimeline() {
                 {/* Content */}
                 <div className="ml-10 md:ml-0 md:w-1/2 md:px-8">
                   <div
-                    className={`p-6 rounded-xl shadow-lg ${event.highlight ? "bg-gradient-to-br from-emerald-50 to-emerald-100/50" : "bg-white"} border border-slate-100`}
+                    className={`p-6 shadow-lg ${event.highlight ? "bg-gradient-to-br from-emerald-50 to-emerald-100/50" : "bg-white"} border border-slate-100`}
                   >
                     <div className="flex items-center gap-2 mb-3">
                       <Calendar className={`h-5 w-5 ${event.highlight ? "text-emerald-600" : "text-slate-500"}`} />
@@ -56,7 +55,7 @@ export default function CompanyTimeline() {
                       </span>
                       {event.highlight && (
                         <span className="ml-auto inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">
-                          <CheckCircle className="w-3 h-3 mr-1" /> Key Milestone
+                          <CheckCircle className="w-3 h-3 mr-1" /> 主要マイルストーン
                         </span>
                       )}
                     </div>
@@ -72,8 +71,8 @@ export default function CompanyTimeline() {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-block px-6 py-3 rounded-xl bg-emerald-50 text-emerald-700 font-medium">
-            Continuing our mission of excellence in public service
+          <div className="inline-block px-6 py-3 bg-emerald-50 text-emerald-700 font-medium">
+            公共サービスにおける卓越性への使命を継続
           </div>
         </div>
       </div>

@@ -12,15 +12,15 @@ import Image from "next/image"
 export default function NewsPage() {
   const featuredNews = {
     id: 1,
-    title: "Aegis LLP Group Awarded Major Digital Infrastructure Contract for Osaka Prefecture",
+    title: "イージスLLPグループ、大阪府の大規模デジタルインフラ契約を受注",
     excerpt:
-      "Our consortium has been selected to lead the digital transformation initiative for Osaka Prefecture's municipal services, representing our largest government partnership to date.",
+      "私たちのコンソーシアムが大阪府の自治体サービスのデジタル変革イニシアティブを主導することに選出され、これまでで最大の政府パートナーシップとなります。",
     content:
-      "This landmark contract will see Aegis LLP Group implementing a comprehensive digital infrastructure overhaul across 15 municipal offices, affecting over 2.8 million citizens...",
-    author: "Aegis Communications Team",
+      "この画期的な契約により、イージスLLPグループは15の市役所にわたって包括的なデジタルインフラの見直しを実施し、280万人以上の市民に影響を与えます...",
+    author: "イージス広報チーム",
     date: "2024-12-15",
-    readTime: "5 min read",
-    category: "Major Announcements",
+    readTime: "5 分で読む",
+    category: "重要発表",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2818%29-bmwbVkyWCQIPIRqPQcEdzDBy6lGAYz.jpeg",
     featured: true,
@@ -29,74 +29,74 @@ export default function NewsPage() {
   const newsArticles = [
     {
       id: 2,
-      title: "New Partnership with Tokyo Metropolitan Government for Smart City Initiative",
+      title: "東京都とのスマートシティイニシアティブのための新しいパートナーシップ",
       excerpt:
-        "Aegis LLP Group joins forces with Tokyo Metro to implement IoT solutions across the capital's infrastructure network.",
-      author: "Strategic Partnerships Team",
+        "イージスLLPグループが東京都と提携し、首都のインフラネットワーク全体にIoTソリューションを実装します。",
+      author: "戦略的パートナーシップチーム",
       date: "2024-12-10",
-      readTime: "3 min read",
-      category: "Partnerships",
+      readTime: "3 分で読む",
+      category: "パートナーシップ",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2814%29-twzHcPSG0mo9wN6RUcU9ZtWSoFOhki.jpeg",
     },
     {
       id: 3,
-      title: "Successful Completion of Kyoto Digital Transformation Project",
+      title: "京都デジタル変革プロジェクトの成功完了",
       excerpt:
-        "Our 18-month digital overhaul of Kyoto's municipal services has resulted in 60% efficiency improvements and enhanced citizen satisfaction.",
-      author: "Project Management Office",
+        "京都の自治体サービスの18か月間のデジタル見直しにより、60%の効率改善と市民満足度の向上を実現しました。",
+      author: "プロジェクト管理室",
       date: "2024-12-08",
-      readTime: "4 min read",
-      category: "Project Updates",
+      readTime: "4 分で読む",
+      category: "プロジェクト更新",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2816%29-komzG8C6TWuA5SMZru3RPUc0nQK9ta.jpeg",
     },
     {
       id: 4,
-      title: "Aegis LLP Group Expands Member Company Portfolio",
+      title: "イージスLLPグループがメンバー会社ポートフォリオを拡大",
       excerpt:
-        "We welcome two new specialized companies to our LLP structure, enhancing our capabilities in AI and cybersecurity.",
-      author: "Corporate Development",
+        "私たちのLLP構造に2つの新しい専門会社を迎え、AIとサイバーセキュリティの能力を強化します。",
+      author: "企業開発部",
       date: "2024-12-05",
-      readTime: "2 min read",
-      category: "Company News",
+      readTime: "2 分で読む",
+      category: "会社ニュース",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2813%29-pQA3PhWWkbXNJ4IBnfULBEE9haSWtv.jpeg",
     },
     {
       id: 5,
-      title: "Industry Recognition: METI Excellence Award for Public Service Innovation",
+      title: "業界認定：公共サービス革新に対するMETI優秀賞",
       excerpt:
-        "Aegis LLP Group receives prestigious recognition from Japan's Ministry of Economy, Trade and Industry for outstanding contributions to public sector digitalization.",
-      author: "Awards Committee",
+        "イージスLLPグループが、公共部門のデジタル化への卓越した貢献により、経済産業省から権威ある認定を受けました。",
+      author: "表彰委員会",
       date: "2024-12-01",
-      readTime: "3 min read",
-      category: "Awards & Recognition",
+      readTime: "3 分で読む",
+      category: "受賞・認定",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%289%29-KyNOAU353e0JaATfjoxAMSPbS5Mh6V.jpeg",
     },
     {
       id: 6,
-      title: "Quarterly Report: Q4 2024 Performance Highlights",
+      title: "四半期報告書：2024年第4四半期業績ハイライト",
       excerpt:
-        "Strong growth in government partnerships and successful project deliveries mark an exceptional quarter for Aegis LLP Group.",
-      author: "Executive Team",
+        "政府パートナーシップの強力な成長と成功したプロジェクト提供により、イージスLLPグループにとって例外的な四半期となりました。",
+      author: "経営陣",
       date: "2024-11-28",
-      readTime: "6 min read",
-      category: "Financial Reports",
+      readTime: "6 分で読む",
+      category: "財務報告",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%287%29-fcdhf3NWqlr6vKoI0tEMnDdIbG0FUY.jpeg",
     },
   ]
 
   const categories = [
-    "All News",
-    "Major Announcements",
-    "Project Updates",
-    "Partnerships",
-    "Company News",
-    "Awards & Recognition",
-    "Financial Reports",
+    "すべてのニュース",
+    "重要発表",
+    "プロジェクト更新",
+    "パートナーシップ",
+    "会社ニュース",
+    "受賞・認定",
+    "財務報告",
   ]
 
   return (
@@ -111,15 +111,14 @@ export default function NewsPage() {
             <div>
               <Badge className="mb-6 bg-emerald-100 text-emerald-800 hover:bg-emerald-200">
                 <TrendingUp className="w-4 h-4 mr-2" />
-                Latest Updates & Insights
+                最新アップデート・インサイト
               </Badge>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight">
-              News & <span className="text-emerald-600">Updates</span>
+              ニュース・<span className="text-emerald-600">更新</span>
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Stay informed about our latest projects, partnerships, and innovations in government digital
-              transformation.
+              政府デジタル変革における私たちの最新プロジェクト、パートナーシップ、イノベーションについて最新情報をお届けします。
             </p>
 
             {/* Search and Filter */}
@@ -127,13 +126,13 @@ export default function NewsPage() {
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-5 w-5" />
                 <Input
-                  placeholder="Search news and updates..."
-                  className="pl-10 py-3 rounded-xl border-slate-200 bg-white/80 backdrop-blur-sm"
+                  placeholder="ニュースと更新を検索..."
+                  className="pl-10 py-3  border-slate-200 bg-white/80 backdrop-blur-sm"
                 />
               </div>
-              <Button variant="outline" className="px-6 py-3 rounded-xl bg-white/80 backdrop-blur-sm">
+              <Button variant="outline" className="px-6 py-3  bg-white/80 backdrop-blur-sm">
                 <Filter className="w-4 h-4 mr-2" />
-                Filter
+                フィルター
               </Button>
             </div>
           </div>
@@ -154,7 +153,7 @@ export default function NewsPage() {
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
-                  <Badge className="absolute top-4 left-4 bg-emerald-600 text-white">Featured Story</Badge>
+                  <Badge className="absolute top-4 left-4 bg-emerald-600 text-white">注目記事</Badge>
                 </div>
                 <div className="p-8 lg:p-12 flex flex-col justify-center">
                   <div className="flex items-center gap-4 text-sm text-slate-500 mb-4">
@@ -178,7 +177,7 @@ export default function NewsPage() {
                       <span>{featuredNews.author}</span>
                     </div>
                     <Button className="bg-emerald-600 hover:bg-emerald-700">
-                      Read Full Article <ArrowRight className="ml-2 h-4 w-4" />
+                      記事全文を読む <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </div>
                 </div>
@@ -250,7 +249,7 @@ export default function NewsPage() {
                         <span>{article.author}</span>
                       </div>
                       <Button variant="ghost" size="sm" className="text-emerald-600 hover:text-emerald-700 p-0">
-                        Read More <ArrowRight className="ml-1 h-3 w-3" />
+                        続きを読む <ArrowRight className="ml-1 h-3 w-3" />
                       </Button>
                     </div>
                   </CardContent>
@@ -261,8 +260,8 @@ export default function NewsPage() {
 
           {/* Load More */}
           <div className="text-center mt-12">
-            <Button variant="outline" size="lg" className="bg-white/80 backdrop-blur-sm hover:bg-white/90 rounded-xl">
-              Load More Articles
+            <Button variant="outline" size="lg" className="bg-white/80 backdrop-blur-sm hover:bg-white/90 ">
+              さらに記事を読み込む
             </Button>
           </div>
         </div>
@@ -273,18 +272,17 @@ export default function NewsPage() {
         <div className="container mx-auto text-center">
           <div>
             <h2 className="text-4xl font-bold text-white mb-6">
-              Stay Updated with Aegis LLP Group
+              イージスLLPグループの最新情報を入手
             </h2>
             <p className="text-emerald-100 text-xl mb-8 max-w-2xl mx-auto">
-              Subscribe to our newsletter for the latest updates on government partnerships and digital transformation
-              initiatives.
+              政府パートナーシップとデジタル変革イニシアティブの最新情報をお届けするニュースレターにご登録ください。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <Input
-                placeholder="Enter your email"
-                className="flex-1 bg-white/10 border-white/20 text-white placeholder-white/70 rounded-xl"
+                placeholder="メールアドレスを入力"
+                className="flex-1 bg-white/10 border-white/20 text-white placeholder-white/70 "
               />
-              <Button className="bg-white text-emerald-600 hover:bg-slate-50 rounded-xl">Subscribe</Button>
+              <Button className="bg-white text-emerald-600 hover:bg-slate-50 ">登録</Button>
             </div>
           </div>
         </div>

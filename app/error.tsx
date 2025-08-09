@@ -21,21 +21,21 @@ export default function Error({
       <div className="text-center max-w-md mx-auto">
         <div className="mb-8">
           <h1 className="text-6xl font-bold text-slate-800 mb-4">500</h1>
-          <h2 className="text-2xl font-semibold text-slate-700 mb-4">Something went wrong</h2>
+          <h2 className="text-2xl font-semibold text-slate-700 mb-4">問題が発生しました</h2>
           <p className="text-slate-600 leading-relaxed">
-            An unexpected error occurred. Please try again or contact support if the problem persists.
+            予期しないエラーが発生しました。再度お試しいただくか、問題が継続する場合はサポートまでお問い合わせください。
           </p>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button onClick={reset} className="bg-emerald-600 hover:bg-emerald-700">
             <RefreshCw className="w-4 h-4 mr-2" />
-            Try Again
+            再試行
           </Button>
           <Button variant="outline" asChild>
             <Link href="/">
               <Home className="w-4 h-4 mr-2" />
-              Go Home
+              ホームに戻る
             </Link>
           </Button>
         </div>

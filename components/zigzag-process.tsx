@@ -1,51 +1,79 @@
 "use client"
 
 import { CheckCircle, Cloud, Cog, Database, FileText, MessageSquare, Rocket, Shield, Users } from "lucide-react"
+import { useEffect, useRef, useState } from "react"
 
 const steps = [
   {
     id: 1,
-    title: "Initial Consultation",
+    title: "初期コンサルテーション",
     description:
-      "We begin with comprehensive stakeholder meetings to understand your government agency's specific needs, compliance requirements, and digital transformation goals.",
+      "政府機関の具体的なニーズ、コンプライアンス要件、デジタル変革の目標を理解するための包括的なステークホルダー会議から始めます。",
     icon: <MessageSquare className="h-6 w-6" />,
     color: "emerald",
   },
   {
     id: 2,
-    title: "Strategic Planning",
+    title: "戦略企画",
     description:
-      "Our LLP team creates detailed project roadmaps with security protocols, compliance frameworks, and resource allocation tailored for public sector requirements.",
+      "私たちのLLPチームが、公共部門の要件に合わせたセキュリティプロトコル、コンプライアンスフレームワーク、リソース配置を含む詳細なプロジェクトロードマップを作成します。",
     icon: <FileText className="h-6 w-6" />,
     color: "blue",
   },
   {
     id: 3,
-    title: "Security & Compliance",
+    title: "セキュリティとコンプライアンス",
     description:
-      "We implement robust security measures and ensure full compliance with government regulations, data protection laws, and industry standards.",
+      "堅牢なセキュリティ対策を実装し、政府規制、データ保護法、業界標準への完全な遵守を保証します。",
     icon: <Shield className="h-6 w-6" />,
     color: "purple",
   },
   {
     id: 4,
-    title: "Development & Testing",
+    title: "開発とテスト",
     description:
-      "Our specialized companies collaborate to develop, integrate, and rigorously test solutions with 24/7 monitoring and quality assurance.",
+      "専門企業が連携して、24時間365日の監視と品質保証でソリューションを開発、統合、厳格にテストします。",
     icon: <Cog className="h-6 w-6" />,
     color: "amber",
   },
   {
     id: 5,
-    title: "Deployment & Support",
+    title: "展開とサポート",
     description:
-      "We ensure seamless deployment with comprehensive training, documentation, and ongoing 24/7 technical support for continuous operations.",
+      "包括的な研修、ドキュメント、継続的な24時間365日技術サポートでシームレスな展開を保証し、継続的な運用を実現します。",
     icon: <Rocket className="h-6 w-6" />,
     color: "rose",
   },
 ]
 
 const ZigzagProcess = () => {
+  const [visibleSteps, setVisibleSteps] = useState<Set<number>>(new Set())
+  const stepRefs = useRef<(HTMLDivElement | null)[]>([])
+
+  useEffect(() => {
+    const observers = stepRefs.current.map((ref, index) => {
+      if (!ref) return null
+      
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setVisibleSteps((prev) => new Set([...prev, index]))
+            }
+          })
+        },
+        { threshold: 0.3 }
+      )
+      
+      observer.observe(ref)
+      return observer
+    })
+
+    return () => {
+      observers.forEach((observer) => observer?.disconnect())
+    }
+  }, [])
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white py-24">
       {/* Background decorations */}
@@ -68,11 +96,10 @@ const ZigzagProcess = () => {
       <div className="container relative z-10 mx-auto max-w-6xl px-4">
         <div className="mb-20 text-center">
           <h2 className="mb-6 text-4xl font-bold tracking-tight text-slate-800 md:text-5xl">
-            Our Government Partnership Process
+            私たちの政府パートナーシッププロセス
           </h2>
           <p className="mx-auto max-w-3xl text-lg text-slate-600">
-            A proven methodology designed specifically for government agencies and municipal organizations, ensuring
-            compliance, security, and operational excellence at every step.
+            政府機関や自治体向けに特化して設計された実証済みの手法で、あらゆるステップでコンプライアンス、セキュリティ、業務卓越性を保証します。
           </p>
         </div>
 
@@ -117,18 +144,23 @@ const ZigzagProcess = () => {
           {/* Steps */}
           {steps.map((step, index) => {
             const isEven = index % 2 === 0
+            const isVisible = visibleSteps.has(index)
 
             return (
               <div
                 key={step.id}
-                className={`flex items-center ${isEven ? "md:flex-row" : "md:flex-row-reverse"} mb-8 last:mb-0 md:mb-32`}
+                ref={(el) => (stepRefs.current[index] = el)}
+                className={`flex items-center ${isEven ? "md:flex-row" : "md:flex-row-reverse"} mb-8 last:mb-0 md:mb-32 transition-all duration-700 ${
+                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                }`}
+                style={{ transitionDelay: `${index * 200}ms` }}
               >
                 {/* Step card */}
                 <div className={`w-full md:w-5/12 ${isEven ? "md:pr-16 md:text-right" : "md:pl-16 md:text-left"}`}>
                   <div className="group">
                     <div className="relative">
                       <div
-                        className={`absolute -inset-1 rounded-2xl bg-gradient-to-r opacity-0 blur-sm transition duration-500 group-hover:opacity-100 ${step.color === "emerald"
+                        className={`absolute -inset-1 bg-gradient-to-r opacity-0 blur-sm transition duration-500 group-hover:opacity-100 ${step.color === "emerald"
                             ? "from-emerald-400 to-teal-400"
                             : step.color === "blue"
                               ? "from-blue-400 to-cyan-400"
@@ -139,7 +171,7 @@ const ZigzagProcess = () => {
                                   : "from-rose-400 to-pink-400"
                           }`}
                       />
-                      <div className="relative rounded-2xl border border-slate-200/50 bg-white/80 backdrop-blur-sm p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                      <div className="relative border border-slate-200/50 bg-white/80 backdrop-blur-sm p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                         <div
                           className={`mb-6 inline-flex items-center justify-center rounded-xl p-4 ${step.color === "emerald"
                               ? "bg-emerald-100 text-emerald-600"
@@ -165,11 +197,11 @@ const ZigzagProcess = () => {
                             <>
                               <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
                                 <Users className="h-3 w-3" />
-                                Stakeholder Alignment
+                                ステークホルダー連携
                               </span>
                               <span className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
                                 <Shield className="h-3 w-3" />
-                                Compliance Review
+                                コンプライアンスレビュー
                               </span>
                             </>
                           )}
@@ -177,11 +209,11 @@ const ZigzagProcess = () => {
                             <>
                               <span className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
                                 <Database className="h-3 w-3" />
-                                Data Architecture
+                                データアーキテクチャ
                               </span>
                               <span className="inline-flex items-center gap-1 rounded-full bg-purple-50 px-3 py-1 text-xs font-medium text-purple-700">
                                 <Cloud className="h-3 w-3" />
-                                Infrastructure Planning
+                                インフラ計画
                               </span>
                             </>
                           )}
@@ -189,11 +221,11 @@ const ZigzagProcess = () => {
                             <>
                               <span className="inline-flex items-center gap-1 rounded-full bg-purple-50 px-3 py-1 text-xs font-medium text-purple-700">
                                 <Shield className="h-3 w-3" />
-                                Security Audit
+                                セキュリティ監査
                               </span>
                               <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
                                 <CheckCircle className="h-3 w-3" />
-                                METI Compliance
+                                経済産業省遵守
                               </span>
                             </>
                           )}
@@ -201,11 +233,11 @@ const ZigzagProcess = () => {
                             <>
                               <span className="inline-flex items-center gap-1 rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700">
                                 <Cog className="h-3 w-3" />
-                                Quality Assurance
+                                品質保証
                               </span>
                               <span className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
                                 <Users className="h-3 w-3" />
-                                LLP Collaboration
+                                LLP連携
                               </span>
                             </>
                           )}
@@ -213,11 +245,11 @@ const ZigzagProcess = () => {
                             <>
                               <span className="inline-flex items-center gap-1 rounded-full bg-rose-50 px-3 py-1 text-xs font-medium text-rose-700">
                                 <Rocket className="h-3 w-3" />
-                                Go-Live Support
+                                稼働開始サポート
                               </span>
                               <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
                                 <CheckCircle className="h-3 w-3" />
-                                24/7 Monitoring
+                                24時間365日監視
                               </span>
                             </>
                           )}

@@ -11,28 +11,28 @@ export default function Footer() {
 
   const footerLinks = {
     company: [
-      { href: "/about", label: "About LLP" },
-      { href: "/companies", label: "Member Companies" },
-      { href: "/careers", label: "Careers" },
-      { href: "/contact", label: "Contact" },
+      { href: "/about", label: "LLPについて" },
+      { href: "/companies", label: "メンバー企業" },
+      { href: "/careers", label: "採用情報" },
+      { href: "/contact", label: "お問い合わせ" },
     ],
     services: [
-      { href: "/projects", label: "Projects" },
-      { href: "/technology", label: "Technology & DX" },
-      { href: "/consulting", label: "Consulting" },
-      { href: "/support", label: "24/7 Support" },
+      { href: "/projects", label: "プロジェクト" },
+      { href: "/technology", label: "技術・DX" },
+      { href: "/consulting", label: "コンサルティング" },
+      { href: "/support", label: "24/7サポート" },
     ],
     resources: [
-      { href: "/news", label: "Latest News" },
-      { href: "/blog", label: "Blog & Updates" },
-      { href: "/case-studies", label: "Case Studies" },
-      { href: "/documentation", label: "Documentation" },
+      { href: "/news", label: "最新ニュース" },
+      { href: "/blog", label: "ブログ・更新情報" },
+      { href: "/case-studies", label: "導入事例" },
+      { href: "/documentation", label: "資料・文書" },
     ],
     legal: [
-      { href: "/privacy", label: "Privacy Policy" },
-      { href: "/terms", label: "Terms of Service" },
-      { href: "/compliance", label: "Compliance" },
-      { href: "/security", label: "Security" },
+      { href: "/privacy", label: "プライバシーポリシー" },
+      { href: "/terms", label: "利用規約" },
+      { href: "/compliance", label: "コンプライアンス" },
+      { href: "/security", label: "セキュリティ" },
     ],
   }
 
@@ -62,13 +62,12 @@ export default function Footer() {
                   <Shield className="h-10 w-10 text-emerald-400 relative z-10" />
                 </div>
                 <div>
-                  <span className="text-2xl font-bold">Aegis LLP</span>
-                  <p className="text-emerald-400 text-sm">Digital Excellence</p>
+                  <span className="text-2xl font-bold">イージス LLP</span>
+                  <p className="text-emerald-400 text-sm">デジタル革新</p>
                 </div>
               </div>
               <p className="text-slate-300 leading-relaxed mb-6 max-w-md">
-                Building trust through digital excellence for government and municipal partners. Our LLP structure
-                combines specialized expertise to deliver comprehensive solutions.
+                政府と自治体パートナーのためのデジタル革新を通じて信頼を構築しています。私たちのLLP構造は専門知識を組み合わせ、包括的なソリューションを提供します。
               </p>
 
               {/* Contact Info */}
@@ -83,7 +82,7 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-3 text-slate-300">
                   <MapPin className="h-5 w-5 text-emerald-400" />
-                  <span>Tokyo, Japan</span>
+                  <span>東京都</span>
                 </div>
               </div>
 
@@ -103,7 +102,7 @@ export default function Footer() {
 
             {/* Footer Links */}
             <div>
-              <h4 className="font-semibold mb-6 text-white">Company</h4>
+              <h4 className="font-semibold mb-6 text-white">企業情報</h4>
               <ul className="space-y-3">
                 {footerLinks.company.map((link) => (
                   <li key={link.href}>
@@ -119,7 +118,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-6 text-white">Services</h4>
+              <h4 className="font-semibold mb-6 text-white">サービス</h4>
               <ul className="space-y-3">
                 {footerLinks.services.map((link) => (
                   <li key={link.href}>
@@ -135,7 +134,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-6 text-white">Resources</h4>
+              <h4 className="font-semibold mb-6 text-white">資料・情報</h4>
               <ul className="space-y-3">
                 {footerLinks.resources.map((link) => (
                   <li key={link.href}>
@@ -151,7 +150,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-6 text-white">Legal</h4>
+              <h4 className="font-semibold mb-6 text-white">法的事項</h4>
               <ul className="space-y-3">
                 {footerLinks.legal.map((link) => (
                   <li key={link.href}>
@@ -170,18 +169,18 @@ export default function Footer() {
           {/* Newsletter Signup */}
           <div className="mt-16 p-8 bg-gradient-to-r from-emerald-600/10 to-blue-600/10 backdrop-blur-sm rounded-2xl border border-white/10">
             <div className="max-w-2xl">
-              <h3 className="text-xl font-bold mb-2">Stay Updated</h3>
+              <h3 className="text-xl font-bold mb-2">最新情報を受信</h3>
               <p className="text-slate-300 mb-6">
-                Get the latest news about our projects, technology updates, and government partnerships.
+                プロジェクト、技術更新、政府パートナーシップに関する最新ニュースを受信できます。
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <input
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder="メールアドレスを入力"
                   className="flex-1 px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400/50 focus:border-emerald-400/50 transition-all duration-200"
                 />
                 <Button className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 px-8">
-                  Subscribe
+                  登録
                 </Button>
               </div>
             </div>
@@ -193,7 +192,7 @@ export default function Footer() {
           <div className="container mx-auto px-4 py-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-slate-400 text-sm">
-                &copy; 2024 Aegis LLP Group. All rights reserved. | METI Certified Partnership
+                &copy; 2024 イージスLLP グループ. 全権利留保 | 経済産業省認定パートナーシップ
               </p>
 
               <div className="flex items-center gap-6">

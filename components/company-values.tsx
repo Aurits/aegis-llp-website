@@ -21,19 +21,18 @@ export default function CompanyValues() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 bg-emerald-900/30 text-emerald-400 rounded-full text-sm font-medium mb-4">
-            PASSION
+            情熱
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Our Core Values</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">私たちの中核価値</h2>
           <p className="text-lg text-slate-300 max-w-3xl mx-auto">
-            We are driven by a passion to protect communities and provide exceptional public services that make a
-            meaningful difference in people's lives.
+            私たちはコミュニティを守り、人々の生活に意味のある変化をもたらす卓越した公共サービスを提供する情熱に駆り立てられています。
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Image */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative overflow-hidden shadow-2xl">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%288%29-CVlVkWRcnCWzQ7QRBDqipsqeOs4Uh6.jpeg"
                 alt="Aegis Group Values"
@@ -45,9 +44,9 @@ export default function CompanyValues() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/50 to-transparent"></div>
 
               <div className="absolute bottom-0 left-0 p-8">
-                <h3 className="text-white text-2xl font-bold mb-2">PASSION</h3>
+                <h3 className="text-white text-2xl font-bold mb-2">情熱</h3>
                 <p className="text-white/90 text-lg max-w-md">
-                  Dedicated to serving users and communities with excellence and integrity.
+                  卓越性と誠実さをもってユーザーとコミュニティに奉仕することに専念。
                 </p>
               </div>
             </div>
@@ -59,8 +58,8 @@ export default function CompanyValues() {
                   <Heart className="h-6 w-6 text-red-600" />
                 </div>
                 <div>
-                  <p className="font-bold text-slate-800">User-Focused</p>
-                  <p className="text-sm text-slate-600">Service with heart</p>
+                  <p className="font-bold text-slate-800">ユーザー中心</p>
+                  <p className="text-sm text-slate-600">心を込めたサービス</p>
                 </div>
               </div>
             </div>
@@ -68,7 +67,7 @@ export default function CompanyValues() {
 
           {/* Right side - Values */}
           <div className="space-y-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/15 transition-colors border border-white/5">
+            <div className="bg-white/10 backdrop-blur-sm p-6 hover:bg-white/15 transition-colors border border-white/5">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-emerald-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
                   <Shield className="h-6 w-6 text-emerald-400" />
@@ -78,17 +77,16 @@ export default function CompanyValues() {
                     <span className="w-6 h-6 rounded-full bg-emerald-900/50 text-emerald-400 flex items-center justify-center text-sm font-bold">
                       1
                     </span>
-                    <h3 className="font-bold text-white text-lg">Creating Local Employment</h3>
+                    <h3 className="font-bold text-white text-lg">地域雇用の創出</h3>
                   </div>
                   <p className="text-slate-300 mb-4">
-                    We believe public services should be delivered by local communities. We focus on creating
-                    sustainable employment opportunities that strengthen the regions we serve.
+                    私たちは公共サービスは地域コミュニティによって提供されるべきだと信じています。私たちがサービスを提供する地域を強化する持続可能な雇用機会の創出に焦点を当てています。
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/15 transition-colors border border-white/5">
+            <div className="bg-white/10 backdrop-blur-sm p-6 hover:bg-white/15 transition-colors border border-white/5">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-blue-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
                   <Users className="h-6 w-6 text-blue-400" />
@@ -98,17 +96,16 @@ export default function CompanyValues() {
                     <span className="w-6 h-6 rounded-full bg-blue-900/50 text-blue-400 flex items-center justify-center text-sm font-bold">
                       2
                     </span>
-                    <h3 className="font-bold text-white text-lg">User-Focused Service</h3>
+                    <h3 className="font-bold text-white text-lg">ユーザー中心のサービス</h3>
                   </div>
                   <p className="text-slate-300 mb-4">
-                    We relentlessly pursue service excellence from the user's perspective, ensuring that every
-                    interaction adds value and meets the highest standards of quality.
+                    私たちはユーザーの立場からサービスの卓越性を飽くなく追求し、すべてのインタラクションが価値を付加し、最高水準の品質を満たすことを保証します。
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/15 transition-colors border border-white/5">
+            <div className="bg-white/10 backdrop-blur-sm p-6 hover:bg-white/15 transition-colors border border-white/5">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-purple-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
                   <svg
@@ -152,11 +149,10 @@ export default function CompanyValues() {
                     <span className="w-6 h-6 rounded-full bg-purple-900/50 text-purple-400 flex items-center justify-center text-sm font-bold">
                       3
                     </span>
-                    <h3 className="font-bold text-white text-lg">Meaningful Work Environment</h3>
+                    <h3 className="font-bold text-white text-lg">意味のある作業環境</h3>
                   </div>
                   <p className="text-slate-300 mb-4">
-                    We foster a workplace where team members experience growth, purpose, and fulfillment through their
-                    contributions to public service and community well-being.
+                    私たちは、チームメンバーが公共サービスとコミュニティの幸福への貢献を通じて成長、目的、やりがいを経験できる職場を育成します。
                   </p>
                 </div>
               </div>

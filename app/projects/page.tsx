@@ -15,113 +15,113 @@ export default function ProjectsPage() {
   const projects = [
     {
       id: 1,
-      title: "Osaka Prefecture Digital Infrastructure Modernization",
-      client: "Osaka Prefecture Government",
-      category: "Government",
-      duration: "12 months",
-      team: ["TechFlow Solutions", "DataCore Systems", "WebCraft Digital"],
+      title: "大阪府デジタルインフラ現代化",
+      client: "大阪府政府",
+      category: "政府",
+      duration: "12ヶ月",
+      team: ["テックフロー・ソリューション", "データコア・システムズ", "ウェブクラフト・デジタル"],
       problem:
-        "The prefecture needed to modernize legacy systems across 15 municipal offices, affecting 2.8 million citizens. Existing infrastructure was fragmented, causing service delays and citizen frustration.",
+        "府は280万人の市民に影響を与える15の市役所でレガシーシステムの現代化が必要でした。既存インフラは断片化しており、サービスの遅延と市民の不満を引き起こしていました。",
       proposal:
-        "Implemented a unified cloud-based platform with integrated citizen services, real-time data analytics, and mobile-first design. Included comprehensive staff training and phased migration strategy.",
+        "統合市民サービス、リアルタイムデータ分析、モバイルファーストデザインを備えた統一クラウドベースプラットフォームを実装しました。包括的なスタッフ研修と段階的移行戦略を含みました。",
       result:
-        "Achieved 65% reduction in service processing time, 40% increase in citizen satisfaction scores, and 99.9% system uptime. Successfully migrated all 15 offices with zero downtime.",
-      technologies: ["Cloud Infrastructure", "Data Analytics", "Mobile Development", "System Integration"],
+        "サービス処理時間の65%短縮、市民満足度スコアの40%向上、システム稼働率99.9%を達成しました。すべての15オフィスをゼロダウンタイムで移行しました。",
+      technologies: ["クラウドインフラ", "データ分析", "モバイル開発", "システム統合"],
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2818%29-bmwbVkyWCQIPIRqPQcEdzDBy6lGAYz.jpeg",
-      status: "Completed",
+      status: "完了",
       year: "2024",
       budget: "¥2.8B",
-      impact: "2.8M citizens served",
+      impact: "280万人の市民にサービス提供",
     },
     {
       id: 2,
-      title: "Tokyo Smart City IoT Integration Platform",
-      client: "Tokyo Metropolitan Government",
-      category: "Smart City",
-      duration: "18 months",
-      team: ["TechFlow Solutions", "MobileFirst Tech", "DataCore Systems"],
+      title: "東京スマートシティIoT統合プラットフォーム",
+      client: "東京都政府",
+      category: "スマートシティ",
+      duration: "18ヶ月",
+      team: ["テックフロー・ソリューション", "モバイルファースト・テック", "データコア・システムズ"],
       problem:
-        "Tokyo needed an integrated IoT system to monitor traffic, environmental conditions, and public utilities while providing real-time data to citizens and enabling predictive maintenance.",
+        "東京は交通、環境状況、公共インフラを監視し、同時に市民にリアルタイムデータを提供し、予知保守を可能にする統合IoTシステムが必要でした。",
       proposal:
-        "Developed a comprehensive IoT platform with 10,000+ sensors, AI-powered analytics, citizen mobile app, and automated alert systems for emergency response and maintenance.",
+        "10,000個以上のセンサー、AI駆動分析、市民モバイルアプリ、緊急対応と保守のための自動アラートシステムを備えた包括的なIoTプラットフォームを開発しました。",
       result:
-        "Improved traffic flow by 30%, reduced energy consumption by 25%, decreased emergency response time by 45%, and increased citizen engagement through the mobile app by 300%.",
-      technologies: ["IoT Integration", "AI Analytics", "Mobile Development", "Real-time Processing"],
+        "交通流の30%改善、エネルギー消費の25%削減、緊急対応時間の45%短縮、モバイルアプリを通じた市民参加の300%向上を達成しました。",
+      technologies: ["IoT統合", "AI分析", "モバイル開発", "リアルタイム処理"],
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2814%29-twzHcPSG0mo9wN6RUcU9ZtWSoFOhki.jpeg",
-      status: "Completed",
+      status: "完了",
       year: "2023",
       budget: "¥4.2B",
-      impact: "14M citizens served",
+      impact: "1,400万人の市民にサービス提供",
     },
     {
       id: 3,
-      title: "Kyoto Healthcare Data Management System",
-      client: "Kyoto Prefecture Health Department",
-      category: "Healthcare",
-      duration: "15 months",
-      team: ["DataCore Systems", "TechFlow Solutions", "WebCraft Digital"],
+      title: "京都医療データ管理システム",
+      client: "京都府保健部",
+      category: "医療",
+      duration: "15ヶ月",
+      team: ["データコア・システムズ", "テックフロー・ソリューション", "ウェブクラフト・デジタル"],
       problem:
-        "Healthcare facilities needed a unified system for patient data management, appointment scheduling, and resource allocation across 25 locations with strict privacy compliance.",
+        "医療施設は25の拠点で厄しいプライバシーコンプライアンスの下、患者データ管理、予約スケジューリング、リソース配分のための統一システムが必要でした。",
       proposal:
-        "Created a secure, HIPAA-compliant data management system with integrated scheduling, resource management, telemedicine capabilities, and advanced analytics for health insights.",
+        "統合スケジューリング、リソース管理、遠隔医療機能、健康洞察のための高度な分析を備えた安全でHIPAA適合のデータ管理システムを作成しました。",
       result:
-        "Streamlined operations across 25 facilities, reduced administrative overhead by 50%, improved patient care coordination by 60%, and achieved 100% privacy compliance.",
-      technologies: ["Healthcare IT", "Data Security", "System Integration", "Telemedicine"],
+        "25の施設での運用を合理化し、管理オーバーヘッドを50%削減、患者ケア連携を60%改善し、100%のプライバシーコンプライアンスを達成しました。",
+      technologies: ["医療IT", "データセキュリティ", "システム統合", "遠隔医療"],
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2816%29-komzG8C6TWuA5SMZru3RPUc0nQK9ta.jpeg",
-      status: "Completed",
+      status: "完了",
       year: "2024",
       budget: "¥1.9B",
-      impact: "500K patients served",
+      impact: "50万人の患者にサービス提供",
     },
     {
       id: 4,
-      title: "Nagoya Municipal Services Digital Transformation",
-      client: "Nagoya City Government",
-      category: "Government",
-      duration: "10 months",
-      team: ["WebCraft Digital", "MobileFirst Tech", "DataCore Systems"],
+      title: "名古屋自治体サービスデジタル変革",
+      client: "名古屋市政府",
+      category: "政府",
+      duration: "10ヶ月",
+      team: ["ウェブクラフト・デジタル", "モバイルファースト・テック", "データコア・システムズ"],
       problem:
-        "Citizens faced long wait times and complex procedures for municipal services. The city needed to digitize 50+ services while maintaining accessibility for all age groups.",
+        "市民は自治体サービスで長い待ち時間と複雑な手続きに直面していました。市はすべての年齢層のアクセシビリティを維持しながら50以上のサービスをデジタル化する必要がありました。",
       proposal:
-        "Built a comprehensive digital services platform with intuitive UI/UX, multi-language support, accessibility features, and integrated payment systems for seamless citizen experience.",
+        "直感的なUI/UX、多言語サポート、アクセシビリティ機能、シームレスな市民体験のための統合決済システムを備えた包括的デジタルサービスプラットフォームを構築しました。",
       result:
-        "Reduced average service completion time from 3 hours to 15 minutes, achieved 85% digital adoption rate, and improved citizen satisfaction scores by 70%.",
-      technologies: ["Web Development", "Mobile Apps", "Payment Integration", "Accessibility"],
+        "平均サービス完了時間を3時間から15分に短縮、デジタル採用玅85%を達成、市民満足度スコアを70%改善しました。",
+      technologies: ["ウェブ開発", "モバイルアプリ", "決済統合", "アクセシビリティ"],
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2813%29-pQA3PhWWkbXNJ4IBnfULBEE9haSWtv.jpeg",
-      status: "Completed",
+      status: "完了",
       year: "2023",
       budget: "¥1.2B",
-      impact: "2.3M citizens served",
+      impact: "230万人の市民にサービス提供",
     },
     {
       id: 5,
-      title: "Hiroshima Emergency Response System",
-      client: "Hiroshima Prefecture",
-      category: "Emergency Services",
-      duration: "8 months",
-      team: ["TechFlow Solutions", "MobileFirst Tech"],
+      title: "広島緊急対応システム",
+      client: "広島県",
+      category: "緊急サービス",
+      duration: "8ヶ月",
+      team: ["テックフロー・ソリューション", "モバイルファースト・テック"],
       problem:
-        "The prefecture needed a modern emergency response system to coordinate disaster response, citizen alerts, and resource management during natural disasters.",
+        "県は自然災害時の災害対応、市民アラート、リソース管理を調整するための最新緊急対応システムが必要でした。",
       proposal:
-        "Developed an AI-powered emergency response platform with real-time monitoring, automated citizen alerts, resource tracking, and coordination tools for first responders.",
+        "リアルタイム監視、自動市民アラート、リソース追跡、初期対応者のための連携ツールを備えたAI駆動緊急対応プラットフォームを開発しました。",
       result:
-        "Reduced emergency response time by 40%, improved coordination between agencies by 60%, and successfully managed 3 major weather events with zero system failures.",
-      technologies: ["AI Systems", "Real-time Monitoring", "Mobile Alerts", "Resource Management"],
+        "緊急対応時間を40%短縮、機関間の連携を60%改善し、3つの主要な気象イベントをシステム障害ゼロで成功的に管理しました。",
+      technologies: ["AIシステム", "リアルタイム監視", "モバイルアラート", "リソース管理"],
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%289%29-KyNOAU353e0JaATfjoxAMSPbS5Mh6V.jpeg",
-      status: "In Progress",
+      status: "進行中",
       year: "2024",
       budget: "¥980M",
-      impact: "2.8M citizens protected",
+      impact: "280万人の市民を保護",
     },
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-emerald-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-emerald-50 font-japanese">
       <Header />
 
       {/* Hero Section */}
@@ -132,16 +132,15 @@ export default function ProjectsPage() {
             <div>
               <Badge className="mb-6 bg-emerald-100 text-emerald-800 hover:bg-emerald-200">
                 <Building2 className="w-4 h-4 mr-2" />
-                Proven Track Record
+                実証された実績
               </Badge>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight">
-              Our Project
-              <span className="text-emerald-600 block">Portfolio</span>
+            <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight mobile-horizontal">
+              私たちの
+              <span className="text-emerald-600 block">プロジェクト実績</span>
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Explore our successful digital transformation projects for government agencies and municipalities,
-              showcasing our Problem → Proposal → Result methodology.
+              政府機関や自治体向けの成功したデジタル変革プロジェクトをご覧ください。私たちの問題→提案→結果の手法を紹介しています。
             </p>
 
             {/* Search and Filter */}
@@ -149,13 +148,13 @@ export default function ProjectsPage() {
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-5 w-5" />
                 <Input
-                  placeholder="Search projects..."
-                  className="pl-10 py-3 rounded-xl border-slate-200 bg-white/80 backdrop-blur-sm"
+                  placeholder="プロジェクトを検索..."
+                  className="pl-10 py-3  border-slate-200 bg-white/80 backdrop-blur-sm"
                 />
               </div>
-              <Button variant="outline" className="px-6 py-3 rounded-xl bg-white/80 backdrop-blur-sm">
+              <Button variant="outline" className="px-6 py-3  bg-white/80 backdrop-blur-sm">
                 <Filter className="w-4 h-4 mr-2" />
-                Filter
+                フィルター
               </Button>
             </div>
           </div>
@@ -167,21 +166,21 @@ export default function ProjectsPage() {
         <div className="container mx-auto">
           <Tabs defaultValue="all" className="w-full">
             <div className="flex justify-center mb-12">
-              <TabsList className="grid w-full max-w-2xl grid-cols-5 bg-slate-100 rounded-xl">
+              <TabsList className="grid w-full max-w-2xl grid-cols-5 bg-slate-100 ">
                 <TabsTrigger value="all" className="rounded-lg">
-                  All Projects
+                  全プロジェクト
                 </TabsTrigger>
                 <TabsTrigger value="government" className="rounded-lg">
-                  Government
+                  政府
                 </TabsTrigger>
                 <TabsTrigger value="smart-city" className="rounded-lg">
-                  Smart City
+                  スマートシティ
                 </TabsTrigger>
                 <TabsTrigger value="healthcare" className="rounded-lg">
-                  Healthcare
+                  医療
                 </TabsTrigger>
                 <TabsTrigger value="emergency" className="rounded-lg">
-                  Emergency
+                  緊急対応
                 </TabsTrigger>
               </TabsList>
             </div>
@@ -232,10 +231,10 @@ export default function ProjectsPage() {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-800 mb-4">
-              Project Impact
+              プロジェクトの影響
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Measurable results from our digital transformation initiatives
+              デジタル変革イニシアティブの測定可能な結果
             </p>
           </div>
 
@@ -244,8 +243,8 @@ export default function ProjectsPage() {
               <Card className="text-center border-0 shadow-lg bg-gradient-to-br from-emerald-50 to-white hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
                   <div className="text-4xl font-bold text-emerald-600 mb-2">25+</div>
-                  <div className="text-slate-600">Projects Completed</div>
-                  <div className="text-sm text-slate-500 mt-2">Across Japan</div>
+                  <div className="text-slate-600">完了プロジェクト</div>
+                  <div className="text-sm text-slate-500 mt-2">日本全国</div>
                 </CardContent>
               </Card>
             </div>
@@ -254,8 +253,8 @@ export default function ProjectsPage() {
               <Card className="text-center border-0 shadow-lg bg-gradient-to-br from-blue-50 to-white hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
                   <div className="text-4xl font-bold text-blue-600 mb-2">22M+</div>
-                  <div className="text-slate-600">Citizens Served</div>
-                  <div className="text-sm text-slate-500 mt-2">Direct impact</div>
+                  <div className="text-slate-600">市民へのサービス</div>
+                  <div className="text-sm text-slate-500 mt-2">直接的な影響</div>
                 </CardContent>
               </Card>
             </div>
@@ -264,8 +263,8 @@ export default function ProjectsPage() {
               <Card className="text-center border-0 shadow-lg bg-gradient-to-br from-purple-50 to-white hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
                   <div className="text-4xl font-bold text-purple-600 mb-2">99.9%</div>
-                  <div className="text-slate-600">Average Uptime</div>
-                  <div className="text-sm text-slate-500 mt-2">System reliability</div>
+                  <div className="text-slate-600">平均稼働時間</div>
+                  <div className="text-sm text-slate-500 mt-2">システム信頼性</div>
                 </CardContent>
               </Card>
             </div>
@@ -274,8 +273,8 @@ export default function ProjectsPage() {
               <Card className="text-center border-0 shadow-lg bg-gradient-to-br from-amber-50 to-white hover:shadow-2xl transition-all duration-500">
                 <CardContent className="p-8">
                   <div className="text-4xl font-bold text-amber-600 mb-2">55%</div>
-                  <div className="text-slate-600">Avg. Efficiency Gain</div>
-                  <div className="text-sm text-slate-500 mt-2">Process improvement</div>
+                  <div className="text-slate-600">平均効率向上</div>
+                  <div className="text-sm text-slate-500 mt-2">プロセス改善</div>
                 </CardContent>
               </Card>
             </div>
@@ -288,21 +287,21 @@ export default function ProjectsPage() {
         <div className="container mx-auto text-center">
           <div>
             <h2 className="text-4xl font-bold text-white mb-6">
-              Ready to Start Your Digital Transformation?
+              デジタル変革を始める準備はできていますか？
             </h2>
             <p className="text-emerald-100 text-xl mb-8 max-w-2xl mx-auto">
-              Let us help you achieve similar results with our proven Problem → Proposal → Result methodology.
+              私たちの実証済みの問題→提案→結果の手法で、同様の成果を達成するお手伝いをします。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-emerald-600 hover:bg-slate-50 text-lg px-8 py-4 rounded-xl">
-                <Link href="/contact">Start Your Project</Link>
+              <Button size="lg" className="bg-white text-emerald-600 hover:bg-slate-50 text-lg px-8 py-4 ">
+                <Link href="/contact">プロジェクトを開始</Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-8 py-4 rounded-xl"
+                className="border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-8 py-4 "
               >
-                <Link href="/technology">View Our Technology</Link>
+                <Link href="/technology">技術を見る</Link>
               </Button>
             </div>
           </div>
@@ -332,7 +331,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
 
             {/* Project Stats Overlay */}
             <div className="absolute top-4 left-4 space-y-2">
-              <Badge className={`${project.status === "Completed" ? "bg-emerald-600" : "bg-blue-600"} text-white`}>
+              <Badge className={`${project.status === "完了" ? "bg-emerald-600" : "bg-blue-600"} text-white`}>
                 {project.status}
               </Badge>
               <Badge variant="outline" className="bg-white/90 text-slate-700">
@@ -344,11 +343,11 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div>
                   <div className="font-bold">{project.budget}</div>
-                  <div className="text-white/80">Project Budget</div>
+                  <div className="text-white/80">プロジェクト予算</div>
                 </div>
                 <div>
                   <div className="font-bold">{project.impact}</div>
-                  <div className="text-white/80">Citizens Impacted</div>
+                  <div className="text-white/80">影響を受けた市民</div>
                 </div>
               </div>
             </div>
@@ -367,14 +366,14 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
             </div>
 
             <h3 className="text-2xl font-bold text-slate-800 mb-2">{project.title}</h3>
-            <p className="text-slate-600 mb-6">Client: {project.client}</p>
+            <p className="text-slate-600 mb-6">クライアント: {project.client}</p>
 
             <div className="space-y-6">
               {/* Problem */}
               <div className="border-l-4 border-red-200 pl-4">
                 <div className="flex items-center gap-2 mb-2">
                   <Target className="h-5 w-5 text-red-600" />
-                  <h4 className="font-semibold text-slate-800">Problem</h4>
+                  <h4 className="font-semibold text-slate-800">問題</h4>
                 </div>
                 <p className="text-slate-600 text-sm leading-relaxed">{project.problem}</p>
               </div>
@@ -383,7 +382,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
               <div className="border-l-4 border-blue-200 pl-4">
                 <div className="flex items-center gap-2 mb-2">
                   <Lightbulb className="h-5 w-5 text-blue-600" />
-                  <h4 className="font-semibold text-slate-800">Proposal</h4>
+                  <h4 className="font-semibold text-slate-800">提案</h4>
                 </div>
                 <p className="text-slate-600 text-sm leading-relaxed">{project.proposal}</p>
               </div>
@@ -392,7 +391,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
               <div className="border-l-4 border-emerald-200 pl-4">
                 <div className="flex items-center gap-2 mb-2">
                   <TrendingUp className="h-5 w-5 text-emerald-600" />
-                  <h4 className="font-semibold text-slate-800">Result</h4>
+                  <h4 className="font-semibold text-slate-800">結果</h4>
                 </div>
                 <p className="text-slate-600 text-sm leading-relaxed">{project.result}</p>
               </div>
@@ -402,7 +401,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2 text-sm text-slate-500">
                   <Users className="h-4 w-4" />
-                  <span>Team: {project.team.join(", ")}</span>
+                  <span>チーム: {project.team.join(", ")}</span>
                 </div>
               </div>
 
@@ -419,7 +418,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
               </div>
 
               <Button variant="outline" className="group-hover:bg-emerald-50 group-hover:border-emerald-200">
-                View Case Study <ArrowRight className="ml-2 h-4 w-4" />
+                ケーススタディを見る <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
           </div>

@@ -14,46 +14,46 @@ export default function CompaniesPage() {
   const companies = [
     {
       id: 1,
-      name: "TechFlow Solutions",
-      specialization: "Digital Infrastructure",
-      description: "Specializing in government digital infrastructure and cloud migration services",
+      name: "テックフロー・ソリューション",
+      specialization: "デジタルインフラ",
+      description: "政府のデジタルインフラとクラウド移行サービスを専門としています",
       icon: Cloud,
       gradient: "from-emerald-500 to-teal-600",
       bgGradient: "from-emerald-50/80 to-teal-50/80",
-      services: ["Cloud Migration", "Infrastructure Design", "System Integration"],
+      services: ["クラウド移行", "インフラ設計", "システム統合"],
       established: "2018",
     },
     {
       id: 2,
-      name: "DataCore Systems",
-      specialization: "Data Management",
-      description: "Expert data management and analytics solutions for municipal governments",
+      name: "データコア・システムズ",
+      specialization: "データ管理",
+      description: "自治体向けの専門的なデータ管理と分析ソリューション",
       icon: Database,
       gradient: "from-blue-500 to-indigo-600",
       bgGradient: "from-blue-50/80 to-indigo-50/80",
-      services: ["Data Analytics", "Database Design", "Business Intelligence"],
+      services: ["データ分析", "データベース設計", "ビジネスインテリジェンス"],
       established: "2016",
     },
     {
       id: 3,
-      name: "WebCraft Digital",
-      specialization: "Web Development",
-      description: "Modern web applications and digital platforms for public sector organizations",
+      name: "ウェブクラフト・デジタル",
+      specialization: "ウェブ開発",
+      description: "公共部門組織向けの最新ウェブアプリケーションとデジタルプラットフォーム",
       icon: Code,
       gradient: "from-purple-500 to-pink-600",
       bgGradient: "from-purple-50/80 to-pink-50/80",
-      services: ["Web Development", "UI/UX Design", "Digital Platforms"],
+      services: ["ウェブ開発", "UI/UXデザイン", "デジタルプラットフォーム"],
       established: "2019",
     },
     {
       id: 4,
-      name: "MobileFirst Tech",
-      specialization: "Mobile Solutions",
-      description: "Mobile applications and responsive solutions for citizen engagement",
+      name: "モバイルファースト・テック",
+      specialization: "モバイルソリューション",
+      description: "市民参加のためのモバイルアプリケーションとレスポンシブソリューション",
       icon: Smartphone,
       gradient: "from-amber-500 to-orange-600",
       bgGradient: "from-amber-50/80 to-orange-50/80",
-      services: ["Mobile Apps", "Responsive Design", "Citizen Portals"],
+      services: ["モバイルアプリ", "レスポンシブデザイン", "市民ポータル"],
       established: "2020",
     },
   ]
@@ -75,20 +75,19 @@ export default function CompaniesPage() {
             <div className="max-w-2xl">
               <div>
                 <Badge className="mb-8 bg-white/80 backdrop-blur-sm text-emerald-800 hover:bg-white/90 border border-emerald-200/50 shadow-lg">
-                  <Building2 className="w-4 h-4 mr-2" />8 Specialized Companies, One Vision
+                  <Building2 className="w-4 h-4 mr-2" />8つの専門企業、1つのビジョン
                 </Badge>
               </div>
 
               <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-8 leading-tight">
-                Our Member
+                私たちの
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-blue-600 block">
-                  Companies
+                  メンバー企業
                 </span>
               </h1>
 
               <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-xl leading-relaxed">
-                Each member company brings unique expertise and specialized knowledge, working together under the Aegis
-                LLP structure to deliver comprehensive digital solutions.
+                各メンバー企業は独自の専門知識と特化した知識を持ち寄り、イージスLLP構造の下で協力して包括的なデジタルソリューションを提供します。
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -96,7 +95,7 @@ export default function CompaniesPage() {
                   size="lg"
                   className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white text-lg px-8 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
                 >
-                  <Link href="/projects">View Our Work</Link>
+                  <Link href="/projects">私たちの実績を見る</Link>
                 </Button>
 
                 <Button
@@ -104,7 +103,7 @@ export default function CompaniesPage() {
                   size="lg"
                   className="border-2 border-slate-300 bg-white/80 backdrop-blur-sm hover:bg-white/90 shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl text-lg px-8 py-6"
                 >
-                  <Link href="/contact">Start a Project</Link>
+                  <Link href="/contact">プロジェクトを開始</Link>
                 </Button>
               </div>
             </div>
@@ -112,7 +111,7 @@ export default function CompaniesPage() {
             {/* Right side - Company overview with real image */}
             <div>
               <div className="relative">
-                <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100">
+                <div className="bg-white shadow-2xl overflow-hidden border border-slate-100">
                   <div className="relative h-64">
                     <Image
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%287%29-fcdhf3NWqlr6vKoI0tEMnDdIbG0FUY.jpeg"
@@ -122,27 +121,27 @@ export default function CompaniesPage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 p-6">
-                      <h3 className="text-white text-xl font-bold mb-2">Group Companies</h3>
-                      <p className="text-white/90">Specialized expertise across multiple domains</p>
+                      <h3 className="text-white text-xl font-bold mb-2">グループ企業</h3>
+                      <p className="text-white/90">複数ドメインにわたる専門知識</p>
                     </div>
                   </div>
 
                   <div className="p-6">
                     <div className="grid grid-cols-2 gap-4 text-sm">
                       <div>
-                        <p className="font-medium text-slate-700">Total Companies</p>
+                        <p className="font-medium text-slate-700">総企業数</p>
                         <p className="text-2xl font-bold text-emerald-600">8</p>
                       </div>
                       <div>
-                        <p className="font-medium text-slate-700">Service Areas</p>
+                        <p className="font-medium text-slate-700">サービス領域</p>
                         <p className="text-2xl font-bold text-blue-600">15+</p>
                       </div>
                       <div>
-                        <p className="font-medium text-slate-700">Years Experience</p>
+                        <p className="font-medium text-slate-700">年間経験</p>
                         <p className="text-2xl font-bold text-purple-600">18+</p>
                       </div>
                       <div>
-                        <p className="font-medium text-slate-700">Projects Completed</p>
+                        <p className="font-medium text-slate-700">完了プロジェクト</p>
                         <p className="text-2xl font-bold text-amber-600">200+</p>
                       </div>
                     </div>
@@ -156,8 +155,8 @@ export default function CompaniesPage() {
                       <Users className="h-4 w-4" />
                     </div>
                     <div className="text-xs">
-                      <div className="font-medium text-slate-800">Unified Team</div>
-                      <div className="text-slate-600">One vision</div>
+                      <div className="font-medium text-slate-800">統一チーム</div>
+                      <div className="text-slate-600">1つのビジョン</div>
                     </div>
                   </div>
                 </div>
@@ -168,8 +167,8 @@ export default function CompaniesPage() {
                       <Award className="h-4 w-4" />
                     </div>
                     <div className="text-xs">
-                      <div className="font-medium text-slate-800">Quality Assured</div>
-                      <div className="text-slate-600">Certified excellence</div>
+                      <div className="font-medium text-slate-800">品質保証</div>
+                      <div className="text-slate-600">認定された卓越性</div>
                     </div>
                   </div>
                 </div>
@@ -188,10 +187,10 @@ export default function CompaniesPage() {
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
-              Member Companies
+              メンバー企業
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Specialized expertise working together as one unified team
+              1つの統一チームとして協力する専門知識
             </p>
           </div>
 
@@ -205,7 +204,7 @@ export default function CompaniesPage() {
                   <CardHeader className="relative z-10 pb-8">
                     <div className="flex items-start justify-between">
                       <div
-                        className={`w-20 h-20 bg-gradient-to-br ${company.gradient} rounded-2xl flex items-center justify-center shadow-lg`}
+                        className={`w-20 h-20 bg-gradient-to-br ${company.gradient} flex items-center justify-center shadow-lg`}
                       >
                         <company.icon className="h-10 w-10 text-white" />
                       </div>
@@ -220,7 +219,7 @@ export default function CompaniesPage() {
                   </CardHeader>
                   <CardContent className="p-6 pt-0 relative z-10">
                     <div className="mb-6">
-                      <h4 className="font-semibold text-slate-800 mb-3">Core Services</h4>
+                      <h4 className="font-semibold text-slate-800 mb-3">主要サービス</h4>
                       <div className="flex flex-wrap gap-2">
                         {company.services.map((service, index) => (
                           <Badge
@@ -246,7 +245,7 @@ export default function CompaniesPage() {
                           className="group-hover:bg-emerald-50 group-hover:border-emerald-200 bg-white/80 backdrop-blur-sm"
                         >
                           <Link href={`/companies/${company.id}`}>
-                            Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                            詳細を見る <ArrowRight className="ml-2 h-4 w-4" />
                           </Link>
                         </Button>
                       </div>
@@ -265,10 +264,10 @@ export default function CompaniesPage() {
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
-              Inter-Company Collaboration
+              企業間連携
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Real examples of how our member companies work together to deliver comprehensive solutions
+              メンバー企業が連携して包括的なソリューションを提供する実際の事例
             </p>
           </div>
 
@@ -286,21 +285,20 @@ export default function CompaniesPage() {
                       </div>
                     </div>
                     <Badge variant="secondary" className="bg-white/80 backdrop-blur-sm">
-                      Collaboration Project
+                      連携プロジェクト
                     </Badge>
                   </div>
-                  <CardTitle className="text-slate-800 text-xl">Municipal Data Platform</CardTitle>
+                  <CardTitle className="text-slate-800 text-xl">自治体データプラットフォーム</CardTitle>
                   <CardDescription className="leading-relaxed">
-                    TechFlow Solutions provided cloud infrastructure while DataCore Systems handled data architecture
-                    and analytics for a comprehensive municipal data platform.
+                    テックフローソリューションがクラウドインフラを提供し、データコアシステムズがデータアーキテクチャと分析を担当した包括的な自治体データプラットフォーム。
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
                     {[
-                      "Seamless data integration across departments",
-                      "Real-time analytics and reporting",
-                      "Scalable cloud infrastructure",
+                      "部門間でのシームレスなデータ統合",
+                      "リアルタイム分析とレポート",
+                      "スケーラブルなクラウドインフラ",
                     ].map((item, index) => (
                       <div key={index} className="flex items-center gap-2 text-sm text-slate-600">
                         <CheckCircle className="h-4 w-4 text-emerald-600 flex-shrink-0" />
@@ -325,21 +323,20 @@ export default function CompaniesPage() {
                       </div>
                     </div>
                     <Badge variant="secondary" className="bg-white/80 backdrop-blur-sm">
-                      Collaboration Project
+                      連携プロジェクト
                     </Badge>
                   </div>
-                  <CardTitle className="text-slate-800 text-xl">Citizen Engagement Portal</CardTitle>
+                  <CardTitle className="text-slate-800 text-xl">市民エンゲージメントポータル</CardTitle>
                   <CardDescription className="leading-relaxed">
-                    WebCraft Digital created the web platform while MobileFirst Tech developed the companion mobile app
-                    for enhanced citizen engagement.
+                    ウェブクラフトデジタルがウェブプラットフォームを作成し、モバイルファーストテックが市民エンゲージメント向上のための付随モバイルアプリを開発。
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
                     {[
-                      "Unified user experience across platforms",
-                      "Mobile-first responsive design",
-                      "Enhanced citizen participation",
+                      "プラットフォーム間での統一されたユーザー体験",
+                      "モバイルファーストのレスポンシブデザイン",
+                      "市民参加の向上",
                     ].map((item, index) => (
                       <div key={index} className="flex items-center gap-2 text-sm text-slate-600">
                         <CheckCircle className="h-4 w-4 text-emerald-600 flex-shrink-0" />
@@ -360,10 +357,10 @@ export default function CompaniesPage() {
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
-              Why Partner With Us?
+              なぜ私たちとパートナーシップを？
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              The advantages of working with our unified LLP structure
+              私たちの統一されたLLP構造で働くことの利点
             </p>
           </div>
 
@@ -371,20 +368,20 @@ export default function CompaniesPage() {
             {[
               {
                 icon: Users,
-                title: "Unified Team",
-                description: "One coordinated team with diverse expertise working towards your success",
+                title: "統一チーム",
+                description: "あなたの成功に向けて働く、多様な専門知識を持つ1つの協調チーム",
                 gradient: "from-emerald-500 to-teal-600",
               },
               {
                 icon: Award,
-                title: "Quality Assurance",
-                description: "Consistent quality standards maintained across all member companies",
+                title: "品質保証",
+                description: "すべてのメンバー企業で維持される一貫した品質基準",
                 gradient: "from-blue-500 to-indigo-600",
               },
               {
                 icon: Zap,
-                title: "Rapid Deployment",
-                description: "Faster project delivery through coordinated expertise and resources",
+                title: "迅速な展開",
+                description: "協調された専門知識とリソースによる迅速なプロジェクト実行",
                 gradient: "from-purple-500 to-pink-600",
               },
             ].map((item, index) => (
@@ -415,10 +412,10 @@ export default function CompaniesPage() {
         <div className="container mx-auto text-center relative z-10">
           <div>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
-              Ready to Work With Our Expert Team?
+              私たちの専門チームと協力する準備はできていますか？
             </h2>
             <p className="text-emerald-100 text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed">
-              Connect with our member companies and discover how our collaborative approach can benefit your project.
+              メンバー企業とのつながりを築き、私たちの協調的なアプローチがプロジェクトにどのような利益をもたらすかをご発見ください。
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <div>
@@ -426,7 +423,7 @@ export default function CompaniesPage() {
                   size="lg"
                   className="bg-white text-emerald-600 hover:bg-slate-50 text-lg px-10 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
                 >
-                  <Link href="/projects">View Our Work</Link>
+                  <Link href="/projects">私たちの実績を見る</Link>
                 </Button>
               </div>
               <div>
@@ -435,7 +432,7 @@ export default function CompaniesPage() {
                   variant="outline"
                   className="border-2 border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-10 py-6 rounded-2xl backdrop-blur-sm bg-white/10 shadow-xl hover:shadow-2xl transition-all duration-300"
                 >
-                  <Link href="/contact">Start a Project</Link>
+                  <Link href="/contact">プロジェクトを開始</Link>
                 </Button>
               </div>
             </div>
